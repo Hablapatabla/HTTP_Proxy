@@ -1,23 +1,34 @@
-#Makefile for project
+EXECUTABLES = proxy parse_tests
+
+INCLUDES = parse.h
+
+# Do all C compies with gcc (at home you could try clang)
 CC = gcc
-PREFLAGS = -g -Wall
+
+# Updating include path to use current directory
+IFLAGS = -I.
+
+# the next three lines enable you to compile and link against course software
+PREFLAGS = -g -Wall $(IFLAGS)
 POSTFLAGS = -lnsl
 
-default: proxy
-
-all: proxy parse_tests
-
-proxy: proxy.o
-	$(CC) $(PREFLAGS) -o proxy proxy.o $(POSTFLAGS)
-
-proxy.o: proxy.c
-	$(CC) $(PREFLAGS) -c proxy.c $(POSTFLAGS)
-
-parse_tests: parse_tests.o
-	$(CC) $(PREFLAGS) -o parse_tests parse_tests.o $(POSTFLAGS)
-
-parse_tests.o: parse_tests.c
-	$(CC) $(PREFLAGS) -c parse_tests.c $(POSTFLAGS)
+all: $(EXECUTABLES)
 
 clean:
-	$(RM) proxy parse_tests *.o *~
+	rm -f $(EXECUTABLES) *.o
+
+%.o:%.c $(INCLUDES)
+	$(CC) $(PREFLAGS) -c $<
+
+#
+# Individual executables
+#
+#    Each executable depends on one or more .o files.
+#    Those .o files are linked together to build the corresponding
+#    executable.
+#
+proxy: proxy.o parse.o
+	$(CC) $(PREFLAGS) -o proxy proxy.o parse.o $(POSTFLAGS)
+
+parse_tests: parse_tests.o parse.o
+	$(CC) $(PREFLAGS) -o parse_tests parse_tests.o parse.o $(POSTFLAGS)
