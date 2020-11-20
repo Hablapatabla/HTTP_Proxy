@@ -1,6 +1,6 @@
 EXECUTABLES = proxy parse_tests
 
-INCLUDES = parse.h rmessage.h
+INCLUDES = parse.h rmessage.h partial.h
 
 # Do all C compies with gcc (at home you could try clang)
 CC = gcc
@@ -10,7 +10,7 @@ IFLAGS = -I.
 
 # the next three lines enable you to compile and link against course software
 PREFLAGS = -g -Wall $(IFLAGS)
-POSTFLAGS = -lnsl
+POSTFLAGS =
 
 default: proxy
 
