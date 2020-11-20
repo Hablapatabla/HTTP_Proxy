@@ -251,7 +251,7 @@ for (int i = 0; i <= fdmax; ++i) {
                 }
                 //All Data read to this point
                 int partner;
-                if((partner = findPartner(i)) != -1) {
+                if((partner = findTunnel(i)) != -1) {
                     if(send(partner, bigBuf, totalSize, 0) == -1) {
                         perror("send");
                     }
