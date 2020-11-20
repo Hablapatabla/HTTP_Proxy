@@ -10,7 +10,6 @@
 
 #include "parse.h"
 #include "rmessage.h"
-#include "partial.h"
 
 #define BUFSIZE 8192
 #define CACHESIZE 30
@@ -417,6 +416,30 @@ void empty_message(int sockfd, fd_set *set) {
   close(sockfd);
   FD_CLR(sockfd, set);
 }
+
+int create_tunnel(Request *r) {
+  int sockfd;
+  struct sockaddr_in server_addr;
+  struct hostent *server;
+
+  if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+    error("Error opening socket (get_response)\n");
+
+  if((server = gethostbyname(r->host)) == NULL)
+    error("Error getting hostname (get_response)\n");
+
+  bzero((char *) &server_addr, sizeof(server_addr));
+  server_addr.sin_family = AF_INET;
+  bcopy((char *)server->h_addr,
+	  (char *)&server_addr.sin_addr.s_addr, server->h_length);
+    server_addr.sin_port = htons(r->port);
+
+  if(connect(sockfd, (struct sockaddr *)&server_addr,
+                                                  sizeof(server_addr)) < 0)
+    error("Error connecting (get_response)\n");
+  return sockfd;
+}
+
 
 int main(int argc, char *argv[]) {
 int master_socket, rv;

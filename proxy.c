@@ -587,7 +587,7 @@ for (int i = 0; i <= fdmax; ++i) {
                             strncpy(req, &bigBuf[sor], j + 3);
                             Request *R = parse_request(req);
                             if(strcmp(R->method, "CONNECT") == 0) {
-                                int newServ = handle_connect(R, req, i);
+                                int newServ = create_tunnel(R);
                                 FD_SET(i, &server_set);
                                 addTunnel(i, newServ);
                             }
