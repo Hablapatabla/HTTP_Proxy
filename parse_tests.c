@@ -78,9 +78,10 @@ void test1() {
     if(strcmp(r->url, "http://www.test.org/simple-path") != 0 ||
        strcmp(r->host, "www.test.org") != 0 ||
        strcmp(r->method, "GET") != 0 ||
+       strcmp(r->path, "/simple-path") !=0 ||
        r->port != 80) {
-         printf("test 1 - Valid - GET - NON HTTPS FAILED, incorrect parsing.\n URL: %s\n Host: %s\n Method: %s\n Port: %d\n",
-                r->url, r->host, r->method, r->port);
+         printf("test 1 - Valid - GET - NON HTTPS FAILED, incorrect parsing.\n URL: %s\n Host: %s\n Method: %s\n Path: %s\nPort: %d\n",
+                r->url, r->host, r->method, r->path, r->port);
        }
     else {
       printf("test 1 - Valid - GET - NON HTTPS PASSED\n");
@@ -91,6 +92,10 @@ void test1() {
 
 int main(int argc, char *argv[]) {
   printf("Here we go baby\n");
+  char *test = "GET www.google.com HTTP/1.1\r\nContent-len: 15\r\n\r\n";
+  char *line = malloc(100);
+  if (sscanf(test, "%[^\r\n\r\n]\r\n\r\n", line) == 1)
+    printf("%s\n", line);
   test1();
   test2();
   test3();

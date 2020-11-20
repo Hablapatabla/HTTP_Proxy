@@ -7,12 +7,13 @@ typedef struct Request {
   char *url;
   char *host;
   char *method;
+  char *path;
   int port;
 } Request;
 
 void clean(char *l);
 
-void free_all(char *a, char *b, char *c, char *d, Request *r);
+void free_all(char *a, char *b, char *c, char *d, char *e, Request *r);
 
 void free_r(Request *r);
 
