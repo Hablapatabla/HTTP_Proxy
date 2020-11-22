@@ -21,7 +21,7 @@
 
 typedef struct CacheElement {
 	char *data, *url;
-	int max_age, port;
+	int max_age, port, size;
 	time_t entry_time, last_retrieval_time;
 } CacheElement;
 
@@ -33,78 +33,78 @@ struct connTunnel {
 
 struct connTunnel *root = NULL;
 
-void addTunnel_H(int cfd, int sfd, struct connTunnel *t) {
-    if(t == NULL) {
-        t = (struct connTunnel*) malloc(sizeof(struct connTunnel));
-        t->clientfd = cfd;
-        t->serverfd = sfd;
-        t->next = NULL;
+void addTunnel_H(int cfd, int sfd, struct connTunnel **t) {
+    if(*t == NULL) {
+        *t = (struct connTunnel*) malloc(sizeof(struct connTunnel));
+        (*t)->clientfd = cfd;
+        (*t)->serverfd = sfd;
+        (*t)->next = NULL;
     }
     else {
-        addTunnel_H(cfd, sfd, t->next);
+        addTunnel_H(cfd, sfd, &(*t)->next);
     }
 }
 
 void addTunnel(int cfd, int sfd) {
-    addTunnel_H(cfd, sfd, root);
+    addTunnel_H(cfd, sfd, &root);
 }
 
-void remTunnel_H(int cfd, int sfd, struct connTunnel *t, 
+void remTunnel_H(int cfd, int sfd, struct connTunnel **t,
                                   struct connTunnel *prev) {
-    if(t == NULL) {
+    if(*t == NULL) {
         return;
     }
-    else if(t->clientfd == cfd || t->serverfd == sfd) {
+    else if((*t)->clientfd == cfd || (*t)->serverfd == sfd) {
         if(prev != NULL) {
-            prev->next = t->next;
-            free(t);
-            t = NULL;
+            prev->next = (*t)->next;
+            free(*t);
+            *t = NULL;
         }
         else {
-            struct connTunnel *temp = t->next;
-            free(t);
-            t = temp;
+            struct connTunnel *temp = (*t)->next;
+            free(*t);
+            *t = temp;
         }
     }
     else {
-        remTunnel_H(cfd, sfd, t->next, t);
+        remTunnel_H(cfd, sfd, &(*t)->next, *t);
     }
 }
 
 void remTunnel(int cfd, int sfd) {
-    remTunnel_H(cfd, sfd, root, NULL);
+    remTunnel_H(cfd, sfd, &root, NULL);
 }
 
-int findPartner_H(int fd, struct connTunnel *t){
-    if(t == NULL){
+int findPartner_H(int fd, struct connTunnel **t){
+    if(*t == NULL){
         return -1;
     }
-    else if(t->clientfd == fd){
-        return t->serverfd;
+    else if((*t)->clientfd == fd){
+        return (*t)->serverfd;
     }
-    else if(t->serverfd == fd){
-        return t->clientfd;
+    else if((*t)->serverfd == fd){
+        return (*t)->clientfd;
     }
     else {
-        return findPartner_H(fd, t->next);
+        return findPartner_H(fd, &(*t)->next);
     }
 }
 
 int findPartner(int fd) {
-    return findPartner_H(fd, root);
+    return findPartner_H(fd, &root);
 }
 
-void destroyTunnels_H(struct connTunnel *t) {
-    if(t != NULL) {
-        destroyTunnels_H(t->next);
-        close(t->clientfd);
-        close(t->serverfd);
-        free(t);
+void destroyTunnels_H(struct connTunnel **t) {
+    if(*t != NULL) {
+        destroyTunnels_H(&(*t)->next);
+        close((*t)->clientfd);
+        close((*t)->serverfd);
+        free(*t);
     }
 }
 
 void destroyTunnels() {
-    destroyTunnels_H(root);
+    destroyTunnels_H(&root);
 }
 
 int noTunnels() {
@@ -140,8 +140,6 @@ int is_cached(char *url, CacheElement *cache, int num_stored, int port)
 {
   int index;
   for(index = 0; index < num_stored; index++) {
-    printf("Url: %s\n", url);
-    printf("Cache url: %s\n", cache[index].url);
     if((strcmp(url, cache[index].url) == 0) && (port == cache[index].port))
       return index;
   }
@@ -173,12 +171,12 @@ int find_expired(CacheElement cache[]) {
  * Returns: Index of found element
  */
 int find_oldest(CacheElement cache[]) {
-	if(cache[0].last_retrieval_time) {
+	if(cache[0].last_retrieval_time != -1) {
 		time_t oldest = cache[0].last_retrieval_time;
 		int oldest_index = 0;
 		double difference;
 		for(int i = 1; i < CACHESIZE; ++i) {
-			if(cache[i].last_retrieval_time) {
+			if(cache[i].last_retrieval_time != -1) {
 				difference = difftime(cache[i].last_retrieval_time, oldest);
 				if(difference > 0) {
 					oldest = cache[i].last_retrieval_time;
@@ -292,26 +290,25 @@ int parse_age(char *buf)
  * HTTP response and determines what the cache age should be. Updates all other
  * relevant fields.
  */
-void refresh_element(CacheElement **c, int index, char *response, int port)
+void refresh_element(CacheElement **c, int index, char *response, int size,
+																																int port)
 {
   int age = parse_age(response);
   time_t curr_time = time(NULL);
   (*c)[index].entry_time = curr_time;
   (*c)[index].max_age = age;
-  (*c)[index].last_retrieval_time = NULL;
+  (*c)[index].last_retrieval_time = -1;
   (*c)[index].data = response;
   (*c)[index].port = port;
+	(*c)[index].size = size;
 }
 
 
-char *get_response(Request *r, char *request) {
-  int sockfd, message_size, total, new_buf_size;
+char *get_response(Request *r, char *request, int *size) {
+	printf("IN GET RESPONSE!!!!!\n");
+  int sockfd, message_size;
   struct sockaddr_in server_addr;
   struct hostent *server;
-  char *buffer;
-  buffer = calloc(BUFSIZE, sizeof(char));
-  if(!buffer)
-    error("Error callocing buffer (get_response)\n");
 
   if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     error("Error opening socket (get_response)\n");
@@ -330,26 +327,35 @@ char *get_response(Request *r, char *request) {
     error("Error connecting (get_response)\n");
   if((message_size = write(sockfd, request, strlen(request))) < 0)
     error("Error writing (get_response)\n");
-  printf("wrote????\n");
-  message_size = read(sockfd, buffer, BUFSIZE - 1);
-  if(message_size < 0)
-    error("Error reading packet (handle_request)\n");
 
-  char temp[BUFSIZE];
-  bzero(temp, BUFSIZE);
-  new_buf_size = 2 * BUFSIZE;
-  while((message_size = read(sockfd, temp, BUFSIZE - 1)) != 0) {
-    if(message_size < 0)
-      error("Error reading rest of packet (handle_request)\n");
-    buffer = realloc(buffer, new_buf_size);
-    if(!buffer)
-      error("Failed to realloc buffer (handle_request)\n");
-    strcat(buffer, temp);
-    new_buf_size += BUFSIZE;
-    bzero(temp, BUFSIZE);
-  }
+	char *bigBuf = calloc(2*BUFSIZE + 1, sizeof(char));
+	if(!bigBuf)
+	  error("Error callocing buffer (get_response)\n");
+	char babyBuf[BUFSIZE];
+	int total = 0, bigBufCapacity = (2*BUFSIZE + 1);
+
+	do {
+		message_size = read(sockfd, babyBuf, BUFSIZE);
+		if (message_size < 0) {
+			printf("Error occured: %d\n", message_size);
+		}
+		else if (message_size == 0) {
+			printf("Disconnect\n");
+		}
+		if (total + message_size > bigBufCapacity) {
+			bigBufCapacity = bigBufCapacity * 2;
+			bigBuf = realloc(bigBuf, bigBufCapacity);
+			if (!bigBuf)
+				error("Error reallocing bigBuf\n");
+		}
+		memcpy(bigBuf + total, babyBuf, message_size);
+		total += message_size;
+		printf("Total: %d\n Message Size: %d\n\n\n", total, message_size);
+	} while (message_size > 0);
+	printf("Total: %d\n", total);
   close(sockfd);
-  return buffer;
+	*size = total;
+  return bigBuf;
 }
 
 void handle_get(Request *r, char *request, int client_sfd) {
@@ -357,43 +363,42 @@ void handle_get(Request *r, char *request, int client_sfd) {
   static int initialized = 0;
   static int num_cached = 0;
   int message_size = 0;
+	printf("Request: %s\n", request);
 
   if (!initialized) {
     cache = calloc(CACHESIZE, sizeof(*cache));
     initialized++;
   }
-  printf("One of these? Url: %s\n", r->url);
-  printf("port: %d\n", r->port);
   int index = is_cached(r->url, cache, num_cached, r->port);
   if (index == -1) {
-    printf("Should be in here\n");
-    char *server_response = get_response(r, request);
+    char *server_response = get_response(r, request, &message_size);
+		printf("AAAAAAA\n");
+		printf("Response: %s\n", server_response);
     time_t creation_time = time(NULL);
     int age = parse_age(server_response);
     CacheElement e = { .max_age = age, .entry_time = creation_time,
-      .last_retrieval_time = NULL, .data = server_response,
-      .url = strdup(r->url), .port = r->port};
+      .last_retrieval_time = -1, .data = server_response,
+      .url = strdup(r->url), .port = r->port, .size = message_size};
     cache_insert(&cache, &e, &num_cached);
     if((message_size = write(client_sfd, server_response,
-                                strlen(server_response))) < 0)
+                                message_size)) < 0)
         error("Error writing to socket\n");
   }
   else {
     time_t curr_time = time(NULL);
     if (difftime(curr_time, cache[index].entry_time)< cache[index].max_age) {
-      printf("Sending from cache\n");
+			printf("BBBBBBBBB\n");
       update_retrieved(&cache, index);
       if((message_size = write(client_sfd, cache[index].data,
-                                            strlen(cache[index].data))) < 0)
+                                            cache[index].size)) < 0)
           error("Error writing to socket\n");
     }
     else {
-      printf("not cached\n");
-
-      char *server_response = get_response(r, request);
-      refresh_element(&cache, index, server_response, r->port);
+			char *server_response = get_response(r, request, &message_size);
+			printf("CCCCCCCC\n");
+      refresh_element(&cache, index, server_response, message_size, r->port);
       if((message_size = write(client_sfd, server_response,
-                                  strlen(server_response))) < 0)
+                                  message_size)) < 0)
           error("Error writing to socket\n");
     }
   }
@@ -418,26 +423,113 @@ void empty_message(int sockfd, fd_set *set) {
 }
 
 int create_tunnel(Request *r) {
+	#ifdef USE_IPV6
+  struct addrinfo hints;
+  char portstr[10];
+  int gaierr;
+  struct addrinfo* ai;
+  struct addrinfo* ai2;
+  struct addrinfo* aiv4;
+  struct addrinfo* aiv6;
+  struct sockaddr_in6 sa_in;
+  #else /* USE_IPV6 */
+  struct hostent *he;
+  struct sockaddr_in sa_in;
+  #endif /* USE_IPV6 */
+  int sa_len, sock_family, sock_type, sock_protocol;
   int sockfd;
-  struct sockaddr_in server_addr;
-  struct hostent *server;
+	char *hostname = r->host;
+	unsigned short port = r->port;
 
-  if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
-    error("Error opening socket (get_response)\n");
+  (void) memset( (void*) &sa_in, 0, sizeof(sa_in) );
 
-  if((server = gethostbyname(r->host)) == NULL)
-    error("Error getting hostname (get_response)\n");
+  #ifdef USE_IPV6
 
-  bzero((char *) &server_addr, sizeof(server_addr));
-  server_addr.sin_family = AF_INET;
-  bcopy((char *)server->h_addr,
-	  (char *)&server_addr.sin_addr.s_addr, server->h_length);
-    server_addr.sin_port = htons(r->port);
+  (void) memset( &hints, 0, sizeof(hints) );
+  hints.ai_family = PF_UNSPEC;
+  hints.ai_socktype = SOCK_STREAM;
+  (void) snprintf( portstr, sizeof(portstr), "%d", (int) port );
+  if ( (gaierr = getaddrinfo( hostname, portstr, &hints, &ai )) != 0 )
+		return -1;
 
-  if(connect(sockfd, (struct sockaddr *)&server_addr,
-                                                  sizeof(server_addr)) < 0)
-    error("Error connecting (get_response)\n");
-  return sockfd;
+  /* Find the first IPv4 and IPv6 entries. */
+  aiv4 = (struct addrinfo*) 0;
+  aiv6 = (struct addrinfo*) 0;
+  for ( ai2 = ai; ai2 != (struct addrinfo*) 0; ai2 = ai2->ai_next )
+  {
+    switch ( ai2->ai_family )
+    {
+      case AF_INET:
+      if ( aiv4 == (struct addrinfo*) 0 )
+      aiv4 = ai2;
+      break;
+      case AF_INET6:
+      if ( aiv6 == (struct addrinfo*) 0 )
+      aiv6 = ai2;
+      break;
+    }
+  }
+
+  /* If there's an IPv4 address, use that, otherwise try IPv6. */
+  if ( aiv4 != (struct addrinfo*) 0 )
+  {
+    if ( sizeof(sa_in) < aiv4->ai_addrlen )
+    {
+      (void) fprintf(
+        stderr, "%s - sockaddr too small (%lu < %lu)\n",
+        hostname, (unsigned long) sizeof(sa_in),
+        (unsigned long) aiv4->ai_addrlen );
+        return -1;
+      }
+      sock_family = aiv4->ai_family;
+      sock_type = aiv4->ai_socktype;
+      sock_protocol = aiv4->ai_protocol;
+      sa_len = aiv4->ai_addrlen;
+      (void) memmove( &sa_in, aiv4->ai_addr, sa_len );
+      goto ok;
+    }
+    if ( aiv6 != (struct addrinfo*) 0 )
+    {
+      if ( sizeof(sa_in) < aiv6->ai_addrlen )
+      {
+        (void) fprintf(
+          stderr, "%s - sockaddr too small (%lu < %lu)\n",
+          hostname, (unsigned long) sizeof(sa_in),
+          (unsigned long) aiv6->ai_addrlen );
+          return -1;
+        }
+        sock_family = aiv6->ai_family;
+        sock_type = aiv6->ai_socktype;
+        sock_protocol = aiv6->ai_protocol;
+        sa_len = aiv6->ai_addrlen;
+        (void) memmove( &sa_in, aiv6->ai_addr, sa_len );
+        goto ok;
+      }
+      ok:
+      freeaddrinfo( ai );
+
+      #else /* USE_IPV6 */
+
+      he = gethostbyname( hostname );
+      if ( he == (struct hostent*) 0 )
+      	return -1;
+      sock_family = sa_in.sin_family = he->h_addrtype;
+      sock_type = SOCK_STREAM;
+      sock_protocol = 0;
+      sa_len = sizeof(sa_in);
+      (void) memmove( &sa_in.sin_addr, he->h_addr, he->h_length );
+      sa_in.sin_port = htons( port );
+
+      #endif /* USE_IPV6 */
+
+      sockfd = socket( sock_family, sock_type, sock_protocol );
+      if ( sockfd < 0 )
+      	return -1;
+
+      if ( connect( sockfd, (struct sockaddr*) &sa_in, sa_len ) < 0 )
+      	return -1;
+
+      return sockfd;
 }
 
 
@@ -529,81 +621,86 @@ for (int i = 0; i <= fdmax; ++i) {
             new);
           }
         }
-        else {
-            if ((nbytes = recv(i, buf, sizeof buf, 0)) <= 0) {
-                if(nbytes == 0) {
-                    //Connection closed
-                    printf("selectserver: socket %d hung up\n", i);
-                }
-                else {
-                    perror("recv");
-                }
-                close(i);
-                FD_CLR(i, &master_set);
-                int partner;
-                if(FD_ISSET(i, &server_set)) {
-                    FD_CLR(i, &server_set);
-                    if((partner = findPartner(i)) != -1) {
-                        remTunnel(partner, i);
-                    }
-                }
-                else if(FD_ISSET(i, &client_set)) {
-                    FD_CLR(i, &client_set);
-                    if((partner = findPartner(i)) != -1) {
-                        remTunnel(i, partner);
-                    }
-                }
-            }
-            else {
-                //We have data!!!
-                //Two types of Data: HTTPS and HTTP
-                //If HTTPS TODO
-                //Else Below
-                char * bigBuf = (char *) calloc(BUFSIZE, sizeof(char));
-                int totalSize = nbytes;
-                memcpy(bigBuf, buf, nbytes);
-                while(nbytes == BUFSIZE) {
-                    if((nbytes = recv(i, buf, sizeof buf, 0)) > 0){
-                        bigBuf = (char *) realloc(bigBuf, totalSize + BUFSIZE);
-                        memcpy(&bigBuf[totalSize], buf, nbytes);
-                        totalSize += nbytes;
-                    }
-                }
-                //All Data read to this point
-                int partner;
-                if((partner = findPartner(i)) != -1) {
-                    if(send(partner, bigBuf, totalSize, 0) == -1) {
-                        perror("send");
-                    }
-                }
-                else {
-                    if(!FD_ISSET(i, &client_set)) {
-                        FD_SET(i, &client_set);
-                    }
-                    for (int j = 0; j < totalSize; j++) {
-                        int sor = 0;
-                        if(bigBuf[j] == '\n' && bigBuf[j + 2] == '\n'){
-                            char req[BUFSIZE + 1] = { 0 };
-                            strncpy(req, &bigBuf[sor], j + 3);
-                            Request *R = parse_request(req);
-                            if(strcmp(R->method, "CONNECT") == 0) {
-                                int newServ = create_tunnel(R);
-                                FD_SET(i, &server_set);
-                                addTunnel(i, newServ);
-                            }
-                            else if(strcmp(R->method, "GET")) {
-                                handle_get(R, req, i);
-                            }
-                            else {
-                                perror("Invalid HTTP Method for Proxy!");
-                            }
-                            free_r(R);
-                            sor = j + 3;
-                        }
-                    }
-                }
-                free(bigBuf);
-            }
+      else {
+          if ((nbytes = recv(i, buf, sizeof buf, 0)) <= 0) {
+              if(nbytes == 0) {
+                  //Connection closed
+                  printf("selectserver: socket %d hung up\n", i);
+              }
+              else {
+                  perror("recv");
+              }
+              close(i);
+              FD_CLR(i, &master_set);
+              int partner;
+              if(FD_ISSET(i, &server_set)) {
+                  FD_CLR(i, &server_set);
+                  if((partner = findPartner(i)) != -1) {
+                      remTunnel(partner, i);
+                  }
+              }
+              else if(FD_ISSET(i, &client_set)) {
+                  FD_CLR(i, &client_set);
+                  if((partner = findPartner(i)) != -1) {
+                      remTunnel(i, partner);
+                  }
+              }
+          }
+          else {
+              //We have data!!!
+              //Two types of Data: HTTPS and HTTP
+              //If HTTPS TODO
+              //Else Below
+              char * bigBuf = (char *) calloc(BUFSIZE, sizeof(char));
+              int totalSize = nbytes;
+              memcpy(bigBuf, buf, nbytes);
+              while(nbytes == BUFSIZE) {
+                  if((nbytes = recv(i, buf, sizeof buf, 0)) > 0){
+                      bigBuf = (char *) realloc(bigBuf, totalSize + BUFSIZE);
+                      memcpy(&bigBuf[totalSize], buf, nbytes);
+                      totalSize += nbytes;
+                  }
+              }
+              //All Data read to this point
+              int partner;
+              if((partner = findPartner(i)) != -1) {
+								int l = 0;
+                  if((l =send(partner, bigBuf, totalSize, 0)) == -1) {
+                      perror("send");
+                  }
+              }
+              else {
+                  if(!FD_ISSET(i, &client_set)) {
+                      FD_SET(i, &client_set);
+                  }
+                  for (int j = 0; j < totalSize; j++) {
+                      int sor = 0;
+                      if(bigBuf[j] == '\n' && bigBuf[j + 2] == '\n'){
+                          char req[BUFSIZE + 1] = { 0 };
+                          strncpy(req, &bigBuf[sor], j + 3);
+                          Request *R = parse_request(req);
+                          if(strncmp(R->method, "CONNECT", 7) == 0) {
+                              int newServ = create_tunnel(R);
+															if (newServ != -1) {
+	                              FD_SET(newServ, &server_set);
+																FD_SET(newServ, &master_set);
+	                              addTunnel(i, newServ);
+																write(i, "HTTP/1.1 200 Connection Established\r\n\r\n", 43);
+															}
+                          }
+                          else if(strncmp(R->method, "GET", 3) == 0) {
+                              handle_get(R, req, i);
+                          }
+                          else {
+                              perror("Invalid HTTP Method for Proxy!");
+                          }
+                          free_r(R);
+                          sor = j + 3;
+                      }
+                  }
+              }
+              free(bigBuf);
+          }
         }
       }
     }
