@@ -10,7 +10,6 @@ IFLAGS = -I.
 
 # the next three lines enable you to compile and link against course software
 PREFLAGS = -g -Wall $(IFLAGS)
-POSTFLAGS =
 
 default: proxy
 
