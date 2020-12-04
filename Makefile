@@ -8,8 +8,10 @@ CC = gcc
 # Updating include path to use current directory
 IFLAGS = -I.
 
-# the next three lines enable you to compile and link against course software
-PREFLAGS = -g -Wall $(IFLAGS)
+LFLAGS = -L/usr/local/lib
+
+PREFLAGS = -g -Wall $(IFLAGS) $(LFLAGS)
+POSTFLAGS = -lssl -lcrypto
 
 default: proxy
 
