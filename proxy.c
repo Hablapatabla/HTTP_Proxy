@@ -41,21 +41,34 @@ typedef struct connTunnel {
 } connTunnel;
 
 connTunnel *root = NULL;
-const char *privateKey = "-----BEGIN RSA PRIVATE KEY-----\n"\
-"MIICWwIBAAKBgQDFswUQQbbd/pMtQklnO7qgvNcxmW/E+hSTLYuSGUTstg8rKZqv\n"\
-"PbgSPudp43iioy4PxJk/+odPphv/Uh0l6oJ1YtxhvEm7VCNp/tYgqbIeqWRKVFn/\n"\
-"ziadFPYvrwlOlj09Gv3y+HH1iUNrWmD2pAMr8AVj89JwFrcVsQNAJxKowQIDAQAB\n"\
-"AoGAFdWNq5v2XFIvYwI9JR+dnv78LUgq5fBQsWiIT5xm1lXNGxE/OjdwyuMTn8g1\n"\
-"nJC1F5y46C39H7jSwsII4hUiTy7m/f/JUBcgtrIgj5LiJHQcWG2VQYGbsh9EAeCh\n"\
-"9A/6eyfWQYmI4bjAzKhUp7xO4CsfI7hZTvQd/kPzP+AWS5kCQQDkpSWrpBgI++cU\n"\
-"k8ftQzVaJL7I6oZqcUi+UPsi1ZIdVi2qNqcWoSNCvz5BYsWzMcBN0D2Msf6dSTgW\n"\
-"C6t+TwN3AkEA3VoTk1LzJBQirpUw7iwEUotte9BGkbdR1CErC9GrSRCLFDQc/Ye0\n"\
-"b+ElfRx27+B4ggvhT2SovahaLTMBsIoThwJAPmhVP+QqK0mWaSdtCnWtuk0NRgm9\n"\
-"ZpBFKq0v3vIsT5WWIT+Jm8OfvDg25eHv1FlgA90y75QlywiRJnNI+9DVQQJAUA98\n"\
-"dRTTjIEb6jlb8UlKZvC3MMksPRgpKKi2gRfc9BhftXcD5U9oG+87N/1Lp4dxDtht\n"\
-"LeIihjaWJzMDsW6/kQJAFidPGQO5PIBG6DgUiacmBQAMhIFaL0kTHTtrrL5/K9Zb\n"\
-"2MQDQjBpQrLJlRsbZZlx4cqpquXX0griDcC2n48F+Q==\n"\
-"-----END RSA PRIVATE KEY-----\n\0";
+const char *privateKey = "-----BEGIN PRIVATE KEY-----\n"\
+"MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDhjFZAntvICtiJ\n"\
+"v6G5f754/b6YilCDNNoF+odvxh30YNsG/AEp1NXHmLav3hzsmnzOENaM+KWKWjLm\n"\
+"v5FoGz3/QihxkObvDjqQxDdf4cYP2kB8/zuutdKUjPGykD6VIqtb/5X43w82J8Xl\n"\
+"GwJrOxrZMev/UJmc3QL6Iweo87SFSzSDfjNYSRG0bhqtLXmZC9rVXKfZnzSYaCpd\n"\
+"pJu+ZRsFyQ64pP37qdvzjj6/Pa5y+8zH4g5LcJ1eHwj4OyjHl85eDR5Zw1nA+L47\n"\
+"e6//des4YaFPHj5TMYmd7D/ARVcLqSIOJrYKj8FtGN+KEZe0SK7tSv9GCP7qJKjp\n"\
+"qEkc9NihAgMBAAECggEBAJRv4pf2tJgroyTMzGejjbxc6qHDbYdcMhx7K8VA8pfR\n"\
+"YnRvR2i7XNJWS+zkVc7VQUvwwvLV9URfZl58Nvr36s5iQPG0tncfuyVpLTRaBxqJ\n"\
+"vaVF6IZrvSHsvGiTC8zkmzgZth6q1n0CoffM1cOyi1Hjy/gkmGQnA/2RLkpf0S9i\n"\
+"+Wme8xIL3D76/geEoKf5HNhMN6TISDU2T3Tzs6/R0W28HRZFdQNfn/fdTCPF3r03\n"\
+"2RwldkFUUhwiDA5bsntP7Srj3xt2kmlBs8gA7+PEKoJ7WtPjsq4G4TkpBf5xh5Mp\n"\
+"OBXTWy9HkGf6JZ++xhV8QAoy5/awv9vMEgSE5McCXRECgYEA/ljI61ZTFmCNsbin\n"\
+"219YjUafqWVhG9S2n+NE39x8fE4lNNjGQcnksJN2inC/f9xBb3FAkjoLwKdE6k9u\n"\
+"qeuYRfe2FtdYX2RSEd6UTkFhRGtJK5xrPiSgzciVPVrWe/WHy7AVE4zmdQ/MwJaO\n"\
+"HQNMztrnaB8wYCjFAUvS667Mh/UCgYEA4wOiGZGuYxvyI5RAbxa5c/+ux21K6tJK\n"\
+"ooPN68KhzBifEXUQrIgphG7n4fqpQhSDeNZQ2AU/Ke5jgWeBP1auO5KtXaLZ0QXY\n"\
+"Vy4BAW4wlPquJhvV/I6XSnX/fCV84AhQVqDbfezMH4l7sIqb3m2pm4Db745a/PJv\n"\
+"ptpyRAJw3n0CgYAjWQtzSWf6sCiBDnyljDauS6Zc0G4ShBltVxR3WBkk3WdmVMoY\n"\
+"0oop0BSlYM38YwvlBQRITjDb8WMufSOQEeHzt11jB0KM31BYk2phBc0SySY+HVr6\n"\
+"I/UFJF85S6qLR7A7qpkDQo20ryFxknrlpVPDW8DVQ6BhfMkESRljD8P1EQKBgQDe\n"\
+"4p1Pz2nRYwm9BvywVTZl/p5CrTrGDQw8PX57QFANDAt5X1+slc91eFJw2+M8vtlK\n"\
+"VdlwDs6yQ50s20vZvSg500wlyBNllwCOr9tK5T4Lt4guYFwbqIBAGlRqNoBBkcgX\n"\
+"Fb4LB+ht+lUXwy9AFplU1RKbREBvYzReNNHFlkPtHQKBgQC2UapnfRD2QWI1oD3V\n"\
+"zwE+g471o+8JLZ4OxyOqlunYWrXRjHd7XVdrMOT/HeapzV6bM/Wc04gVd+VfZYzu\n"\
+"VtubW1aryWuITJzkUc64HwYFx6UWteTXaebRINnqhr8xi23IXsD7PQudv+mu+aYq\n"\
+"5ODgYdjC646wKBMCXxRqGb7w4w==\n"\
+"-----END PRIVATE KEY-----\n\0";
 
 void addTunnel_H(int cfd, int sfd, SSL *cssl, SSL *sssl,struct connTunnel **t) {
     if(*t == NULL) {
@@ -111,7 +124,6 @@ void remTunnel(int cfd, int sfd) {
 
 int findPartner_H(int fd, int *which, struct connTunnel **t){
     if(*t == NULL){
-				printf("NULLLL\n");
         return -1;
     }
     else if((*t)->clientfd == fd){
@@ -705,7 +717,7 @@ for (int i = 0; i <= fdmax; ++i) {
       else {
           int partner;
           if((partner = findPartner(i, &which)) != -1) {
-							printf("IN HERE\n");
+							printf("i=%d\n", i);
 							int l = 0;
 							memset(buf, 0, BUFSIZE);
 							connTunnel *tunnel = findTunnel(i);
@@ -713,14 +725,14 @@ for (int i = 0; i <= fdmax; ++i) {
 								printf("READING FROM CLIENT: %d\n", i);
 								l = SSL_read_ex(tunnel->serv_ssl, buf, BUFSIZE, &nbytes);
 								printf("NUMBYTES: %d\n", nbytes);
-								printf("BUF: %s\n", buf);
+								//buf[nbytes] = '\0';
+								//printf("BUF: %s\n", buf);
 							}
 							else if (which == 1) {
 								printf("READING FROM SERV: %d\n", partner);
 								l = SSL_read_ex(tunnel->client_ssl, buf, BUFSIZE, &nbytes);
 							}
 							if (nbytes <= 0) {
-								printf("NBYTES < 0\n");
 								if(nbytes == 0) {
 	                  //Connection closed
 	                  printf("selectserver: socket %d hung up\n", i);
@@ -798,11 +810,7 @@ for (int i = 0; i <= fdmax; ++i) {
 											totalSize += nbytes;
 									}
 							}
-							printf("BUF: %s\n SIZE: %d\n", bigBuf, totalSize);
-							for (int i = 0; i < totalSize; ++i) {
-								printf("%c", bigBuf[i]);
-							}
-							printf("\n");
+							printf("BUF: %s\nSIZE: %d\n", bigBuf, totalSize);
 							//All Data read to this point
               if(!FD_ISSET(i, &client_set)) {
                   FD_SET(i, &client_set);
@@ -820,6 +828,8 @@ for (int i = 0; i <= fdmax; ++i) {
 													write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
 											}
                       else if(strncmp(R->method, "CONNECT", 7) == 0) {
+													printf("HOSTNAME: %s\n", R->host);
+													printf("URL: %s\n", R->url);
                           int newServ = create_tunnel(R);
 													if (newServ != -1) {
                             FD_SET(newServ, &server_set);
@@ -856,10 +866,12 @@ for (int i = 0; i <= fdmax; ++i) {
 														EVP_PKEY *key = NULL;
 														int q = mkcert(&spoofed_cert, cert, &key, 2048, 0, 365);
 														if (q == 1) {
-															LoadCertificates(serv_ctx, "proxy.pem", "proxy_key.pem");
+															printf("?\n");
+															LoadCertificates(serv_ctx, "testcert.pem", "testkey.pem");
 															SSL *serv_ssl = SSL_new(serv_ctx);
 															SSL_set_accept_state(serv_ssl);
 															SSL_set_fd(serv_ssl, i);
+															printf("!\n");
 															if (SSL_accept(serv_ssl) <= 0) { /* perform the connection */
 																ERR_print_errors_fp(stderr);
 																printf("SSL ACCEPT ERRROR2\n");
