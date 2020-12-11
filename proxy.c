@@ -4,13 +4,18 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <netdb.h>
-#include <time.h>
+#include <sys/time.h>
 #include <errno.h>
 #include <sys/ioctl.h>
-#include <openssl/bio.h> /* BasicInput/Output streams */
+#include <openssl/pem.h>
+#include <openssl/conf.h>
+#include <openssl/x509v3.h>
 #include <openssl/err.h> /* errors */
 #include <openssl/ssl.h> /* core library */
 #include <openssl/rsa.h>
+#ifndef OPENSSL_NO_ENGINE
+#include <openssl/engine.h>
+#endif
 
 #include "parse.h"
 #include "rmessage.h"
@@ -21,10 +26,35 @@
 #define STARTOFCACHEFIELD "Cache-Control: "
 #define STARTOFCACHE " "
 #define ENDOFCACHE " "
-
 #define FAIL -1
-#define YEAR 31536000L
+#define MAXSOCKETS 1024 * 10
 
+const char *create_key_command_template = "openssl genrsa -out certificates/key.%s.key 2048";
+
+const char *key_name_change_template = "mv certificates/key.%s.key certificates/key.%s.pem";
+
+const char *key_file_name_template = "certificates/key.%s.pem";
+
+const char *create_csr_template = "openssl req -new -key certificates/key.%s.pem -subj \"/C=US/ST=/L=/O=/CN=%s\" -out certificates/%s.csr";
+
+const char *extension_file_content_template =
+"authorityKeyIdentifier=keyid,issuer\n" \
+"basicConstraints=CA:FALSE\n" \
+"keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment\n" \
+"subjectAltName = @alt_names\n\n" \
+"[alt_names]\n\n" \
+"DNS.1 = %s\n" \
+"DNS.2 = www.%s\n";
+
+const char *extension_file_name_template = "certificates/v%s.ext";
+
+const char *sign_command_first_serial_template = "openssl x509 -req -in certificates/%s.csr -extfile certificates/v%s.ext -CA myCA.pem -CAkey myCA.key -passin pass:abcd -CAcreateserial -out certificates/cert.%s.crt -days 365";
+
+const char *sign_command_not_first_serial_template = "openssl x509 -req -in certificates/%s.csr -extfile certificates/v%s.ext -CA myCA.pem -CAkey myCA.key -passin pass:abcd -CAserial myCA.srl -out certificates/cert.%s.crt -days 365";
+
+const char *cert_name_change_template = "mv certificates/cert.%s.crt certificates/cert.%s.pem";
+
+const char *remove_csr_template = "rm certificates/%s.csr";
 
 typedef struct CacheElement {
 	char *data, *url;
@@ -32,60 +62,37 @@ typedef struct CacheElement {
 	time_t entry_time, last_retrieval_time;
 } CacheElement;
 
-typedef struct connTunnel {
+struct connTunnel {
     int clientfd;
     int serverfd;
-		SSL *client_ssl;
-		SSL *serv_ssl;
     struct connTunnel *next;
-} connTunnel;
+};
 
-connTunnel *root = NULL;
-const char *privateKey = "-----BEGIN PRIVATE KEY-----\n"\
-"MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDhjFZAntvICtiJ\n"\
-"v6G5f754/b6YilCDNNoF+odvxh30YNsG/AEp1NXHmLav3hzsmnzOENaM+KWKWjLm\n"\
-"v5FoGz3/QihxkObvDjqQxDdf4cYP2kB8/zuutdKUjPGykD6VIqtb/5X43w82J8Xl\n"\
-"GwJrOxrZMev/UJmc3QL6Iweo87SFSzSDfjNYSRG0bhqtLXmZC9rVXKfZnzSYaCpd\n"\
-"pJu+ZRsFyQ64pP37qdvzjj6/Pa5y+8zH4g5LcJ1eHwj4OyjHl85eDR5Zw1nA+L47\n"\
-"e6//des4YaFPHj5TMYmd7D/ARVcLqSIOJrYKj8FtGN+KEZe0SK7tSv9GCP7qJKjp\n"\
-"qEkc9NihAgMBAAECggEBAJRv4pf2tJgroyTMzGejjbxc6qHDbYdcMhx7K8VA8pfR\n"\
-"YnRvR2i7XNJWS+zkVc7VQUvwwvLV9URfZl58Nvr36s5iQPG0tncfuyVpLTRaBxqJ\n"\
-"vaVF6IZrvSHsvGiTC8zkmzgZth6q1n0CoffM1cOyi1Hjy/gkmGQnA/2RLkpf0S9i\n"\
-"+Wme8xIL3D76/geEoKf5HNhMN6TISDU2T3Tzs6/R0W28HRZFdQNfn/fdTCPF3r03\n"\
-"2RwldkFUUhwiDA5bsntP7Srj3xt2kmlBs8gA7+PEKoJ7WtPjsq4G4TkpBf5xh5Mp\n"\
-"OBXTWy9HkGf6JZ++xhV8QAoy5/awv9vMEgSE5McCXRECgYEA/ljI61ZTFmCNsbin\n"\
-"219YjUafqWVhG9S2n+NE39x8fE4lNNjGQcnksJN2inC/f9xBb3FAkjoLwKdE6k9u\n"\
-"qeuYRfe2FtdYX2RSEd6UTkFhRGtJK5xrPiSgzciVPVrWe/WHy7AVE4zmdQ/MwJaO\n"\
-"HQNMztrnaB8wYCjFAUvS667Mh/UCgYEA4wOiGZGuYxvyI5RAbxa5c/+ux21K6tJK\n"\
-"ooPN68KhzBifEXUQrIgphG7n4fqpQhSDeNZQ2AU/Ke5jgWeBP1auO5KtXaLZ0QXY\n"\
-"Vy4BAW4wlPquJhvV/I6XSnX/fCV84AhQVqDbfezMH4l7sIqb3m2pm4Db745a/PJv\n"\
-"ptpyRAJw3n0CgYAjWQtzSWf6sCiBDnyljDauS6Zc0G4ShBltVxR3WBkk3WdmVMoY\n"\
-"0oop0BSlYM38YwvlBQRITjDb8WMufSOQEeHzt11jB0KM31BYk2phBc0SySY+HVr6\n"\
-"I/UFJF85S6qLR7A7qpkDQo20ryFxknrlpVPDW8DVQ6BhfMkESRljD8P1EQKBgQDe\n"\
-"4p1Pz2nRYwm9BvywVTZl/p5CrTrGDQw8PX57QFANDAt5X1+slc91eFJw2+M8vtlK\n"\
-"VdlwDs6yQ50s20vZvSg500wlyBNllwCOr9tK5T4Lt4guYFwbqIBAGlRqNoBBkcgX\n"\
-"Fb4LB+ht+lUXwy9AFplU1RKbREBvYzReNNHFlkPtHQKBgQC2UapnfRD2QWI1oD3V\n"\
-"zwE+g471o+8JLZ4OxyOqlunYWrXRjHd7XVdrMOT/HeapzV6bM/Wc04gVd+VfZYzu\n"\
-"VtubW1aryWuITJzkUc64HwYFx6UWteTXaebRINnqhr8xi23IXsD7PQudv+mu+aYq\n"\
-"5ODgYdjC646wKBMCXxRqGb7w4w==\n"\
-"-----END PRIVATE KEY-----\n\0";
+struct connTunnel *root = NULL;
 
-void addTunnel_H(int cfd, int sfd, SSL *cssl, SSL *sssl,struct connTunnel **t) {
+typedef struct Socket_Context {
+	int partner_tcp_sfd;
+	char hostname[512];
+	SSL_CTX *ctx;
+	SSL *ssl;
+} Socket_Context;
+
+Socket_Context *socket_contexts[MAXSOCKETS] = {NULL};
+
+void addTunnel_H(int cfd, int sfd, struct connTunnel **t) {
     if(*t == NULL) {
         *t = (struct connTunnel*) malloc(sizeof(struct connTunnel));
         (*t)->clientfd = cfd;
         (*t)->serverfd = sfd;
-				(*t)->client_ssl = cssl;
-				(*t)->serv_ssl = sssl;
         (*t)->next = NULL;
     }
     else {
-        addTunnel_H(cfd, sfd, cssl, sssl, &(*t)->next);
+        addTunnel_H(cfd, sfd, &(*t)->next);
     }
 }
 
-void addTunnel(int cfd, int sfd, SSL *cssl, SSL *sssl) {
-    addTunnel_H(cfd, sfd, cssl, sssl, &root);
+void addTunnel(int cfd, int sfd) {
+    addTunnel_H(cfd, sfd, &root);
 }
 
 void remTunnel_H(int cfd, int sfd, struct connTunnel **t,
@@ -96,19 +103,11 @@ void remTunnel_H(int cfd, int sfd, struct connTunnel **t,
     else if((*t)->clientfd == cfd || (*t)->serverfd == sfd) {
         if(prev != NULL) {
             prev->next = (*t)->next;
-						if ((*t)->client_ssl)
-							SSL_free((*t)->client_ssl);
-						if ((*t)->serv_ssl)
-							SSL_free((*t)->serv_ssl);
             free(*t);
             *t = NULL;
         }
         else {
             struct connTunnel *temp = (*t)->next;
-						if ((*t)->client_ssl)
-							SSL_free((*t)->client_ssl);
-						if ((*t)->serv_ssl)
-							SSL_free((*t)->serv_ssl);
             free(*t);
             *t = temp;
         }
@@ -122,37 +121,23 @@ void remTunnel(int cfd, int sfd) {
     remTunnel_H(cfd, sfd, &root, NULL);
 }
 
-int findPartner_H(int fd, int *which, struct connTunnel **t){
+int findPartner_H(int fd, struct connTunnel **t){
     if(*t == NULL){
         return -1;
     }
     else if((*t)->clientfd == fd){
-				*which = 0;
         return (*t)->serverfd;
     }
     else if((*t)->serverfd == fd){
-				*which = 1;
         return (*t)->clientfd;
     }
     else {
-        return findPartner_H(fd, which, &(*t)->next);
+        return findPartner_H(fd, &(*t)->next);
     }
 }
 
-int findPartner(int fd, int *which) {
-    return findPartner_H(fd, which, &root);
-}
-
-connTunnel *findTunnel(int fd) {
-	connTunnel *temp = root;
-	if (!temp)
-		return NULL;
-	if (!temp->next && temp->clientfd != fd && temp->serverfd != fd)
-		return NULL;
-
-	while (temp && temp->clientfd != fd && temp->serverfd != fd)
-		temp = temp->next;
-	return temp;
+int findPartner(int fd) {
+    return findPartner_H(fd, &root);
 }
 
 void destroyTunnels_H(struct connTunnel **t) {
@@ -160,8 +145,6 @@ void destroyTunnels_H(struct connTunnel **t) {
         destroyTunnels_H(&(*t)->next);
         close((*t)->clientfd);
         close((*t)->serverfd);
-				SSL_free((*t)->client_ssl);
-				SSL_free((*t)->serv_ssl);
         free(*t);
     }
 }
@@ -419,45 +402,14 @@ char *get_response(Request *r, char *request, int *size) {
 }
 
 void handle_get(Request *r, char *request, int client_sfd) {
-  static CacheElement *cache = NULL;
-  static int initialized = 0;
-  static int num_cached = 0;
   int message_size = 0;
-
-  if (!initialized) {
-    cache = calloc(CACHESIZE, sizeof(*cache));
-    initialized++;
-  }
-  int index = is_cached(r->url, cache, num_cached, r->port);
-  if (index == -1) {
-    char *server_response = get_response(r, request, &message_size);
-    time_t creation_time = time(NULL);
-    int age = parse_age(server_response);
-    CacheElement e = { .max_age = age, .entry_time = creation_time,
-      .last_retrieval_time = -1, .data = server_response,
-      .url = strdup(r->url), .port = r->port, .size = message_size};
-    cache_insert(&cache, &e, &num_cached);
-		//free(server_response);
-    if((message_size = write(client_sfd, server_response,
+	printf("in handle get\n");
+  char *server_response = get_response(r, request, &message_size);
+	//printf("got response %d long: \n%s\n", message_size, server_response);
+  if((message_size = write(client_sfd, server_response,
                                 message_size)) < 0)
-        error("Error writing to socket\n");
-  }
-  else {
-    time_t curr_time = time(NULL);
-    if (difftime(curr_time, cache[index].entry_time) < cache[index].max_age) {
-      update_retrieved(&cache, index);
-      if((message_size = write(client_sfd, cache[index].data,
-                                            cache[index].size)) < 0)
-          error("Error writing to socket\n");
-    }
-    else {
-			char *server_response = get_response(r, request, &message_size);
-      refresh_element(&cache, index, server_response, message_size, r->port);
-      if((message_size = write(client_sfd, server_response,
-                                  message_size)) < 0)
-          error("Error writing to socket\n");
-    }
-  }
+      error("Error writing to socket\n");
+	free(server_response);
 }
 
 
@@ -503,122 +455,264 @@ int create_tunnel(Request *r) {
   return sockfd;
 }
 
-SSL_CTX *InitServerCTX() {
-	SSL_METHOD *method;
-	SSL_CTX *ctx;
+void makeKey(char *hostname) {
+	char command[BUFSIZE] = {0};
+	sprintf(command, create_key_command_template, hostname);
+	system(command);
 
-	method = TLSv1_2_server_method();
-	ctx = SSL_CTX_new(method);
-	if (!ctx) {
-		ERR_print_errors_fp(stderr);
-		error("Error with creating context.\n");
+	memset(command, 0, BUFSIZE);
+	sprintf(command, key_name_change_template, hostname, hostname);
+	system(command);
+}
+
+void makeCSR(char *hostname) {
+	char command[BUFSIZE] = {0};
+	sprintf(command, create_csr_template, hostname, hostname, hostname);
+	system(command);
+}
+
+void makeCSRExtension(char *hostname) {
+	char extfile[BUFSIZE];
+	sprintf(extfile, extension_file_content_template, hostname, hostname);
+
+	char extfilename[BUFSIZE];
+	sprintf(extfilename, extension_file_name_template, hostname);
+
+	FILE *ext_fp = fopen(extfilename, "w");
+	if (ext_fp == NULL) {
+		fprintf(stderr, "\nCould not create extension file\n");
 	}
-	return ctx;
+	else {
+		fprintf(ext_fp, "%s", extfile);
+	}
 }
 
-void LoadCertificates(SSL_CTX *ctx, char *cert, char *key) {
-	/* set the local certificate from CertFile */
-if ( SSL_CTX_use_certificate_file(ctx, cert, SSL_FILETYPE_PEM) <= 0 ) {
-		ERR_print_errors_fp(stderr);
-		error("Error use certificate file\n");
+void signCSR(char *hostname) {
+	static int first_serial = 0;
+	char command[BUFSIZE] = {0};
+
+	if (first_serial == 0) {
+	 	first_serial++;
+		sprintf(command, sign_command_first_serial_template, hostname, hostname, hostname);
+	}
+	else
+		sprintf(command, sign_command_not_first_serial_template, hostname, hostname, hostname);
+
+	system(command);
 }
-/* set the private key from KeyFile (may be the same as CertFile) */
-if ( SSL_CTX_use_PrivateKey_file(ctx, key, SSL_FILETYPE_PEM) <= 0 ) {
-		ERR_print_errors_fp(stderr);
-		error("Error use private key\n");
+
+void convertCertificateToPem(char *hostname) {
+	char command[BUFSIZE] = {0};
+
+	sprintf(command, cert_name_change_template, hostname, hostname);
+	system(command);
 }
-/* verify private key */
-if ( !SSL_CTX_check_private_key(ctx) ) {
-		fprintf(stderr, "Private key does not match the public certificate\n");
-		error("error check private key\n");
+
+
+void cleanupCSR(char *hostname) {
+	char command[BUFSIZE] = {0};
+
+	sprintf(command, remove_csr_template, hostname, hostname);
+	system(command);
 }
+
+/*
+ * This logic uses the const char * templates at the top of the file.
+ */
+void makeCertificateAndKey(char *hostname) {
+	makeKey(hostname);
+	makeCSR(hostname);
+	makeCSRExtension(hostname);
+	signCSR(hostname);
+	convertCertificateToPem(hostname);
+	cleanupCSR(hostname);
 }
 
 SSL_CTX *InitClientCTX() {
-	SSL_METHOD *method;
-	SSL_CTX *ctx;
-
-	method = TLSv1_2_client_method();
-	ctx = SSL_CTX_new(method);
-	if (!ctx) {
+	const SSL_METHOD *method = TLSv1_2_client_method();
+	SSL_CTX *ctx = SSL_CTX_new(method);
+	if (ctx == NULL) {
 		ERR_print_errors_fp(stderr);
-		error("Error with creating client context.\n");
+		exit(1);
 	}
 	return ctx;
 }
 
-int mkcert(X509 **x509p, X509 *real_cert, EVP_PKEY **pkeyp, int bits, int serial, int days) {
-	EVP_PKEY *pkey;
-	pkey = EVP_PKEY_new();
-
-	RSA *rsa = NULL;
-	BIO *keybio = BIO_new_mem_buf((void *)privateKey, -1);
-	if (keybio == NULL)
-		printf("ERROR WITH MAKING KEYBIO\n");
-	rsa = PEM_read_bio_RSAPrivateKey(keybio, rsa, NULL, NULL);
-
-	if (!EVP_PKEY_assign_RSA(pkey,rsa)) {
-		printf("ERROR WITH EVP PKEY ASSIGN\n");
-		return -1;
+SSL_CTX *InitServerCTX() {
+	const SSL_METHOD *method = TLSv1_2_server_method();
+	SSL_CTX *ctx = SSL_CTX_new(method);
+	if (ctx == NULL) {
+		ERR_print_errors_fp(stderr);
+		exit(1);
 	}
-	rsa=NULL;
+	return ctx;
+}
 
-	X509 *cert = X509_new();
-	ASN1_INTEGER_set(X509_get_serialNumber(cert), 1);
-	X509_gmtime_adj(X509_get_notBefore(cert), 0);
-	X509_gmtime_adj(X509_get_notAfter(cert), YEAR);
+void LoadCertificates(SSL_CTX* ctx, char *hostname)
+{
+	char *certificate_name_template = "certificates/cert.%s.pem";
+	char *key_name_template = "certificates/key.%s.pem";
+	char cert_name[BUFSIZE];
+	char key_name[BUFSIZE];
 
-	X509_set_pubkey(cert, pkey);
+	sprintf(cert_name, certificate_name_template, hostname);
+	sprintf(key_name, key_name_template, hostname);
 
-	X509_NAME *real_name = X509_get_subject_name(real_cert);
-	char *CN;
-	for (int i = 0; i < X509_NAME_entry_count(real_name); i++) {
-		X509_NAME_ENTRY *e = X509_NAME_get_entry(real_name, i);
-		ASN1_STRING *d = X509_NAME_ENTRY_get_data(e);
-		CN = ASN1_STRING_data(d);
-		printf("STR: %s\n", CN);
+
+	if ( SSL_CTX_use_certificate_file(ctx, cert_name, SSL_FILETYPE_PEM) <= 0 ) {
+		ERR_print_errors_fp(stderr);
+		error("Error use certificate file\n");
 	}
-	X509_set_subject_name(cert, X509_get_subject_name(real_cert));
-	printf("AFTER SUBJECT?\n");
-	X509_NAME *issuer = X509_NAME_new();
-	X509_NAME_add_entry_by_txt(issuer, "C", MBSTRING_ASC,
-							(unsigned char *)"US", -1, -1, 0);
-	X509_NAME_add_entry_by_txt(issuer, "CN", MBSTRING_ASC,
-							(unsigned char *)"proxy_cert", -1, -1, 0);
-	for (int i = 0; i < X509_NAME_entry_count(issuer); i++) {
-		X509_NAME_ENTRY *e = X509_NAME_get_entry(issuer, i);
-		ASN1_STRING *d = X509_NAME_ENTRY_get_data(e);
-		char *s = ASN1_STRING_data(d);
-		printf("STR2: %s\n", s);
+	/* set the private key from KeyFile (may be the same as CertFile) */
+	if ( SSL_CTX_use_PrivateKey_file(ctx, key_name, SSL_FILETYPE_PEM) <= 0 ) {
+			ERR_print_errors_fp(stderr);
+			error("Error use private key\n");
 	}
-	X509_set_issuer_name(cert, issuer);
-	printf("AFTER ISSUE?\n");
-	X509_sign(cert, pkey, EVP_sha1());
-	*x509p = cert;
-	*pkeyp = pkey;
-	printf("AFER SIGN\n");
+	/* verify private key */
+	if ( !SSL_CTX_check_private_key(ctx) ) {
+			fprintf(stderr, "Private key does not match the public certificate\n");
+			error("error check private key\n");
+	}
+}
 
-	FILE * f;
-	f = fopen("testkey.pem", "wb");
-	PEM_write_PrivateKey(
-	    f,                  /* write the key to the file we've opened */
-	    pkey,               /* our key from earlier */
-	    NULL, /* default cipher for encrypting the key on disk */
-	    NULL,       /* passphrase required for decrypting the key on disk */
-	    10,                 /* length of the passphrase string */
-	    NULL,               /* callback for requesting a password */
-	    NULL                /* data to pass to the callback */
-	);
-	fclose(f);
+/*
+ * Function: custom_wait(int s, int n)
+ * Desc: Sleeps for the given quantity of seconds + nanoseconds using nanosleep.
+ * Args: int s = # of seconds to wait
+ *       int n = # of nanoseconds to wait
+ */
+void custom_wait(int sec, int nsec) {
+  struct timespec ts;
+  int status;
+  ts.tv_sec = sec;
+  ts.tv_nsec = nsec;
+  do {
+    status = nanosleep(&ts, &ts);
+  } while (status && errno == EINTR);
+}
 
-	f = fopen("testcert.pem", "wb");
-	PEM_write_X509(
-	    f,   /* write the certificate to the file we've opened */
-	    cert /* our certificate */
-	);
-	printf("AFTER ALL???\n");
-	fclose(f);
-	return 1;
+// https://stackoverflow.com/questions/31171396/openssl-non-blocking-socket-ssl-read-unpredictable
+char *SAFE_SSL_read(SSL *ssl, int *ssl_read) {
+	char buf[BUFSIZE];
+	char bufCopy[BUFSIZE];
+	int total_read = 0;
+	int bytes = 0;
+	fd_set fds;
+  struct timeval timeout;
+	char *request = calloc(BUFSIZE, sizeof(char));
+
+	printf("\n --- Beginning SAFE_SSL_read --- \n");
+	if (ssl) {
+		while (1) {
+			bytes = SSL_read(ssl, buf, BUFSIZE);
+			if (bytes > 0) {
+				request = realloc(request, total_read + BUFSIZE);
+				memcpy(&request[total_read], buf, bytes);
+				total_read += bytes;
+				printf("\n\n --- SAFE_SSL_read %d bytes: --- \n\n", bytes);
+				if (buf[bytes-1] == '\n' && buf[bytes-3] == '\n' && buf[0] != 'H') {
+					printf("\n --- NEW LINES DETECTED --- \n");
+					break;
+				}
+
+
+				//if (bytes < BUFSIZE)
+				//	break;
+			}
+			else {
+				printf("\n\n --- SAFE_SSL_read IN ERROR --- \n\n\n");
+				int err = SSL_get_error(ssl, bytes);
+				switch (err)
+				{
+					case SSL_ERROR_NONE:
+						continue;
+					case SSL_ERROR_ZERO_RETURN:
+					{
+						//peer disconnected
+						printf("SSL ERROR ZERO RETURN\n");
+						break;
+					}
+					case SSL_ERROR_WANT_READ:
+					{
+						printf("SSL ERROR WANT READ\n");
+						int sock = SSL_get_rfd(ssl);
+            FD_ZERO(&fds);
+            FD_SET(sock, &fds);
+
+            timeout.tv_sec = 3;
+            timeout.tv_usec = 0;
+
+            err = select(sock+1, &fds, NULL, NULL, &timeout);
+            if (err > 0) {
+								printf("IN SELECT \n");
+								FD_ZERO(&fds);
+                continue; // more data to read...
+							}
+            else if (err == 0) {
+                printf("TIMED OUT WANT READ\n");
+            }
+
+            break;
+					}
+					case SSL_ERROR_WANT_WRITE:
+					{
+						printf("SSL ERROR WANT WRITE\n");
+						int sock = SSL_get_rfd(ssl);
+            FD_ZERO(&fds);
+            FD_SET(sock, &fds);
+
+            timeout.tv_sec = 0;
+            timeout.tv_usec = 500000;
+
+            err = select(sock+1, &fds, NULL, NULL, &timeout);
+            if (err > 0)
+                continue; // more data to read...
+            else if (err == 0) {
+                printf("TIMED OUT WANT WRITE\n");
+            }
+
+            break;
+					}
+					default:
+					{
+						printf("ERROR DEFAULTING OUT\n");
+						break;
+					}
+				}
+				//break;
+			}
+		}
+	}
+	*ssl_read = total_read;
+	printf("\n --- End SAFE_SSL_read --- \n");
+	return request;
+}
+
+char *TCP_read(int sockfd, int *bytes_read) {
+	char buf[BUFSIZE];
+	int nbytes = 0;
+	if ((nbytes = read(sockfd, buf, BUFSIZE)) <= 0) {
+		return NULL;
+	}
+
+	char *bigBuf = calloc(BUFSIZE, sizeof(char));
+	if (!bigBuf)
+		error("Calloc failed\n");
+	int totalSize = nbytes;
+	memcpy(bigBuf, buf, nbytes);
+	while(nbytes == BUFSIZE) {
+			if((nbytes = read(sockfd, buf, BUFSIZE)) > 0) {
+					bigBuf = (char *) realloc(bigBuf, totalSize + BUFSIZE);
+					memcpy(&bigBuf[totalSize], buf, nbytes);
+					totalSize += nbytes;
+			}
+			else if (nbytes < 0) {
+				free(bigBuf);
+				return NULL;
+			}
+	}
+	*bytes_read = totalSize;
+	return bigBuf;
 }
 
 int main(int argc, char *argv[]) {
@@ -677,14 +771,11 @@ FD_ZERO(&temp_set);
 FD_SET(master_socket, &master_set);
 
 int fdmax = master_socket;
-int nbytes, which;
+int nbytes;
 
 SSL_library_init();
-OpenSSL_add_all_algorithms();
 SSL_load_error_strings();
-
-SSL_CTX *serv_ctx = InitServerCTX();
-SSL_CTX *client_ctx = InitClientCTX();
+OpenSSL_add_all_algorithms();
 
 while(1) {
 temp_set = master_set;
@@ -715,197 +806,223 @@ for (int i = 0; i <= fdmax; ++i) {
           }
         }
       else {
-          int partner;
-          if((partner = findPartner(i, &which)) != -1) {
-							printf("i=%d\n", i);
-							int l = 0;
-							memset(buf, 0, BUFSIZE);
-							connTunnel *tunnel = findTunnel(i);
-							if (which == 0) {
-								printf("READING FROM CLIENT: %d\n", i);
-								l = SSL_read_ex(tunnel->serv_ssl, buf, BUFSIZE, &nbytes);
-								printf("NUMBYTES: %d\n", nbytes);
-								//buf[nbytes] = '\0';
-								//printf("BUF: %s\n", buf);
-							}
-							else if (which == 1) {
-								printf("READING FROM SERV: %d\n", partner);
-								l = SSL_read_ex(tunnel->client_ssl, buf, BUFSIZE, &nbytes);
-							}
-							if (nbytes <= 0) {
-								if(nbytes == 0) {
-	                  //Connection closed
-	                  printf("selectserver: socket %d hung up\n", i);
-	              }
-	              else {
-	                  perror("read err: ");
-	              }
-	              close(i);
-	              FD_CLR(i, &master_set);
-	              int partner = findPartner(i, &which);
-	              if(FD_ISSET(i, &server_set)) {
-	                  FD_CLR(i, &server_set);
-	                  if((partner = findPartner(i, &which)) != -1) {
-	                      remTunnel(partner, i);
-	                  }
-	              }
-	              else if(FD_ISSET(i, &client_set)) {
-	                  FD_CLR(i, &client_set);
-	                  if((partner = findPartner(i, &which)) != -1) {
-	                      remTunnel(i, partner);
-	                  }
-	              }
-							}
-							else {
-								if (which == 0) {
-									l = SSL_write(tunnel->client_ssl, buf, nbytes);
-									if (l > 0)
-										printf("SUCCESSFUL WRITE1\n");
+				// Data coming from a socket that is not a member of a tunnel
+				if (!socket_contexts[i]) {
+					printf("NO SOCKET CONTEXTS\n");
+					int bytes_read = 0;
+					char *TCP_buf = TCP_read(i, &bytes_read);
+					printf("FINISHED TCP READ\nREAD %d BYTES: \n%s\n", bytes_read, TCP_buf);
+					if (!TCP_buf) {
+						fprintf(stderr, "TCP_read returned NULL\n");
+						close(i);
+						FD_CLR(i, &master_set);
+					}
+					else {
+						for (int j = 0; j < bytes_read; j++) {
+							int sor = 0;
+							if(TCP_buf[j] == '\n' && TCP_buf[j + 2] == '\n') {
+								printf("In break point\n\n");
+								char *TCP_request = calloc(bytes_read, sizeof(char));
+								if (!TCP_request)
+									error("Calloc failed\n");
+
+								strncpy(TCP_request, &TCP_buf[sor], j + 3);
+								fprintf(stderr, "TCP REQUEST: \n%s\n", TCP_request);
+								Request *R = parse_request(TCP_request);
+								if (R == NULL) {
+									fprintf(stderr, "R IS NULL\n");
+									write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
 								}
-								else if (which == 1){
-									l = SSL_write(tunnel->serv_ssl, buf, nbytes);
-									if (l > 0)
-										printf("SUCCESSFUL WRITE2\n");
+								else if(strncmp(R->method, "GET", 3) == 0) {
+									fprintf(stderr, "BEFORE GET\n");
+									handle_get(R, TCP_request, i);
 								}
+								else if(strncmp(R->method, "CONNECT", 7) == 0) {
+									int server_fd = create_tunnel(R);
+									if (server_fd != -1) {
+										FD_SET(server_fd, &master_set);
+										if (server_fd > fdmax)
+											fdmax = server_fd;
+										makeCertificateAndKey(R->host);
+										write(i, "HTTP/1.1 200 Connection Established\r\n\r\n", 43);
+
+										SSL_CTX *serv_ctx = InitServerCTX();
+										LoadCertificates(serv_ctx, R->host);
+										SSL *serv_ssl = SSL_new(serv_ctx);
+										SSL_set_fd(serv_ssl, i);
+
+										SSL_CTX *client_ctx = InitClientCTX();
+										SSL *client_ssl = SSL_new(client_ctx);
+										SSL_set_fd(client_ssl, server_fd);
+
+										if (SSL_accept(serv_ssl) <= 0) {
+											ERR_print_errors_fp(stderr);
+											printf("ACCEPT ERROR :/ \n");
+											exit(1);
+										}
+										if (SSL_connect(client_ssl) <= 0) {
+											ERR_print_errors_fp(stderr);
+											printf("CONNECT ERROR :/ \n");
+											exit(1);
+										}
+										printf("WE DID IT!!!!\n");
+										exit(1);
+
+									}
+									else {
+										write(i, "HTTP/1.1 400 Bad Connect\r\nConnection: Closed\r\n\r\n", 54);
+									}
+								}
+								else {
+									write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
+									fprintf(stderr, "BAD REQUEST\n");
+								}
+
+								if (R)
+									free_r(R);
+								sor = j + 3;
+								free(TCP_request);
 							}
-							//bigBuf[totalSize] = '\0';
-							//printf("BUF: %s\n", bigBuf);
-          }
-          else {
-							//We have data!!!
-							//Two types of Data: HTTPS and HTTP
-							//If HTTPS TODO
-							//Else Below
-							if ((nbytes = read(i, buf, BUFSIZE)) <= 0) {
+						}
+						free(TCP_buf);
+					}
+				}
+				/*
+          if ((nbytes = read(i, buf, BUFSIZE)) <= 0) {
               if(nbytes == 0) {
                   //Connection closed
-                  printf("selectserver: socket %d hung up\n", i);
+                  //printf("selectserver: socket %d hung up\n", i);
               }
               else {
                   perror("read err: ");
               }
               close(i);
               FD_CLR(i, &master_set);
-              int partner = findPartner(i, &which);
+              int partner = findPartner(i);
               if(FD_ISSET(i, &server_set)) {
                   FD_CLR(i, &server_set);
-                  if((partner = findPartner(i, &which)) != -1) {
+                  if((partner = findPartner(i)) != -1) {
                       remTunnel(partner, i);
                   }
               }
               else if(FD_ISSET(i, &client_set)) {
                   FD_CLR(i, &client_set);
-                  if((partner = findPartner(i, &which)) != -1) {
+                  if((partner = findPartner(i)) != -1) {
                       remTunnel(i, partner);
                   }
               }
           }
-							char * bigBuf = (char *) calloc(BUFSIZE, sizeof(char));
-							int totalSize = nbytes;
-							memcpy(bigBuf, buf, nbytes);
-							while(nbytes == BUFSIZE) {
-									if((nbytes = recv(i, buf, sizeof buf, 0)) > 0){
-											bigBuf = (char *) realloc(bigBuf, totalSize + BUFSIZE);
-											memcpy(&bigBuf[totalSize], buf, nbytes);
-											totalSize += nbytes;
-									}
-							}
-							printf("BUF: %s\nSIZE: %d\n", bigBuf, totalSize);
-							//All Data read to this point
-              if(!FD_ISSET(i, &client_set)) {
-                  FD_SET(i, &client_set);
-              }
-              for (int j = 0; j < totalSize; j++) {
-                  int sor = 0;
-                  if(bigBuf[j] == '\n' && bigBuf[j + 2] == '\n'){
-											if (totalSize > BUFSIZE + 1) {
-												printf("BIG TIME ERRORR\n\n\nSIZE > BUFSIZE\n\n\n");
-											}
-                      char req[BUFSIZE + 1] = { 0 };
-                      strncpy(req, &bigBuf[sor], j + 3);
-                      Request *R = parse_request(req);
-											if (R == NULL) {
-													write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
-											}
-                      else if(strncmp(R->method, "CONNECT", 7) == 0) {
-													printf("HOSTNAME: %s\n", R->host);
-													printf("URL: %s\n", R->url);
-                          int newServ = create_tunnel(R);
-													if (newServ != -1) {
-                            FD_SET(newServ, &server_set);
-														FD_SET(newServ, &master_set);
-														if (newServ > fdmax)
-															fdmax = newServ;
-													}
-													else {
-														printf("BIG ERROR\n");
-														exit(1);
-													}
-													SSL *client_ssl = SSL_new(client_ctx);
-													SSL_set_connect_state(client_ssl);
-													SSL_set_fd(client_ssl, newServ);
-													if ( SSL_connect(client_ssl) == FAIL ) { /* perform the connection */
-														ERR_print_errors_fp(stderr);
-														printf("SSL CONNECT ERRROR\n");
-													}
-													else {
-														printf("CONNECTED!~!!!!\n");
-														X509 *cert = SSL_get_peer_certificate(client_ssl);
-
-														write(i, "HTTP/1.1 200 Connection Established\r\nProxy-agent: TrevProx\r\n\r\n", 68);
-														/*X509_NAME *subj = X509_get_subject_name(cert);
-														char *CN;
-														for (int i = 0; i < X509_NAME_entry_count(subj); i++) {
-															X509_NAME_ENTRY *e = X509_NAME_get_entry(subj, i);
-															ASN1_STRING *d = X509_NAME_ENTRY_get_data(e);
-															CN = ASN1_STRING_data(d);
-															printf("STR: %s\n", CN);
-														}
-														*/
-														X509 *spoofed_cert = NULL;
-														EVP_PKEY *key = NULL;
-														int q = mkcert(&spoofed_cert, cert, &key, 2048, 0, 365);
-														if (q == 1) {
-															printf("?\n");
-															LoadCertificates(serv_ctx, "testcert.pem", "testkey.pem");
-															SSL *serv_ssl = SSL_new(serv_ctx);
-															SSL_set_accept_state(serv_ssl);
-															SSL_set_fd(serv_ssl, i);
-															printf("!\n");
-															if (SSL_accept(serv_ssl) <= 0) { /* perform the connection */
-																ERR_print_errors_fp(stderr);
-																printf("SSL ACCEPT ERRROR2\n");
-															} else {
-																printf("HOLYYYY SHITTTTT\nserv id: %d", newServ);
-																addTunnel(i, newServ, client_ssl, serv_ssl);
-															}
-														}
-													}
-                      }
-                      else if(strncmp(R->method, "GET", 3) == 0) {
-                          handle_get(R, req, i);
-													int q  = sizeof(req);
-													req[q] = '\0';
-													printf("GET REQUEST: %s\n\n", req);
-                      }
-                      else {
-                          perror("Invalid HTTP Method for Proxy!");
-                      }
-											if (R)
-                      	free_r(R);
-                      sor = j + 3;
+          else {
+              //We have data!!!
+              //Two types of Data: HTTPS and HTTP
+              //If HTTPS TODO
+              //Else Below
+              char * bigBuf = (char *) calloc(BUFSIZE, sizeof(char));
+              int totalSize = nbytes;
+              memcpy(bigBuf, buf, nbytes);
+              while(nbytes == BUFSIZE) {
+                  if((nbytes = recv(i, buf, sizeof buf, 0)) > 0){
+                      bigBuf = (char *) realloc(bigBuf, totalSize + BUFSIZE);
+                      memcpy(&bigBuf[totalSize], buf, nbytes);
+                      totalSize += nbytes;
                   }
               }
-							free(bigBuf);
-            }
-        }
-      }
-    }
-}
-	close(master_socket);
-	SSL_CTX_free(client_ctx);
-	SSL_CTX_free(serv_ctx);
-  destroyTunnels();
+              //All Data read to this point
+              int partner;
+              if((partner = findPartner(i)) != -1) {
+								int l = 0;
+                  if((l =send(partner, bigBuf, totalSize, 0)) == -1) {
+                      perror("send");
+                  }
+              }
+              else {
+                  if(!FD_ISSET(i, &client_set)) {
+                      FD_SET(i, &client_set);
+                  }
+                  for (int j = 0; j < totalSize; j++) {
+                      int sor = 0;
+                      if(bigBuf[j] == '\n' && bigBuf[j + 2] == '\n'){
+                          char req[BUFSIZE + 1] = { 0 };
+                          strncpy(req, &bigBuf[sor], j + 3);
+                          Request *R = parse_request(req);
+													if (R == NULL) {
+															write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
+													}
+                          else if(strncmp(R->method, "CONNECT", 7) == 0) {
+                              int newServ = create_tunnel(R);
+															if (newServ != -1) {
+	                              FD_SET(newServ, &server_set);
+																FD_SET(newServ, &master_set);
+																if (newServ > fdmax)
+																	fdmax = newServ;
+	                              addTunnel(i, newServ);
+																makeCertificateAndKey(R->host);
+																write(i, "HTTP/1.1 200 Connection Established\r\n\r\n", 43);
+																if(strcmp(R->host, "www.google.com") == 0) {
+																	SSL_CTX *serv_ctx = InitServerCTX();
+																	LoadCertificates(serv_ctx, R->host);
+																	SSL *serv_ssl = SSL_new(serv_ctx);
+																	SSL *ssl = SSL_new(serv_ctx);
+																	SSL_set_fd(serv_ssl, i);
+																	int ssl_read = 0;
+																	if (SSL_accept(serv_ssl) <= 0) {
+																		ERR_print_errors_fp(stderr);
+																		printf("ACCEPT ERROR :/ \n");
+																		exit(1);
+																	}
+																	else {
+																		char *sslrequest = SAFE_SSL_read(serv_ssl, &ssl_read);
+																		printf("\n\n ---- FINAL REQUEST ---- \n\n%s\n\n", sslrequest);
+																		SSL_CTX *ctx = InitClientCTX();
+																		SSL *ssl = SSL_new(ctx);
+																		SSL_set_fd(ssl, newServ);
+																		if (sslrequest && SSL_connect(ssl) <= 0) {
+																			ERR_print_errors_fp(stderr);
+																			printf("ACCEPT ERROR :/ \n");
+																			exit(1);
+																		}
+																		else {
+																			int q = SSL_write(ssl, sslrequest, ssl_read);
+																			char *sslresponse = SAFE_SSL_read(ssl, &ssl_read);
+																			if (sslresponse) {
+																				printf("\n\n ---- FINAL RESPONSE ---- \n\n%s\n\n", sslresponse);
+																				q = SSL_write(serv_ssl, sslresponse, ssl_read);
+																				free(sslresponse);
+																			}
+																			printf("\n\n\nABOUT TO FREE STUFF\n\n\n");
+																			free(sslrequest);
+																			SSL_shutdown(serv_ssl);
+																			SSL_free(serv_ssl);
+																			SSL_shutdown(ssl);
+																			SSL_free(ssl);
+																			SSL_CTX_free(ctx);
+																			SSL_CTX_free(serv_ctx);
+																		}
 
+																	}
+																}
+															}
+                          }
+                          else if(strncmp(R->method, "GET", 3) == 0) {
+                              handle_get(R, req, i);
+                          }
+                          else {
+                              perror("Invalid HTTP Method for Proxy!");
+                          }
+													if (R)
+                          	free_r(R);
+                          sor = j + 3;
+                      }
+                  }
+              }
+              free(bigBuf);
+          }
+        }*/
+	      }
+	    }
+		}
+	}
+  destroyTunnels();
+	EVP_cleanup();
   return 0;
 }
