@@ -7,6 +7,7 @@
 #include <sys/time.h>
 #include <errno.h>
 #include <sys/ioctl.h>
+#include <signal.h>
 #include <openssl/pem.h>
 #include <openssl/conf.h>
 #include <openssl/x509v3.h>
@@ -20,7 +21,7 @@
 #include "parse.h"
 #include "rmessage.h"
 
-#define BUFSIZE 8192
+#define BUFSIZE 1024 * 16
 #define CACHESIZE 30
 #define ONEHOUR 3600
 #define STARTOFCACHEFIELD "Cache-Control: "
@@ -72,7 +73,6 @@ struct connTunnel *root = NULL;
 
 typedef struct Socket_Context {
 	int partner_tcp_sfd;
-	char hostname[512];
 	SSL_CTX *ctx;
 	SSL *ssl;
 } Socket_Context;
@@ -436,6 +436,7 @@ int create_tunnel(Request *r) {
   struct hostent *server;
 	char *hostname = r->host;
 	unsigned short port = r->port;
+	sigaction(SIGPIPE, &(struct sigaction){SIG_IGN}, NULL);
 
   if((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     return -1;
@@ -485,6 +486,7 @@ void makeCSRExtension(char *hostname) {
 	else {
 		fprintf(ext_fp, "%s", extfile);
 	}
+	fclose(ext_fp);
 }
 
 void signCSR(char *hostname) {
@@ -715,6 +717,134 @@ char *TCP_read(int sockfd, int *bytes_read) {
 	return bigBuf;
 }
 
+void display_ssl_error(int err) {
+	switch (err)
+	{
+		case SSL_ERROR_NONE:
+			printf("\n --- SSL_ERROR_NONE --- \n");
+			break;
+		case SSL_ERROR_ZERO_RETURN:
+		{
+			//peer disconnected
+			printf("\n --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- \n");
+			break;
+		}
+		case SSL_ERROR_WANT_READ:
+		{
+			printf("\n --- SSL ERROR WANT READ --- \n");
+			break;
+		}
+		case SSL_ERROR_WANT_WRITE:
+		{
+			printf("\n --- SSL ERROR WANT WRITE --- \n");
+			break;
+		}
+		case SSL_ERROR_WANT_CONNECT:
+		{
+			printf("\n --- SSL ERROR WANT CONNECT --- \n");
+			break;
+		}
+		case SSL_ERROR_WANT_ACCEPT:
+		{
+			printf("\n --- SSL ERROR WANT ACCEPT --- \n");
+			break;
+		}
+		case SSL_ERROR_WANT_X509_LOOKUP:
+		{
+			printf("\n --- SSL ERROR WANT X509 LOOKUP --- \n");
+			break;
+		}
+		case SSL_ERROR_WANT_ASYNC:
+		{
+			printf("\n --- SSL_ERROR_WANT_ASYNC --- \n");
+			break;
+		}
+		case SSL_ERROR_WANT_ASYNC_JOB:
+		{
+			printf("\n --- SSL_ERROR_WANT_ASYNC_JOB --- \n");
+			break;
+		}
+		case SSL_ERROR_WANT_CLIENT_HELLO_CB:
+		{
+			printf("\n --- SSL_ERROR_WANT_CLIENT_HELLO_CB --- \n");
+			break;
+		}
+		case SSL_ERROR_SYSCALL:
+		{
+			printf("\n --- SSL_ERROR_SYSCALL ERRNO: %d --- \n", errno);
+			break;
+		}
+		case SSL_ERROR_SSL:
+		{
+			printf("\n --- SSL_ERROR_SSL --- \n");
+			error("SSL_ERROR_SSL");
+			break;
+		}
+		default:
+		{
+			printf("\n --- DEFAULT ERROR: %d --- \n", err);
+			break;
+		}
+	}
+}
+
+Socket_Context *newSocketContext(int fd, SSL_CTX *ctx, SSL *ssl) {
+	Socket_Context *s = malloc(sizeof(struct Socket_Context));
+	if (!s)
+		error("Error malloc'ing socket context\n");
+	s->partner_tcp_sfd = fd;
+	s->ctx = ctx;
+	s->ssl = ssl;
+	return s;
+}
+
+void handshakeError(SSL *ssl, int r) {
+	ERR_print_errors_fp(stderr);
+	int err = SSL_get_error(ssl, r);
+	display_ssl_error(err);
+}
+
+void cleanupTunnelsSSL(SSL_CTX *sctx, SSL *sssl, SSL_CTX *cctx, SSL *cssl) {
+	printf("\n --- CLEANING UP SSL TUNNELS --- \n");
+	if (sctx)
+		SSL_CTX_free(sctx);
+	if (sssl)
+		SSL_free(sssl);
+	if (cctx)
+		SSL_CTX_free(cctx);
+	if (cssl)
+		SSL_free(cssl);
+}
+
+void cleanupTunnelsTCP(int cfd, int sfd, fd_set *set) {
+	printf("\n --- CLEANING UP TCP TUNNELS --- \n");
+	close(cfd);
+	close(sfd);
+	FD_CLR(cfd, set);
+	FD_CLR(sfd, set);
+}
+
+
+void close_ssl_tunnel(int fd, int partner, fd_set *set) {
+	printf("\n --- CLOSING SSL TUNNEL --- \n");
+	SSL *ssla = socket_contexts[fd]->ssl;
+	SSL *sslb = socket_contexts[partner]->ssl;
+	SSL_CTX *ctxa = socket_contexts[fd]->ctx;
+	SSL_CTX *ctxb = socket_contexts[partner]->ctx;
+	SSL_shutdown(ssla);
+	SSL_shutdown(sslb);
+	cleanupTunnelsSSL(ctxa, ssla, ctxb, sslb);
+	close(fd);
+	close(partner);
+	FD_CLR(fd, set);
+	FD_CLR(partner, set);
+
+	free(socket_contexts[fd]);
+	free(socket_contexts[partner]);
+	socket_contexts[fd] = NULL;
+	socket_contexts[partner] = NULL;
+}
+
 int main(int argc, char *argv[]) {
 int master_socket, rv;
 //int client_socket, message_size;
@@ -808,10 +938,9 @@ for (int i = 0; i <= fdmax; ++i) {
       else {
 				// Data coming from a socket that is not a member of a tunnel
 				if (!socket_contexts[i]) {
-					printf("NO SOCKET CONTEXTS\n");
 					int bytes_read = 0;
 					char *TCP_buf = TCP_read(i, &bytes_read);
-					printf("FINISHED TCP READ\nREAD %d BYTES: \n%s\n", bytes_read, TCP_buf);
+					//printf("FINISHED TCP READ\nREAD %d BYTES: \n%s\n", bytes_read, TCP_buf);
 					if (!TCP_buf) {
 						fprintf(stderr, "TCP_read returned NULL\n");
 						close(i);
@@ -821,14 +950,11 @@ for (int i = 0; i <= fdmax; ++i) {
 						for (int j = 0; j < bytes_read; j++) {
 							int sor = 0;
 							if(TCP_buf[j] == '\n' && TCP_buf[j + 2] == '\n') {
-								printf("In break point\n\n");
-								char *TCP_request = calloc(bytes_read, sizeof(char));
-								if (!TCP_request)
-									error("Calloc failed\n");
-
+								char TCP_request[BUFSIZE + 1] = { 0 };
 								strncpy(TCP_request, &TCP_buf[sor], j + 3);
-								fprintf(stderr, "TCP REQUEST: \n%s\n", TCP_request);
 								Request *R = parse_request(TCP_request);
+
+
 								if (R == NULL) {
 									fprintf(stderr, "R IS NULL\n");
 									write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
@@ -855,19 +981,36 @@ for (int i = 0; i <= fdmax; ++i) {
 										SSL *client_ssl = SSL_new(client_ctx);
 										SSL_set_fd(client_ssl, server_fd);
 
-										if (SSL_accept(serv_ssl) <= 0) {
-											ERR_print_errors_fp(stderr);
-											printf("ACCEPT ERROR :/ \n");
-											exit(1);
+										int accept = SSL_accept(serv_ssl);
+										if (accept <= 0) {
+											handshakeError(serv_ssl, accept);
+											cleanupTunnelsSSL(serv_ctx, serv_ssl, NULL, NULL);
+											cleanupTunnelsTCP(i, server_fd, &master_set);
 										}
-										if (SSL_connect(client_ssl) <= 0) {
-											ERR_print_errors_fp(stderr);
-											printf("CONNECT ERROR :/ \n");
-											exit(1);
-										}
-										printf("WE DID IT!!!!\n");
-										exit(1);
+										else
+										{
+											int connect = SSL_connect(client_ssl);
+											if (connect <= 0) {
+												SSL_shutdown(serv_ssl);
+												handshakeError(client_ssl, connect);
+												cleanupTunnelsSSL(serv_ctx, serv_ssl, client_ctx, client_ssl);
+												cleanupTunnelsTCP(i, server_fd, &master_set);
+											}
+											else {
+												printf("WE DID IT!!!!\n");
+												Socket_Context *serv_socket_ctx = newSocketContext(server_fd, serv_ctx, serv_ssl);
+												Socket_Context *client_socket_ctx = newSocketContext(i, client_ctx, client_ssl);
 
+												socket_contexts[i] = serv_socket_ctx;
+												socket_contexts[server_fd] = client_socket_ctx;
+
+												struct timeval tv;
+												tv.tv_sec = 0;
+												tv.tv_usec = 500000; // Half second timeout
+												setsockopt(i, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
+												setsockopt(server_fd, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
+											}
+										}
 									}
 									else {
 										write(i, "HTTP/1.1 400 Bad Connect\r\nConnection: Closed\r\n\r\n", 54);
@@ -877,152 +1020,49 @@ for (int i = 0; i <= fdmax; ++i) {
 									write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
 									fprintf(stderr, "BAD REQUEST\n");
 								}
-
 								if (R)
 									free_r(R);
 								sor = j + 3;
+
 								free(TCP_request);
 							}
 						}
 						free(TCP_buf);
 					}
 				}
-				/*
-          if ((nbytes = read(i, buf, BUFSIZE)) <= 0) {
-              if(nbytes == 0) {
-                  //Connection closed
-                  //printf("selectserver: socket %d hung up\n", i);
-              }
-              else {
-                  perror("read err: ");
-              }
-              close(i);
-              FD_CLR(i, &master_set);
-              int partner = findPartner(i);
-              if(FD_ISSET(i, &server_set)) {
-                  FD_CLR(i, &server_set);
-                  if((partner = findPartner(i)) != -1) {
-                      remTunnel(partner, i);
-                  }
-              }
-              else if(FD_ISSET(i, &client_set)) {
-                  FD_CLR(i, &client_set);
-                  if((partner = findPartner(i)) != -1) {
-                      remTunnel(i, partner);
-                  }
-              }
-          }
-          else {
-              //We have data!!!
-              //Two types of Data: HTTPS and HTTP
-              //If HTTPS TODO
-              //Else Below
-              char * bigBuf = (char *) calloc(BUFSIZE, sizeof(char));
-              int totalSize = nbytes;
-              memcpy(bigBuf, buf, nbytes);
-              while(nbytes == BUFSIZE) {
-                  if((nbytes = recv(i, buf, sizeof buf, 0)) > 0){
-                      bigBuf = (char *) realloc(bigBuf, totalSize + BUFSIZE);
-                      memcpy(&bigBuf[totalSize], buf, nbytes);
-                      totalSize += nbytes;
-                  }
-              }
-              //All Data read to this point
-              int partner;
-              if((partner = findPartner(i)) != -1) {
-								int l = 0;
-                  if((l =send(partner, bigBuf, totalSize, 0)) == -1) {
-                      perror("send");
-                  }
-              }
-              else {
-                  if(!FD_ISSET(i, &client_set)) {
-                      FD_SET(i, &client_set);
-                  }
-                  for (int j = 0; j < totalSize; j++) {
-                      int sor = 0;
-                      if(bigBuf[j] == '\n' && bigBuf[j + 2] == '\n'){
-                          char req[BUFSIZE + 1] = { 0 };
-                          strncpy(req, &bigBuf[sor], j + 3);
-                          Request *R = parse_request(req);
-													if (R == NULL) {
-															write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
-													}
-                          else if(strncmp(R->method, "CONNECT", 7) == 0) {
-                              int newServ = create_tunnel(R);
-															if (newServ != -1) {
-	                              FD_SET(newServ, &server_set);
-																FD_SET(newServ, &master_set);
-																if (newServ > fdmax)
-																	fdmax = newServ;
-	                              addTunnel(i, newServ);
-																makeCertificateAndKey(R->host);
-																write(i, "HTTP/1.1 200 Connection Established\r\n\r\n", 43);
-																if(strcmp(R->host, "www.google.com") == 0) {
-																	SSL_CTX *serv_ctx = InitServerCTX();
-																	LoadCertificates(serv_ctx, R->host);
-																	SSL *serv_ssl = SSL_new(serv_ctx);
-																	SSL *ssl = SSL_new(serv_ctx);
-																	SSL_set_fd(serv_ssl, i);
-																	int ssl_read = 0;
-																	if (SSL_accept(serv_ssl) <= 0) {
-																		ERR_print_errors_fp(stderr);
-																		printf("ACCEPT ERROR :/ \n");
-																		exit(1);
-																	}
-																	else {
-																		char *sslrequest = SAFE_SSL_read(serv_ssl, &ssl_read);
-																		printf("\n\n ---- FINAL REQUEST ---- \n\n%s\n\n", sslrequest);
-																		SSL_CTX *ctx = InitClientCTX();
-																		SSL *ssl = SSL_new(ctx);
-																		SSL_set_fd(ssl, newServ);
-																		if (sslrequest && SSL_connect(ssl) <= 0) {
-																			ERR_print_errors_fp(stderr);
-																			printf("ACCEPT ERROR :/ \n");
-																			exit(1);
-																		}
-																		else {
-																			int q = SSL_write(ssl, sslrequest, ssl_read);
-																			char *sslresponse = SAFE_SSL_read(ssl, &ssl_read);
-																			if (sslresponse) {
-																				printf("\n\n ---- FINAL RESPONSE ---- \n\n%s\n\n", sslresponse);
-																				q = SSL_write(serv_ssl, sslresponse, ssl_read);
-																				free(sslresponse);
-																			}
-																			printf("\n\n\nABOUT TO FREE STUFF\n\n\n");
-																			free(sslrequest);
-																			SSL_shutdown(serv_ssl);
-																			SSL_free(serv_ssl);
-																			SSL_shutdown(ssl);
-																			SSL_free(ssl);
-																			SSL_CTX_free(ctx);
-																			SSL_CTX_free(serv_ctx);
-																		}
-
-																	}
-																}
-															}
-                          }
-                          else if(strncmp(R->method, "GET", 3) == 0) {
-                              handle_get(R, req, i);
-                          }
-                          else {
-                              perror("Invalid HTTP Method for Proxy!");
-                          }
-													if (R)
-                          	free_r(R);
-                          sor = j + 3;
-                      }
-                  }
-              }
-              free(bigBuf);
-          }
-        }*/
+				else {
+					if (!socket_contexts[i]->ssl)
+						error("SSL * IS NULL IN SOCKET CONTEXTS\n");
+					else {
+						int partner = socket_contexts[i]->partner_tcp_sfd;
+						// TODO: THIS IS BAD BAD BAD
+						int read = SSL_read(socket_contexts[i]->ssl, buf, BUFSIZE);
+						if (read <= 0) {
+							ERR_print_errors_fp(stderr);
+							int err = SSL_get_error(socket_contexts[i]->ssl, read);
+							display_ssl_error(err);
+							if (err == SSL_ERROR_ZERO_RETURN)
+								close_ssl_tunnel(i, partner, &master_set);
+						}
+						else {
+							printf("\n --- SSL READ %d BYTES --- \n%s\n", read, buf);
+							int wrote = SSL_write(socket_contexts[partner]->ssl, buf, read);
+							if (wrote <= 0) {
+								ERR_print_errors_fp(stderr);
+								int err = SSL_get_error(socket_contexts[partner]->ssl, wrote);
+								display_ssl_error(err);
+								if (err == SSL_ERROR_ZERO_RETURN)
+									close_ssl_tunnel(i, partner, &master_set);
+							}
+							else
+								printf("\n --- SSL WROTE %d BYTES --- \n", wrote);
+						}
+					}
+					}
 	      }
 	    }
 		}
 	}
-  destroyTunnels();
 	EVP_cleanup();
   return 0;
 }
