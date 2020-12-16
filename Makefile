@@ -10,8 +10,8 @@ IFLAGS = -I.
 
 LFLAGS = -L/usr/local/lib
 
-PREFLAGS = -g -Wall $(IFLAGS) $(LFLAGS)
-POSTFLAGS = -lssl -lcrypto
+PREFLAGS = -Wall $(IFLAGS) $(LFLAGS)
+POSTFLAGS = -g3 -lssl -lcrypto
 
 default: proxy
 
