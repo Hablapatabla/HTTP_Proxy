@@ -1,0 +1,9 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+
+[alt_names]
+
+DNS.1 = tps10241.doubleverify.com
+DNS.2 = www.tps10241.doubleverify.com

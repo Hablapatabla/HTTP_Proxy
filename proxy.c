@@ -397,9 +397,11 @@ char *get_response(Request *r, char *request, int *size) {
 			if (!bigBuf)
 				error("Error reallocing bigBuf\n");
 		}
-		memcpy(bigBuf + total, babyBuf, message_size);
+		memcpy(&bigBuf[total], babyBuf, message_size);
 		total += message_size;
-	} while (message_size == BUFSIZE);
+	} while (message_size > 0);
+	printf("%s\n", bigBuf);
+	printf("%d\n", total);
   close(sockfd);
 	*size = total;
   return bigBuf;
@@ -783,6 +785,56 @@ void close_ssl_tunnel(int fd, int partner, fd_set *set) {
 	//printf("\n --- DONE CLOSING SSL TUNNEL --- \n");
 }
 
+
+int proxyBlock(char* h, char* c){
+	char host[256];
+	char cat[100];
+	if(c == NULL) {
+		return 0;
+	}
+	strcpy(host, h);
+	strcat(host, "\n");
+	strcpy(cat, c);
+	char buf[256]; 
+	FILE* p = fopen("proxyBlock.txt", "r");
+	if(p == NULL) {
+		error("File Couldn't Be Opened!\n");
+	}
+	if(strcmp(cat, "All") == 0) {
+		while(fgets(buf, 256, p) != NULL){
+			if(strcmp(buf, host) == 0) {
+				return 1;
+			}
+		}
+		return 0;
+	}
+	else {
+		int catFound = 0;
+		while(fgets(buf, 256, p) != NULL) {
+			if(strcmp(buf, cat) == 0) {
+				
+				catFound = 1;
+			}
+			if(catFound == 1) {
+				if(strcmp(buf, host) == 0) {
+					return 1;
+				}
+				else {
+					if(strcmp(buf, "\n") == 0) {
+						return 0;
+					}
+				}
+			}
+			
+		}
+		return 0;
+	}
+	fclose(p);
+}
+
+
+
+
 int main(int argc, char *argv[]) {
 int master_socket, rv;
 //int client_socket, message_size;
@@ -793,9 +845,15 @@ struct sockaddr_storage client_addr;
 
 char buf[BUFSIZE];
 
-if(argc != 2) {
-fprintf(stderr, "usage: %s <port>\n", argv[0]);
-exit(1);
+char* proxyFlg = NULL;
+
+if(argc < 2 || argc > 3) {
+        fprintf(stderr, "usage: %s <port> <contentBlock>\n", argv[0]);
+        exit(1);
+}
+else if(argc == 3) {
+	proxyFlg = (char *) malloc(100 * sizeof(char));
+	strcpy(proxyFlg, argv[2]);
 }
 
 // Most of this boilerplate is taken from beej's select server example.
@@ -899,6 +957,9 @@ for (int i = 0; i <= fdmax; ++i) {
 									fprintf(stderr, "R IS NULL\n");
 									write(i, "HTTP/1.1 400 Bad Request\r\nConnection: Closed\r\n\r\n", 54);
 								}
+								else if(proxyBlock(R->host, proxyFlg)) {
+									write(i, "HTTP/1.1 403 Forbidden\r\nProxy Blocked\r\n\r\n", 42);
+			  					}
 								else if(strncmp(R->method, "GET", 3) == 0) {
 									fprintf(stderr, "BEFORE GET\n");
 									handle_get(R, TCP_request, i);

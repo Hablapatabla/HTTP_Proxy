@@ -1,0 +1,9 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+
+[alt_names]
+
+DNS.1 = mitmdetection.services.mozilla.com
+DNS.2 = www.mitmdetection.services.mozilla.com
