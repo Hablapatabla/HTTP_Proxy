@@ -47,3 +47,6 @@ This is a brief list of sites that are known to not work with the proxy. The rea
 * ESPN.com
 * salesforce.com
 * dropbox.com
+
+## Hostname Lookup Server
+Included in the project is server.py. Run this script with 'python3 server.py'. This server runs on port 9994 and communicates with the proxy on port 9996. If your proxy is not running on port 9996, or you'd like the lookup server to run on another port, these can be easily changed in the code. Simply start the proxy, start the server, then navigate to localhost:9994, or 127.0.0.1:9994, to see a list of all of the servers by hostname that are currently connected to the proxy.
