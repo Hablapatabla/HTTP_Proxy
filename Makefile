@@ -11,7 +11,9 @@ IFLAGS = -I.
 LFLAGS = -L/usr/local/lib
 
 PREFLAGS = -Wall $(IFLAGS) $(LFLAGS)
-POSTFLAGS = -g3 -lssl -lcrypto
+POSTFLAGS = -g3 -lssl -lcrypto -lz
+
+ZLIB = -Wl,-rpath,. -L.
 
 default: proxy
 

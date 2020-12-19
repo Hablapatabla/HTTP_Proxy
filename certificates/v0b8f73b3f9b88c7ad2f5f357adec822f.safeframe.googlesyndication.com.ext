@@ -1,9 +1,0 @@
-authorityKeyIdentifier=keyid,issuer
-basicConstraints=CA:FALSE
-keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
-subjectAltName = @alt_names
-
-[alt_names]
-
-DNS.1 = 0b8f73b3f9b88c7ad2f5f357adec822f.safeframe.googlesyndication.com
-DNS.2 = www.0b8f73b3f9b88c7ad2f5f357adec822f.safeframe.googlesyndication.com

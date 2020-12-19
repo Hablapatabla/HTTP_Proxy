@@ -1,9 +1,0 @@
-authorityKeyIdentifier=keyid,issuer
-basicConstraints=CA:FALSE
-keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
-subjectAltName = @alt_names
-
-[alt_names]
-
-DNS.1 = 4846802.fls.doubleclick.net
-DNS.2 = www.4846802.fls.doubleclick.net

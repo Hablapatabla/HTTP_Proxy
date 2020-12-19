@@ -1,9 +1,0 @@
-authorityKeyIdentifier=keyid,issuer
-basicConstraints=CA:FALSE
-keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
-subjectAltName = @alt_names
-
-[alt_names]
-
-DNS.1 = post-cn-45908b8cn07.mqtt.aliyuncs.com
-DNS.2 = www.post-cn-45908b8cn07.mqtt.aliyuncs.com

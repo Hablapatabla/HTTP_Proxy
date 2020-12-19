@@ -1,9 +1,0 @@
-authorityKeyIdentifier=keyid,issuer
-basicConstraints=CA:FALSE
-keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
-subjectAltName = @alt_names
-
-[alt_names]
-
-DNS.1 = r5---sn-8xgp1vo-ab5e.googlevideo.com
-DNS.2 = www.r5---sn-8xgp1vo-ab5e.googlevideo.com
