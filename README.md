@@ -39,4 +39,9 @@ It is highly recommended to clear out this folder every time before starting the
 This is a brief list of sites that are known to not work with the proxy. The reason why these sites are not compatible with the proxy is unclear at this time.
 
 * leetcode.com
-*
+* myshopify.com
+* Instructure.com
+* ESPN.com
+* salesforce.com
+* dropbox.com
+* 
