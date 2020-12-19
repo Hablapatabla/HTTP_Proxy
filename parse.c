@@ -54,7 +54,7 @@ Request *parse_request(char *header) {
 
   // Absolute form URI required for HTTP requests to a proxy (RFC 2616 5.1.2)
   // URI form must be hostname:portno for CONNECT requests (RFC 7231 4.3.6)
-  if ((strcmp(method, "GET") == 0) || strncmp(url, "http://", 7) == 0) {
+  if ((strncmp(method, "GET", 3) == 0) || strncmp(url, "http://", 7) == 0) {
     if (sscanf(url, "http://%[^:/]:%d%s", host, &port, path) == 3)
       port = port;
     else if (sscanf(url, "http://%[^/]%s", host, path) == 2)
@@ -66,7 +66,7 @@ Request *parse_request(char *header) {
       return NULL;
     }
   }
-  else if (strcmp(method, "CONNECT") == 0) {
+  else if (strncmp(method, "CONNECT", 7) == 0) {
     if (sscanf(url, "%[^:]:%d", host, &port) == 2)
       port = port;
     else {
@@ -74,7 +74,7 @@ Request *parse_request(char *header) {
       return NULL;
     }
   }
-  else {
+  else if (strncmp(method, "LIST", 4) != 0){
     free_all(temp_header, url, host, method, path, r);
     return NULL;
   }

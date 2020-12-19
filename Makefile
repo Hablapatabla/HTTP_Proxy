@@ -1,6 +1,6 @@
 EXECUTABLES = proxy parse_tests
 
-INCLUDES = parse.h rmessage.h partial.h
+INCLUDES = parse.h partial.h
 
 # Do all C compies with gcc (at home you could try clang)
 CC = gcc
@@ -8,8 +8,10 @@ CC = gcc
 # Updating include path to use current directory
 IFLAGS = -I.
 
-# the next three lines enable you to compile and link against course software
-PREFLAGS = -g -Wall $(IFLAGS)
+LFLAGS = -L/usr/local/lib
+
+PREFLAGS = -Wall $(IFLAGS) $(LFLAGS)
+POSTFLAGS = -g3 -lssl -lcrypto
 
 default: proxy
 
@@ -28,8 +30,8 @@ clean:
 #    Those .o files are linked together to build the corresponding
 #    executable.
 #
-proxy: proxy.o parse.o rmessage.o
-	$(CC) $(PREFLAGS) -o proxy proxy.o parse.o rmessage.o $(POSTFLAGS)
+proxy: proxy.o parse.o
+	$(CC) $(PREFLAGS) -o proxy proxy.o parse.o $(POSTFLAGS)
 
 parse_tests: parse_tests.o parse.o
 	$(CC) $(PREFLAGS) -o parse_tests parse_tests.o parse.o $(POSTFLAGS)
