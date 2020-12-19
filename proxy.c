@@ -398,9 +398,7 @@ char *get_response(Request *r, char *request, int *size) {
 		}
 		memcpy(&bigBuf[total], babyBuf, message_size);
 		total += message_size;
-	} while (message_size > 0);
-	printf("%s\n", bigBuf);
-	printf("%d\n", total);
+	} while (message_size == BUFSIZE);
   close(sockfd);
 	*size = total;
   return bigBuf;
@@ -808,6 +806,7 @@ int proxyBlock(char* h, char* c){
 		return 0;
 	}
 	else {
+		strcat(cat, "\n");
 		int catFound = 0;
 		while(fgets(buf, 256, p) != NULL) {
 			if(strcmp(buf, cat) == 0) {

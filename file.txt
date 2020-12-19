@@ -1,0 +1,4165 @@
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 272 BYTES --- 
+GET /complete/search?client=firefox&q=goo HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+ --- SSL READ 273 BYTES --- 
+GET /complete/search?client=firefox&q=goog HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+ --- SSL READ 695 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:51:51 GMT
+Pragma: no-cache
+Expires: -1
+Cache-Control: no-cache, must-revalidate
+Content-Type: text/javascript; charset=UTF-8
+Strict-Transport-Security: max-age=31536000
+Content-Disposition: attachment; filename="f.txt"
+Content-Encoding: br
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Transfer-Encoding: chunked
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+7f
+ƒ€
+
+ --- SSL READ 6 BYTES --- 
+1
+
+
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 273 BYTES --- 
+GET /complete/search?client=firefox&q=goog HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+ --- SSL READ 695 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:51:53 GMT
+Pragma: no-cache
+Expires: -1
+Cache-Control: no-cache, must-revalidate
+Content-Type: text/javascript; charset=UTF-8
+Strict-Transport-Security: max-age=31536000
+Content-Disposition: attachment; filename="f.txt"
+Content-Encoding: br
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Transfer-Encoding: chunked
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+7f
+ƒ€
+
+ --- SSL READ 6 BYTES --- 
+1
+
+
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 1126 BYTES --- 
+GET /staff-contributors/jimmy-kempski/ HTTP/1.1
+Host: www.phillyvoice.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Cookie: _omappvp=ZKTK73T4oZMOjQWCEG5G24YK8L6kKNgFfZnWITGf3XBKIQV0nRZDVmBv8yxOQZ07m8IQ0KSP4MnJ8FMsiVlGEHLEUFGqTA4z; _ntv_uid=f9176c3a-1c91-4a7c-a06c-e5e4b4588da7; _ga=GA1.2.1569384814.1608372058; _gid=GA1.2.652329575.1608372058; ac_user_id=actin8cb0iltl985f667b7baf856a9ebc8cac4776eb1e6d43f6d96ab15bd830f4994f06aa372a23; __gads=ID=32e98f71ddce3a99-2225afe482b8002d:T=1608372066:S=ALNI_MZPgRd1IkH7Uky5wxXwbYoPD0_1YA; _awl=2.1608395908.0.4-9b79b3de-44d06f6a9734839e1d87466e0fe9428a-6763652d75732d6561737431-5fde2c84-0; __adroll_fpc=74b9f566c91a26f616b5725ff0cb8d54-1608372079897; __ar_v4=DVLY2XANAFCZFOLBCYXEHP%3A20210018%3A3%7CKOJCYOJQ6FC5RBY7J25SWH%3A20210018%3A3%7CFOQDHHBDGJCARD5XWBIHOP%3A20210018%3A3; _fbp=fb.1.1608372082774.290922502; _admrla=2.
+Upgrade-Insecure-Requests: 1
+
+
+
+ --- SSL READ 363 BYTES --- 
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 18490
+Content-Encoding: gzip
+Content-Type: text/html; charset=utf-8
+Server: nginx
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+Date: Sat, 19 Dec 2020 16:51:58 GMT
+Via: 1.1 varnish
+Age: 1482
+X-Served-By: cache-ewr18122-EWR
+X-Cache: HIT
+X-Cache-Hits: 3
+X-Timer: S1608396718.126983,VS0,VE0
+
+
+
+ --- SSL READ 1371 BYTES --- 
+‹
+
+ --- SSL READ 1371 BYTES --- 
+ joaáqGğëD ’À4VÆ`²šE,•æQ³âçr3Ùjö£{†)ò\ug%äi_bÆÂŠ2Ê’ÅÄB95æØg¥F¢ê0;MPùÑá÷
+$¨ 7Ùğ8Ô”êƒ¼ò\°™#	’Iİ&!¦Æãçˆ¼ğñ)øÚ±ÄõTŞKP€vËy^¦6ôÏx…ü£‰—eYóq­$F¶mÌØt‰O§¼½?Âµ}Ü­”Ì`Şå°¼ûq“$ ıŒ¼kÅ,:Çp‚‘`….‰’<>çCzœtå¼*FXå`ír(Z)^
+
+ --- SSL READ 1371 BYTES --- 
+!I…EK‘Á…ù¢Y¬›0rK˜ Ôş€5"ó,ò’õ!Âr
+
+ --- SSL READ 1371 BYTES --- 
+²÷gÿşñùúÎÎIòëËêîÛ_wÿşëv5ù°{ş>0õ#\hğ=ã´yñ¬¶\_HE"Ú+\¦ƒù(sI¼ÄgOñz½¡aüõúñ‰g|5ö»ö3?†Ø3Üªˆ2ÚGÜƒ„ö£šd0>#7ÖüFúøìÊÇ/&–á]eÜıD|ì21»´ï0
+/6’.3víÏbã4@^Dâòeã3`A2ZŒÆ—¶ïıÃşmicÓ€Â9€»
+j¢®)ğTµT_ŸCˆ8±IõCYò‡ØƒHº²%jÄ€
+
+ --- SSL READ 1371 BYTES --- 
+¦ê:v SĞÊGEÑ³³³<ı¾İæî”üpFÅ•/dµ²N„Ñª’R˜Éeçİ‚ÃAg–
+SV¹€[L•âİˆãAØ‘«:Y¾Ä}T*Ëı@`¥ê¬×q2„-½÷zãÂpÅ"j´°v²y™¾ˆâÙ“Ç–e¼à2†0Xz )ÀLû9
+
+ --- SSL READ 1371 BYTES --- 
+«ê™FESâAä¬¸˜;ËëË«ëÕ:<yb8¨àÀ’×f…ÜNqzÊÛ¤å"Knr«JÕMø^5å¥ëû¸ÛÄoäb71½ÇPhlõ»Ç®„c"Ç	E Oçæ&µæ"è“ÿŸ¥ÓŠå¯æ—…pÄaGøÜçÌ8Ù]äü*†Bı§¿ŒN‰{ño†¢£S–‡¯ö
+
+ --- SSL READ 1371 BYTES --- 
+®æbWß“ˆÛ¶{?´ÚÈóTGC¢ëâÉKùd&Â|Ûì—˜¯‡“ÀD@^ªëÜ-à6ui?‹¿ı	ı÷*T I{¤mÈËûÆ½o‡uİh§úŠ]ê™£÷ƒuÍÅºP”¡êfé·MÜcïìhqñ‹ÜîY`DÒÉ÷—¸7mGX9Çå¸'AË†\Ä Â‹Ó!Ñèíómã%ÛüÉîÛ§O»èş½ï>ü1,Izİ ù`d#>Å,f }B \z%¡gFÅ@tu¬{úJœ¾SH›‚×`CPh‡3gåoáMÅkèw®Bs{¨Ì]£!ui©ğp¬Ö€ˆÙ6Ìúa::¨¯õßù:2Ó›UU7WUsúnŠ/8ˆ£´Ñ…@J	ÂîÏDtÕyõ;_ÿ¾¿ñ¤@±H™T$ê„ã2*¼ÈûÍV±Ï:8€Ñ`	p†¼8…Ú=±ß/~ bŞ(ŠgÙXNrMĞÆk±Í¼Vş²ë:Šc«Í˜KæıÁÁ7‰ƒS'gºd—/å—ßê+YI¬S:/Yxºà„ıá¦Q¯Ö«Æ§OÏWğs†)Çó÷övÊ›Ü_6F\l~nÜİªô'Å>Í?6
+ùM±¤¦	ˆ39c&tÉšÚp¿n!œrZ×™zÇÃ`s‰kx"8œ¸ylfá¸…às'“Áêc~Ü) Â&+Ã,ºŠ(ù#OkîzKDTöñ¾ÉÇ7ê–ªRx5ónÈØïT§Äy8«ïÒ#jÒè™øÂ;W«-Uë+Õµå¥¥ÕõåÚ2"<®­Â…áY®@½­·?‹xLûhêV=VëE);˜I8„Hˆ/tÕIÚ~Wïx/!Š‘ÆQÑÑsÂ?]}¡£ãoáu õc&æ]	2OƒİA…<˜Ó—hXPÍqoú´¬îkJ²Mµß¼°ëÂC[
+yğ¦/Çá7-ªƒ»¯*¿ÜI’:vC»•—ÚÅŠS
+Ÿ{†s¤”:bS@–-<i…ˆµ¢©Û<Ä„vêÕoÅ~kê¹W­{=Ñª·3ïiÖ´×9ƒ“‰åpXÉ=çM¤ß¦µ©‹‰·â¬´P½*~$?]ŒFä(ëgŒèÜ¸zM‡R½`|.¶º5ÉAHku¦h…—£!Mèî$Z¥÷V·S§Nz‡§Út¬<ÿ†è}ŞW<¯ÿ¶ ó»Hè&Æ3Â¼*Ú%‘5È”!yU LL}T@iAWmø-ó:¯C§Í‚ló¨.¶|’ãzµ¶j½ôB­ü¥Oñäe@—ú2rÑsÿåäáO+2Øö¬Ú¢9!3b«Œ(›¾U_[;G–SÍÊà1x<ş,
+Àç*p~­UÅ‹÷Ÿêƒy8C'„¸­¾œRÙ	cj–œTÁ V…à9ç4”§~.šªÃQåG¯Ø¿ş™—Sg1Ë§ó¯îÃ²>-¡Î£¼„:ÿúg>Tã
+
+ --- SSL READ 1371 BYTES --- 
+kˆ¸‡g‚@ ü,7Tãã%ZGÈ5dËê0
+F,Z7Ğ:¢u$Œ­ëI¾®u ÆÛ—{ğ 3ŸªµTàO¾©ßgóÚB"ÇÌN-Jµµ†3_oÅ	œvf×AõÌ¬…
+ĞßH˜â+¿˜Y
+
+ --- SSL READ 1371 BYTES --- 
+§
+
+ --- SSL READ 1371 BYTES --- 
+„˜1dÁ€e›;ªk7>BËÑÑ§±5Ûmf1˜=qúäáãoŠ_sU?kLŞĞNË>	íÆa
+
+ --- SSL READ 1371 BYTES --- 
+_wo¼‘pŠ#š¾€?ìú‡™Aı‡]_¹}Ç:òıÛg÷ÑÍ‰Z*ÈIâe	JEVüµ?ÂŠ__ªUÉ^¿Ú^[j¹ní¯£x¯äˆ
+:ÁNçû¶â#4ùæ€£'×•\Àê¸kÍSĞ\\Ü»üB;¨*^û¸üÌØ“»^K7_šîÀ+èŞ¤Œ©q½¬~½¹»¡¿^K7Ç’”€ï71eîEÍïa“"·sÏ½ïIOÑ7½ 2˜C™¥ºšC8sJß¿Ê·MïZíq0+É¦ß¨ë{'æ=DM‡¾h|hz{úï¡õ0ìQ*D„?­‹³0Ø°â ×Bo³foÑìÍ0‘ù´3Æ'ŞŠÀÒÂUl9ü¬"õW-–#cğ‘ù¾TÊ‡º»{Šı`œ3®×–j«3ĞâÇ>.6½ç¬ïXG½Ñyp´.VÆÈ'_÷"®ÔVkuè±¢½cIF¿‡mŞT:É.Ò«q…ûğ‹Ct(#ìá€"bbÁg\ø’Fš^0Akîş¶xˆÀ$ãúCéõŸnøtq>!tÒ–•[Â>İuTé•\L¢“²-¯u,õ]~ê‘¾Å¶Æè¥|”öR+¢¿âïµƒÔ<‘FO&Jk(Õ(5[­·iIÙÍ§ÂÊ&Ï5äH}HI”jÎ ŸÜ_ç1L\S67åDCZÃø«^L;ÚšLº6Re:1ãGr$-›"ß±€X&
+
+ --- SSL READ 1371 BYTES --- 
+Ë·s|?ÈĞ=ã‰¤×ìÌÀ£¹…ˆL›íYƒw­Ò??@„-:Px†°ß¬…8HHÑSWğïòÌß­ğaÉ÷J®$Í$—ÃßÀÎÙfÜ9E†i$eø­ØGÌy²€š¶˜{¯†€êêêêÊ2Œ}Çƒ³°ú{÷ç‡+ÉŒ¤x
+
+ --- SSL READ 1371 BYTES --- 
+kûg{ê°ŸÙ}wı6è_]ı,ÄOgUÇŞ3°ÌCønöÃ3d¼„Xº 
+
+ --- SSL READ 667 BYTES --- 
+ÿiF1b&0æ`ïnàVE®E~“F£vÂşsœÂÓºŞ¤ƒ‹UãÓ§çP–|Šfiloo§l€á¼dL±	XtJñºû´è$=Q¿šNÅiNó
+c4¯`Ä‘Ó,¨%VæÿÏ5)Ò[!rg{çÕnåK\ÁŠï’òÒš»±¶´±ÆÜÕò¤i¥rzÛ¼‘JÅqƒ2£·|/D~N%rz•årmì¦%,˜_NØ
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 345 BYTES --- 
+GET /jspoll/4/civicscience-widget.js HTTP/1.1
+Host: www.civicscience.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 406 BYTES --- 
+GET /anyclip-widget/lre-widget/prod/v1/src/lre.js HTTP/1.1
+Host: player.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+If-Modified-Since: Mon, 14 Dec 2020 13:18:06 GMT
+
+
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 350 BYTES --- 
+HTTP/1.1 302 Moved Temporarily
+Server: awselb/2.0
+Date: Sat, 19 Dec 2020 16:51:58 GMT
+Content-Type: text/html
+Content-Length: 110
+Connection: keep-alive
+Location: https://d2zqfs55y95cft.cloudfront.net:443/jspoll/5/csw-polyfills.js
+
+<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>302 Found</h1></center>
+</body>
+</html>
+
+
+ --- SSL READ 288 BYTES --- 
+HTTP/1.1 304 Not Modified
+Date: Sat, 19 Dec 2020 16:51:58 GMT
+Content-Type: application/javascript
+Connection: keep-alive
+X-LLID: 48d879bbb31a9821127eab94a8e83a2c
+Age: 53094
+Expires: Sat, 19 Dec 2020 02:08:04 GMT
+Cache-Control: public,max-age=60
+Access-Control-Allow-Origin: *
+
+
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 355 BYTES --- 
+GET /anyclip-widget/lre-widget/sps-flow/rules.js HTTP/1.1
+Host: player.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 531 BYTES --- 
+POST /events/1/9c5a1632dc?a=13055627&v=1184.ab39b52&to=MgdUY0AAC0QABUUPDgtNd1RGCApZTgheAgQ6EldQVz4BUgcHRAoV&rst=70174&ck=1&ref=https://www.tufts.edu/ HTTP/1.1
+Host: bam-cell.nr-data.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 21
+Origin: https://www.tufts.edu
+Connection: keep-alive
+Referer: https://www.tufts.edu/
+
+bel.6;e,'unload,1i56,
+
+ --- SSL READ 960 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:51:59 GMT
+Content-Type: application/javascript
+Content-Length: 216
+Connection: keep-alive
+x-amz-id-2: x3+SxDK+Gfg1JFKPnHzmmHuMPsTNVGcXL3ohSOKd0WwhCilvztM7PwJiK1CFpicR+4BQvCfReZw=
+x-amz-request-id: 5815A8920E9AF6CC
+x-amz-meta-sha256: bf8a3d71354828a837da5f234fdeab608b2e535b11b4851e89d75b1686686635
+x-amz-meta-s3b-last-modified: 20200430T151051Z
+x-amz-version-id: Dnob.rNfaHkFPCA9eGou8IS.DrpBU9EH
+Accept-Ranges: bytes
+Server: AmazonS3
+Content-Encoding: gzip
+Vary: Accept-Encoding
+X-LLID: 65b1c0d9c7676467c1f47b87ba3a2fe2
+Age: 252351
+Last-Modified: Thu, 30 Apr 2020 15:11:24 GMT
+Expires: Wed, 16 Dec 2020 18:47:08 GMT
+Cache-Control: public,max-age=60
+Access-Control-Allow-Origin: *
+
+‹
+
+ --- SSL READ 507 BYTES --- 
+GET /activityi;src=4846802;type=phill0;cat=phill0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=3700666036330.261? HTTP/1.1
+Host: 4846802.fls.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+Upgrade-Insecure-Requests: 1
+
+
+
+ --- SSL READ 334 BYTES --- 
+HTTP/1.1 403 Forbidden
+Server: cloudflare
+Date: Sat, 19 Dec 2020 16:51:59 GMT
+Content-Type: text/html
+Content-Length: 151
+Connection: keep-alive
+CF-RAY: 6042a1a78b4d74bb-IAD
+
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>
+
+
+ --- SSL READ 339 BYTES --- 
+GET /gtm.js?id=GTM-TMX5L69 HTTP/1.1
+Host: www.googletagmanager.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+HTTP/1.1 200 OK
+P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Date: Sat, 19 Dec 2020 16:51:59 GMT
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Strict-Transport-Security: max-age=21600
+Content-Type: text/html; charset=UTF-8
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+Server: cafe
+X-XSS-Protection: 0
+Set-Cookie: test_cookie=CheckForPermission; expires=Sat, 19-Dec-2020 17:06:59 GMT; path=/; domain=.doubleclick.net; Secure; SameSite=none
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+
+00000001
+
+00000001
+‹
+00000001
+
+00000001
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 76 BYTES --- 
+Š<»)WÕè¤.`)šó†åÛ'¼Ä%Ål‘;%WRtdÛÏíÙÖ1ŠRP2——8ĞN£ÓËfğE÷ğk?6)³`
+÷y¯šÉ
+
+ --- SSL READ 1408 BYTES --- 
+HTTP/1.1 200 OK
+Content-Type: application/javascript; charset=UTF-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Cache-Control
+Content-Encoding: br
+Vary: Accept-Encoding
+Date: Sat, 19 Dec 2020 16:51:59 GMT
+Expires: Sat, 19 Dec 2020 16:51:59 GMT
+Cache-Control: private, max-age=900
+Last-Modified: Sat, 19 Dec 2020 15:00:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cross-Origin-Resource-Policy: cross-origin
+Server: Google Tag Manager
+Content-Length: 49836
+X-XSS-Protection: 0
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+[()2
+éj/æÃ‘¤Õz¨#uáÏŸ7ñ±Îóıç/íûÿ|‘S3t­`ğ–®&µßÎë=I÷,ˆç:HËa‹$ìxlşÿß7ûÿ¾Šµsè5ÃAMº›å´®‰Ñ¼íXOÀ¢€¢(KSpÿ÷—úÿÿşù2z]D;¨ròŞŒ²ã5¦ÍiâLÎmSB²dC‹1ˆÙÀû{K«´t±®ˆ9#¶[g·Ó<‹dÕôŞ‡µ±†)÷½÷¿ñ3F&
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 1408 BYTES --- 
+y	bğz¬µ„ûl°ıÏòÿ±Ei•{û¬$vÏíÇ€öM«ıÿïbÀŞµ@o¤lû¼Rw•oÌe•{5(Ş”ù¦üPkz«îUŞ—šıùFB»¹é]ûE7y±]½Ìê±5µF"İöİ¼=ÉÄÊºV2o*…J[4…; p¯J
+W@@ 0-Ğhet«ŠÂóy]o™e™ ;»ë?:‚vÂñÿ3ğIB¿nÎ—«å"¼œÍÎ#[ı¬vNlpOĞùí¾½½®5î—©ª-|áse1¡'ñËª§Æ)Ó`ÅıÇH­~TùôıåUÕÿÃûqóú	¯,>Š_Ï_jŠut¨N¯”®ú“`"jÅo¹h”EË]ugb@?³rJ{ªì>³ŠòcúM©èÕã—©Hº®¹tBÅ‡ÆÃüï:ÄğúğïWiyÆ´æ«²Ke>Shı«×˜Ö¨Ë¥äñÿŠ_t£¾õu®dõÿ°Úÿ2Õ£ÁÒÿpo+ùÑİ¨ı=@òcóğâĞqÿ‡}[ÉO1ÊÍ‚»6¥jıêğëZªB¸]Eı‘È¼9x)«ø>
+¡¥'pY eUŒBôŸÎQvÓVu-fõ#óW£¿€¥‘{—]+õgHVüyÿ/¸RÏèto“W]‹'´H^$8,×Ï÷m¶N¤ø3jåĞƒ¸Äš4£ÚF¨u§ÌZíšÈæ5aïÔ¦u[4k«Zk	1\Ì/——l}‡åÌ«^HĞ£¨DÑ#çc_İÖİ¼)ƒ„¼ÉOäKˆ¡Ûèª
+Óªë­zª±TPŒO 
+§wÚYØ©¬Ü«»xy½ùvó|0Ûh¤îæOì‡Q…ş€Ö¥põä¶eš·¿¸\¬.ÃY¶Ë^6ä´NSæÍîŞT
+
+ --- SSL READ 476 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=5&val=vjs&wnx=0&abc=&ty=wlo&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+²¿™¤*”agabk×&E¢‚¼•‡“·fÉ°CãuBU÷è©A)áœò&80Æd+úZ5.ˆªœNö{NWc ‰kQÖ²qhº	zÿô¦F¿˜á@â\a2‹|÷ß¿wºöK‹RI”îßäøQHb6²|Jp°B^¯z‰ÿ2Ú©Õ÷ñ§;á…~m%Ü§ñƒÔîÿìW¦½UÜéÖÉ%ÔÔŸÑ–2v&ÚwGs*ÉQ2ßÛÊI‚àLs’†Y"ÅÕ)¥qîà,-º¢m¥_ó÷[v3>ù´)>ôÇï®ùñ|ùeùŸ÷OÏÿ½{Xí¶ÿÍ÷âüõkñº»¿4_›u-¿ÜËçoWŸ]c›÷Ÿ~>}nÜÍœC‚ApÕR_R$ƒ/š¶%üBŸœ1Í3†iN·ÌÇ4Ï‚wvñ^§Sš‘ ëíÆóºH†øbşäPÖÚ`Å$¼!k+6şaŸ1>îĞx‚íZ-½0qæ0ñXÅ|ÁªV`õâZƒ¥}|´'§jŸÃn"Rú¿&ä@ˆÿ‡—¬áaÈ_•r é"Kr£ğÍÃáğœ£$ÇA±³hP	x¾*ækêú¥õ	u‡Nµ…§«V±ï¦›’1&—4@d|ÄÎğ8±3½â@ÈàFè×pH jÉD jy:¥Y’­-YË“×…Oây£D-ƒ¾±]8
+
+ --- SSL READ 723 BYTES --- 
+GET /vmp.gif?dom=www.phillyvoice.com&cke=true&lan=en-US&plat=Linux+x86_64&net=-&ver=js3.0.37.865&dev=desktop&os=UNIX&bw=Firefox%2C84&ua=Mozilla%2F5.0+%28X11%3B+Ubuntu%3B+Linux+x86_64%3B+rv%3A84.0%29+Gecko%2F20100101+Firefox%2F84.0&url=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ty=data&rt=9&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:51:59 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+éZş©[&¿øOÉ§¶ßÿO™²Ò`úÊ`
+
+ --- SSL READ 386 BYTES --- 
+GET /anyclip-widget/config/phillyvoicecom/0011r00001qbFvJ_373/conf.js?cb=488804 HTTP/1.1
+Host: config.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:51:59 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+?øH•d@èÍb*2–§"K0ØkV²·6Ğ™Ûh{:YUÔ"VâxŒg¬C¢vóïèc°ñû%IÓWcÌàxìdïèw ’ş›08ĞÙôÿS¾ŸL×çÙ$eÙ1¤³áoSj5}UÑwpÛ—‹ÁH#ÎËQš‚Ö&Ú~sñ>iÓ6Be@]øy
+`y0kÛé”#³½×ˆ~-Æã§¬ó)«';sK€£¡s.´,;ÎX~Çx}cm/ºúH®ÁÄyM_U0ĞÿI PìağÉqÛÌ|Ô„ÂF6*ÄµƒÚ€,–TÑ‚¿³%ÃX´
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+a˜ Å¤ºÆ_Joôokµ]OÎ%—áJ2<ö}®Âc’á1Ş‘ï„
+%ÉPzŸÉOªğz#^IJ£PëÊç—–2Ç>š_¯V†2ìá÷Êå¼áF¼¹•Æ¢jƒ–2FPã´ğéĞ† Ò
+
+ --- SSL READ 3979 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:51:59 GMT
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 3387
+Connection: keep-alive
+x-amz-id-2: EXTUYRvnFbdvREduZvkm8xOJfPu2rhD+1vr4LOwz5juEfV8cyI6VwkcwcfvnGDFyvuCGGm2BT0o=
+x-amz-request-id: FB77E80F614FC25B
+x-amz-version-id: EbkvHHPOTfSb5gn2dWxUvS80ay5CErD.
+x-amz-meta-updatedby: adela@anyclip.com
+Accept-Ranges: bytes
+Server: AmazonS3
+Content-Encoding: gzip
+Vary: Accept-Encoding
+X-LLID: c5af3b03f672c5a5c1c62d805b6d0df1
+Age: 45934
+Last-Modified: Mon, 14 Dec 2020 21:29:06 GMT
+Access-Control-Allow-Origin: *
+
+‹
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+º†,â0'’ûEPÃì­ 9ç¦ÀKb¶rqà‹®A²<…©©şÇ¿’‹~qN%w/Á¥`Ä?>Ó4ú
+
+ --- SSL READ 1408 BYTES --- 
+vxDºıË¢C=5Nø°§²æíÓ]Gä„ÛŞ~túîlğÍ€Ê\‚,­Ÿ ¿lÜ¤6#qíÖ¶!Ç YXøR±]-ù3}}ä¸}ÌÆ
+
+ --- SSL READ 512 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=963&val=0&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=blo&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 515 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=1043&val=ima&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=ami&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 451 BYTES --- 
+OPTIONS /write?db=hits1 HTTP/1.1
+Host: hits-i.iubenda.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Origin: https://www.phillyvoice.com
+Connection: keep-alive
+
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+¥Ww!¹C‰vß"ã¬û§¿¸±İØob?ş)™ß\™’ù?kM[[^Ÿ÷:›Æ¯Ã-WBÿt•?f.píÔdßWb¦N®‚Ãº”QfSla8<Ñ4»/¬·CŞ)FÊW•ãÀ£JmG>¨aÁš–×¸PË7ô‰>æôõ”^G·Abaå¼+=
+Àç·»ÚRíW!]—Î5İ•%1åŸşSqL£²ÌE ÜµrX@Y¸~¹X)^ Ñz­Š|g—¯.¤W©*ÿvqÕòÛH«E¢ vq1öz	òRÂXé]>ô¾¾Zëlgk"ÖDSÜËÉÙ±õÜZÂˆ)å†Ä$ñÕ¸êëÿÆÃò! ÜC&fÃ´Ş×-©ëå]ÚÌ­¯S À®kt¿m• QcJM5"X%r(²¾¯…c‚—h²7P¸$<¥2•­Û>lç7#nõwÄéã›c¥a;SJŸ¸ïsI2ì$uU)PNÖ½+	 ÛÀsV
+ŞJÓ"iîRÖ¹ÖHÔ2"/-S“Ä‹‰ö}ŞñlMNp¾wÆ»Öd–
+ç[eG|)åñ—÷zCœ>>¤£øÿÿ!·¼í¿M8)9·}İ·>øïmà4›x²ZÆŸÉ2úxÕ«ªñc6Iè~Nz{^aÃPMï$Ÿõ=âE4ß¯=â¥§ĞÂÆÅñµGü‚À½bç&s
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:00 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:00 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+~LVß±…N'üá±ÇG06"0dÌ¸:U8WeÉˆŸÃŸøgBşÜöÍ5À˜¿i¤¤wôäµŠ–U…®9ÆĞ•Iu†–6#º,lÄÉPõˆĞÍ8P˜ Ä\îûÊ÷U¨İ«µ\¦.´)©i™ºÄ…¤".ß—ºs{Üë(Ã-$g†k´«®”¯…FMÚJ
+
+ --- SSL READ 386 BYTES --- 
+HTTP/1.1 204 No Content
+Server: nginx
+Date: Sat, 19 Dec 2020 16:52:00 GMT
+Connection: close
+Access-Control-Allow-Origin: https://www.phillyvoice.com
+Access-Control-Allow-Methods: GET, POST, OPTIONS
+Access-Control-Allow-Headers: *, authorization
+Access-Control-Max-Age: 1728000
+Access-Control-Allow-Credentials: true
+Content-Length: 0
+Content-Type: text/plain charset=UTF-8
+
+
+
+ --- SSL READ 542 BYTES --- 
+GET /ddm/fls/i/src=4846802;type=phill0;cat=phill0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=3700666036330.261;~oref=https://www.phillyvoice.com/ HTTP/1.1
+Host: adservice.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+Upgrade-Insecure-Requests: 1
+
+
+
+ --- SSL READ 1391 BYTES --- 
+RÎ![6TÜ’ïºBFbcQ¶Èğ©îB±d7ô—PNÊr»¡ 'ä 0&_)zñøf@4¢nØÿ2©6ÙX¦4l¶JI¨E.çàÁğ‹X\öÍbª³ñæ¦ÎÒÆq£½A*ıfÂ7&óıõ1lI–b"¦RJ«iïs
+
+ --- SSL READ 1408 BYTES --- 
+¯¹ïó*e®|ydA»r<1Vaí¨
+k7—EÿP›¬Ô}²óßï—=ímoï ­Í½Ì“ÿ~ïì ì›y©Ë·Ü®5ñâFº$†¯áĞëzûÒËÎJH/ïf;%>#
+ãØA]Èn™ìü—şwíŒ¸H/!”¦+ÚhÍööï—=;aä£IYöF}>)vÂÊØvŠEIìc¢b°çĞÈŒ(Õêm²¹˜tiœVL£¬§µc¡˜ÃÍ-Â[\/ªÕM²ÅS¡è±±½JR<?0?}i9;Øùı{ù–]˜š#öû÷òí!CV²|Ógºışş½üıûköv
+Aí³9ÛÂÿj”2éB)±ˆãÏ2î9t%Ó2uİXqŸÑpiíŠ6£èÒİL;GÌÂëËŸq¯ø‚‚9ğˆ^‡áeşƒÓ2;»ß_Ól_Ø”´3å3qb.Ö«Ğ‘X¥ëŒNÂŞ¾ô¾Îƒ¯U÷ö¥†£©ghŸR&+ü¢ÏëÒ½öaMÜü+¾Õó,
+gßè€ºi—aéºõÄTyŸnRÖ“JÇë´Ë
+Cı²¢EÚeTåÕ”¯ÌhÂ—Õaèp•óu˜\„‚§
+
+ --- SSL READ 1408 BYTES --- 
+j¸—fô¹£]¬€ø4'Vp£Ÿc¾èòi‰Ö„û«{š;ZX7†Ô>¶†4'_°2Ô¢““.PQíS¢ã
+æ¨Ór}¹©…n•=ş/n„ı?¡-ÙĞ–ì.´%»mÉv¡-Ù+ñ«6?™Q®d¦¦ëŞpI¿:#ûÛÆåĞX¢–„¯ç°V7éGhcéŒ&›Ê+Åª„ß 1¿rQV|%VµSedÀÆ³­CÍ£“§Í˜=·§Ì)wFw`wãÖ`š„P©¤èƒéìŞ°ì‰~œ~Z¬¢¬²VQÚq›æ_(a;—%°ìwÃz}<–¶fUquaWìuo×ü,~¬šùŒ—CûhşöÅ‚½]³oı¨(!¬	mãb–û¶£]vïÛ„°­o×&Ù)-``‡û²ç½í¸l'mÇAäíoië3’écÛÂ.`Ô'
+
+ --- SSL READ 1408 BYTES --- 
+Ç$½
+¢¢0²à5„“?û ¦#"¢6Q¥‚/3Ôe\›KÓ¤5m¬i‰Ã`K‡=q‰V‡c©º^ŒåO‰Õæ–¢¦ Ú¥Ò81¥Ô³ÖsÁ˜}„'¡9¾Dºqƒö’é?±i¶ïšG²X*bmº"œµrA½…‚Xä&ª¡|f§9Æ1Ö€3‡²N4¦I;lœ›ÿº¾^º¬ã?B
+¬áE©•< ;&¡XÇïLQ‘Á/iÃ:ÖFøÀ½ş[şÒõ¼9òDËïCzcÍ]||JÖ‚¨yì£¶,Q¯–²Ø.š‚šÇşN|6KÚml…ı—¢Ç·üõhvÌTj/ø1S)³}Ë³1£K.Iÿ^‘¤£PtÁÂ°äİ¶¼‘„TÄ]'ŠjÎ
+
+ --- SSL READ 1408 BYTES --- 
+õ4á*šA{°eD}[ˆ8ŠËIÅv,*ëœÿƒcL~;)Ä]Á
+}ËBxvßIæ"_-¥šš·I³\ÒÜì×YØğÎÃ‚›ÛÕ‘GËåŒìñjCÛ’(Í,¶º3Å/¿ŞŞ„ô³µ\Œ€£Ñ(İëm)—LóŞ¹º•x”Rê–@÷¹ßåø{@Î\VóÆ?IÑŠºçü­cMÛX,©éøªmOä– HœhhdbE`Ñ‡j0Ğ´z«!›Ù×SMM`ìEF]ÕÇw9+‹iØ_¨•µqàÓD¡³[Aqskåû¹ŞñTÈ¢ôm;—Tká›5
+
+ --- SSL READ 1178 BYTES --- 
+HTTP/1.1 302 Found
+P3P: policyref="https://www.googleadservices.com/pagead/p3p.xml", CP="NOI DEV PSA PSD IVA IVD OTP OUR OTR IND OTC"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Date: Sat, 19 Dec 2020 16:52:00 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Location: https://4846802.fls.doubleclick.net/ddm/fls/r/src=4846802;type=phill0;cat=phill0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=3700666036330.261;~oref=https://www.phillyvoice.com/
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Server: cafe
+Content-Length: 0
+X-XSS-Protection: 0
+Alt-Svc: h3-29="googleads.g.doubleclick.net:443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051="googleads.g.doubleclick.net:443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic="googleads.g.doubleclick.net:443"; ma=2592000; v="46,43",quic=":443"; ma=2592000; v="46,43"
+
+
+
+ --- SSL READ 388 BYTES --- 
+HEAD /js/sdkloader/loader.js HTTP/1.1
+Host: imasdk.googleapis.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Connection: keep-alive
+If-Modified-Since: Tue, 15 Dec 2020 20:19:07 GMT
+
+
+
+ --- SSL READ 549 BYTES --- 
+GET /ddm/fls/r/src=4846802;type=phill0;cat=phill0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=3700666036330.261;~oref=https://www.phillyvoice.com/ HTTP/1.1
+Host: 4846802.fls.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://4846802.fls.doubleclick.net/
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+
+
+
+ --- SSL READ 1408 BYTES --- 
+†K:iÚOn/«'ÔŞJIs²Ğêğ,¼$Z;u31p4«¨•aß­–½5÷¯­%EaÈg23·ƒ¤+ŠÅÈúßQA¬ÍÕeç÷×WÉ‘D¿h·ÑmñÃİUr$ÇÕ`YÃ¦]ëîh*ëûïi7>¦…åSG’
+Ş8îº¼79o. —ø-("úè¦2alçD,ª´Cßc÷å"Nõ^óĞUZØÈJ;÷Ñ	§PTî@™v®ÿö™sYV}3¸¾…dHÿKv¦ÿËŞòi’îLÿ—o
+
+ --- SSL READ 263 BYTES --- 
+GET /js/sdkloader/ima3.js HTTP/1.1
+Host: imasdk.googleapis.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+ --- SSL READ 294 BYTES --- 
+HTTP/1.1 304 Not Modified
+Date: Sat, 19 Dec 2020 16:48:31 GMT
+Expires: Sat, 19 Dec 2020 17:03:31 GMT
+Age: 209
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+
+
+ --- SSL READ 1408 BYTES --- 
+HTTP/1.1 200 OK
+P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Date: Sat, 19 Dec 2020 16:52:00 GMT
+Expires: Sat, 19 Dec 2020 16:52:00 GMT
+Cache-Control: private, max-age=0
+Strict-Transport-Security: max-age=21600
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
+Server: cafe
+X-XSS-Protection: 0
+Set-Cookie: test_cookie=CheckForPermission; expires=Sat, 19-Dec-2020 17:07:00 GMT; path=/; domain=.doubleclick.net; Secure; SameSite=none
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+
+00000001
+
+00000001
+‹
+00000001
+
+00000001
+
+
+ --- SSL READ 1408 BYTES --- 
+ø%ø? 2–9ÕpÖÔ,ĞÚÄ€
+
+ --- SSL READ 1408 BYTES --- 
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Type: text/javascript
+Date: Sat, 19 Dec 2020 16:52:00 GMT
+Expires: Sat, 19 Dec 2020 16:52:00 GMT
+Cache-Control: private, max-age=900, stale-while-revalidate=3600
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 0
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+
+00000001
+
+00000001
+‹
+00000001
+
+00000001
+
+
+ --- SSL READ 321 BYTES --- 
+HEAD /? HTTP/1.1
+Host: lreprx-server.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Connection: keep-alive
+
+
+
+ --- SSL READ 682 BYTES --- 
+ŞVc§ÑÚÚİØjîînoo›÷¨0ÀÆ×VâŒØg¹½Ú%ˆ]!—K>¡1ã£1„nÓE9O`\¬½[yh©¸ô.–j'á3Ş±YX™tŞUVÂ¦KŒ%²bÕríP$¯ñ­x?È9
+
+ --- SSL READ 1408 BYTES --- 
+¸YÕ¦¬ó“ª´ugu_­Vaß´D*üºÔƒ
++ëzó:–•yÑƒwl;ı“˜·«Şš¯ıkecÙD“/K!
+ ò–pıD¤q, 6B.“hI#¶V
+
+ --- SSL READ 1408 BYTES --- 
+Ïâ$ÂÛGK·Vz¦‡ˆ7z£z+ôâd“„É]Ã¡^äD|é½»^	³Øz¬½xİ“kNz,MÖyvÁò4s İı²Î§5K—«kUå£3
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 1408 BYTES --- 
+côÔ¦‹;ê÷ç<ÑïîÍù>ïè}Øş[©SÀº8ñ3m­Ò(Ãµ(ğŒµå•~@Ô‚³`FÓË²¦è€%fÚ¯ˆÄÕkòb±†•íó^IßMò<Â8jK\ûBi†(ìE®²=–Ta¡-Á#ŠÄÑõU¾G‡Gâ¨E-:¡:=ÊwIV¼ Îıï&¹¶õ»AÔÁÂÄü°­e¹èU,—ßÊœ‰w•{[ôÚÚ$—„¬öÏ¾X$y«'íYÖí¡Â¶ö=U¥áâÉ†'Ä¸G2ñdÃFS«è}ù¢$FŞşÉVmu•x>>Ú_g‹3Ïpòlyf)ü¿ÿÉ:U˜ï_»­^?üŸ£ÆgXA¾T~Ñ]œOr]LÊz²*`UÈqVk«-gŸ‹t]èŞ„J­-ˆ­×ëp+®«—ù×šOMIg™EkÂ¯½øGÑ¿#V_¿l'±ğRNKC,x²áIÀ|ıLûû?RW§âÔãgà@I·áÓ‡ê†X¸L‘”³¿°ú(“İ>Ÿµ|‰2ÚÕå«àº Í±š3ì¹ƒ´3<ˆ ƒ§¼±`û±ñ¢
+
+ --- SSL READ 1408 BYTES --- 
+9ˆĞpCpØb$şÓm¸®iËğ¡šª1WfÔı¶”ÒƒÙAT‹‡fºÊG“Ù4ÿj$»¾™hÖ/1s‚–eÙ\“V?ÓÖH¶gH#È(Ø)Í´ˆí
+QMä4i¡™†!Aú£ÆBx)€ª»˜ÙÓ‡ä—ºøÌ
+
+ --- SSL READ 286 BYTES --- 
+HTTP/1.1 400 Bad Request
+Date: Sat, 19 Dec 2020 16:52:00 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 18
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+ETag: W/"12-aYDwc8aOzxQtGy9nc7j5YT71TdA"
+
+
+
+ --- SSL READ 513 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=1187&val=0&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=grf&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+@T›édt¤Sn=*¹a¨Ü”[J‹UT*X{ƒ˜%bÑº³Ë$–tgC¿Ò8ÿ³à›¾¼"z¢<
+ÁË gÄWÃ
+
+ --- SSL READ 1408 BYTES --- 
+»RÒ?¢+\§–os?Š$Ïb±şşòU©'fùÚ›UgN(bÓ!Ğf[sqık¨¶ì¹µ5Kÿ­áôXÕÁ~ñú¯í(Æ˜‡}ŒåÎŞ“?G{Ì§2ÁuYcfÖæHâ„-.¸øÑÿªh£‰€aVúğ2×LYèxKrØ@ !„;õbnn’«±UóBDaÅî”µğMMãöø—£Ô»£>®ĞENzqÂÅÕëP–.ŠáÆêığf¯pÕdŠ¸š®}GPÄ¡ëeı„#:áÓiS¬—óƒ ó—dõùbS¨8×&ÃhàÕÖW8±fEx^-0©!q	I¢#æ(„¬f|¨J´*‰Dnîª¦¨û gk2Ÿ‰ë‚ênÊ¢â,›Û¬R|,ƒj+œTJZ°„®ËÁ²6éK#İ@™¤(ú=F57nõ-sÜÈ7%DÉVÊR—€Édö§h’ {r‰âì÷ñÒ‹Dæ°(îÙ	¬ÛYz\,D.§#XJš$è¾íw)©90‡®{W•#uÑ5×¶	DÓC!vî¦YÌ¹H>:uÆ2’ğt	` €fB|•w™
+
+ --- SSL READ 516 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=1190&val=1---&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=crs&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:00 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+hƒı¤¿]ÓÍ—‰Á¥œÛófÙ'vg%‡ğ«ˆã5İ‘	ÀŞİÔ‹è5¢éÎ8ZD!MÉjÓ–¡‡ƒÒ„ÉÓÃ‡é±á¨ÒÅŠò	çÈ%¶$±&ÏËÃ¤şq¥ã•ïózZèjy CÁıÀ	
++±8j6Ï™*]d½:¿)¶3³©L•¦zgZx¦®JCÚ‚¤cşíÄ_@çm™é)kDÚX¬:%ÊCr±Úénƒè-ÛŸµŠ[ä%ß©¤ñõİõìˆg}ª!.€§­œÏ”WŞaàŠ6•‰(Ğ¾0¯°¤sVä²¤¾Âï·/ça?•&F¸Óäãõ¤ÿıŞÉŞNáw8Õ¦şÊyûdÆ­ßÏÔÅšŞ<våói²²ü›i˜ÿ9o‡ìàuI;<ıoú¿,
+
+ --- SSL READ 1408 BYTES --- 
+Ešf@}º´V>Òñ.óoe«Ãx±ø!fqë¢õVgƒ-yˆÄ€ijFË7yQğ‡r,nÎa0|ÈŞªhwÌT|kÀ¸â¶•m›bÚº¡ŒÄêq§õH×¨•<²ò\Øš’ÇD-líĞğÍM?‡Û
+Öîßõ"µ³Dg‰å[e>§é[ñÍ2Æåâ¶2[ò‹ág9Éò%¥iK@+0 »M™Œ>³}ŒÙØ°núNÏ1[¨ë²13"X}˜ˆ€î1+u„Şú‚®uõ!¢Ğw8P2OÅ–>!ø	)Š›]ª}^ÊëëzÛÖµíJ¥$F—™§qÒcEÑÒ{›kyâJ°3eÑ\Í_À‘;Y¿á—Xa©:'Ä[ÏâPŞo$Õ¬ìêé˜MøÔuå¿ımº	Ÿ–™¾şƒoJ_ı¥%z¶m¾ìº¤/-¶yJ@­‡F÷‡O‰ë‚S‚ŸpYçV¸ç””è9Á{ÿLÎ¿ö>îN<½¢ıòÎ’d§\ï§]‡Èéı|!²ë3±L»¥´€£MÃ'Iš01u RÖ`â©ßEAäİz˜çYL/r•¬J='^.Ö9 pLüÇ)Ñ‹-Qw{u©Ä¾—A­_µ [á¥8Ó	™°ééÙ©0µ2ãª$µèeË½D¯6Ü¼Ïv«Ä;î ¦d‰±üÇWe#Y–èu—;¨efŠ-IÒÇtL}2Ö;^«¿r2¢¼«|ê;²Ëö\™duÕdu]'QºŞßvFJôæ›}Ù”åQ+Ê#mZ‰–è¬¥ÿ NñwIA“ÉïdZ@ıÅƒÁ[eÉü®×H‰ë:™X¦—¢Ú8NœôäYğ6ÒÁïDÛ2¦E7Ì,…7e‰~'ØaÚÓ÷ãEÌ?:0:ùínKõğáÃ!Do	¢÷Û
+Âj½åx´Ã *&,ÑªÅ>iIŒ´¸oK)jQğ&–_KVÍÌ£­‚öa‡s±¦	~¤>6K]$
+£™¡	Äk…¡I£HÀm—¢ÆÔØb	)Ñ‡íéğ ’éº;»£>¾%·!$¬$éNBòøRôXÊ…Ç~OüÿQ9}°½Rø­¹RnâM~hòG·M>ÇL×
+
+ --- SSL READ 513 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=1197&val=0&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=prq&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:01 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+‚º]õ†ÂC=¢‚u+Â<´MP^d	IjYu-
+
+ --- SSL READ 1408 BYTES --- 
+På3ÕKÛğGxûÒ_5n}DÑZjº²¢Mªa(äÔvÚŞãÄvL@×eƒAÙÒgÚ¸Ó6;ÄÒ„K›M¦MB¦Ñš¼¯{JV¼¹¦%Pˆt¤ªŒ(ŞS…©æËÈª»tM­£¡nä¦DÚÊ¨±$h+¦Ö2ñB8vRgp&¿|ëOB{.†p?ÄOPÂ¢
+
+ --- SSL READ 896 BYTES --- 
+š6£¨S—Qš?ñ
+21â5*lõÃkjF:öOùÕíìôƒ@oHÌ§*ÕYÓK’öÕSÛá»’FÕÀ&÷}èÆgç+JGÚ3ÚVi
+
+ --- SSL READ 1408 BYTES --- 
+7-µ³¡œºj3±}îŞ=Ãkvx¨ñeş›hÍÌM”oßDùÿæ&Ê·n¢ün"%»½øşU”w\EùöUtFBsÿ\2¼÷ûä‚Çéùû÷¢Õj¿ÿ„°âÅèA±Œy\,W÷Šåê~±\‰¨H#R¤QT¤«‹uqµ»¼Oä¿$ÏÒõ\~~!—…ú_Ğ%,Â4ÉÏ÷Î¿ŠxI"¡š¡ËUÅañI‚û´ŠŠUy†²Îª¸ÚYšÀâ2æB÷Kµ+; Û•p‹Ï1›çñR4Ú†ŒıàüË
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:01 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 525 BYTES --- 
+POST /write?db=hits1 HTTP/1.1
+Host: hits-i.iubenda.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Authorization: Basic aGl0czFfdTpoaXRzMV91cHdk
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 54
+Origin: https://www.phillyvoice.com
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+hits,cp=79968850,pv_nocs=1,pv_nocs_nopc=1,sf=1 value=1
+
+ --- SSL READ 1408 BYTES --- 
+ºC§OzU@pÉ£UjÂÒdd`<{*¶­UijôC2ÆsŞvú?kj×XÂgGßİésÕ÷Mø¡Ÿ¢õVf
+ÛBÂÉÔE‡2-‰;¢&çC®Tê­—¹*N¾ar£àµO†ÁÃ²yš¬7h*ñ"ØE2ç€êT #¡œîJÓk!4éí‘Î˜©š³,ĞhèË·ÍQŒ9õ
+
+ --- SSL READ 1408 BYTES --- 
+|•ö2å•G
+:äÁ!¬8vtÜï“´ôgn¸•½ìÒ“Îa ‘Ñ9,XIâT¸îª ïù˜œóso:h—J«RçŒ}9Ev	'~oú-àYUMOíù8?Û
+
+ --- SSL READ 519 BYTES --- 
+OPTIONS /trafficmanager/api/v2/player/playlist? HTTP/1.1
+Host: trafficmanager.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/no-referrer
+Origin: https://www.phillyvoice.com
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+
+ --- SSL READ 1408 BYTES --- 
+R*e[—Ë­ ’Pª3Â]Úˆ]6°1U£'ˆs¤¾&Â…MüGÑ¦—ù2I³Q°Œøşz¶vt•B“r¡ª	Ï(£ìÄz±LY‡ëÁ&ÖN—>L–ƒÍŒZpOÜ,Â'UÒÚa<ö	¡RÅ¡¦ÍäzëFšv­¤ƒà‚>X0¾¯Iû~
+o€¿ä(³íÈ]Ñ²äŸJxÜ2‘2şyŞµl^¡èĞL£„ìz·ácUúşq¨¼s“Ñâ°/çe§0Ò^l¸_ÙÔ_{Ùõ¨éZòkôT0†>i¯Ç
+
+ --- SSL READ 1408 BYTES --- 
+Æ@åÈ!È^KôIt=£¶m$·k mü¢	›ÚËK¶ªßù:C‡ê¼¡‹Vé%šÿè5¡[@B2cÂŞ´™òŠ3mNB…éT7D©„6¨<
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+.ÆÕ;s¼LŠâÛRhâ¢šÓBìV‡ëpæ¦U¢
+
+ --- SSL READ 1408 BYTES --- 
+Jb­¾ë‡‹õ¸ÈI¼Ljëá%À§ËZ,Bïu®Y&DrL’K²CyOI„s¬Opö¹+#;û)/Šßl4¶SÑSebÂ‹"Óú©SÑeŒxUßYdL|#¾®S%6,ƒÓÖë8"^l	…¯pËK'@l#ãz#ti¶ìŞ\K}» 7r¾	>K/~x•Ù	¾‘óMğkFİó|×â¸ë»¸ÊTqÄcZ[³i¸J§Ø	ëKÌó™7q4Ë±¤Mğ³&U½ğÈz%Xş–äqzÃ«@í5
+
+ --- SSL READ 621 BYTES --- 
+HTTP/1.1 204 No Content
+Server: nginx
+Date: Sat, 19 Dec 2020 16:52:01 GMT
+Content-Type: application/json
+Connection: keep-alive
+Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Content-Length, Content-Type, X-CSRF-Token, X-HTTP-Method-Override
+Access-Control-Allow-Methods: DELETE, GET, OPTIONS, POST, PUT
+Access-Control-Allow-Origin: https://www.phillyvoice.com
+Access-Control-Expose-Headers: Date, X-InfluxDB-Version, X-InfluxDB-Build
+Request-Id: 8405d4cf-421a-11eb-aab2-0242ac110002
+X-Influxdb-Build: OSS
+X-Influxdb-Version: 1.8.2
+X-Request-Id: 8405d4cf-421a-11eb-aab2-0242ac110002
+
+
+
+ --- SSL READ 360 BYTES --- 
+HTTP/1.1 200 
+Date: Sat, 19 Dec 2020 16:52:01 GMT
+Content-Type: text/plain
+Content-Length: 24
+Connection: keep-alive
+Access-Control-Allow-Origin: https://www.phillyvoice.com
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,POST
+Access-Control-Allow-Headers: Content-Type
+Allow: HEAD,POST,GET,OPTIONS
+
+HEAD, POST, GET, OPTIONS
+
+ --- SSL READ 1408 BYTES --- 
+~åî»L}(ƒa¸vœ]½8µuOÍ) ğ¡ö£Õ³†šï´KnKXg…¯e¸èzZ£Ó+-¼ï×*ÙİƒR—uß,‹4"8öÒdşª¬W/aOŸt·_YÃÜò½"~¥Ô Ïø¡â{åûü{Ê¶…RÄEM±â8Š kˆos^:5&‹×ğ»ÁäÏÍdÙ,#›ú£ég#ÔäXğ.:4lBA1²j-yÜÓ!Ì\~^–R•­“L°±ı8vMœ™q6|29’±”gyóX6#=õF×z‘4M¡‰r„LÍîbòg¡Fóñ¿¦$lÚx`ì¤ĞW'R;²sñ1OşV“«~uûë+¡07mwÄ!ïÔÒ÷…wÕ¼Õ]%¹™ô”zî·×khDU¸`äD¦I†S•ãû:®Ğ"ÃÜÔOwêyû•
+
+ --- SSL READ 1408 BYTES --- 
+hâÜ-û¶Q]z£à{ÃQ ‚šñL?H’§Äõ¬ù¨¯–6*ÇğSÑæ©[âåzöuôÃ7o^œ¼s|óëíÉ¡ı>:<;©¾ßÚ¯ã×/êÏ—/_=²?O^T?¿=|YÕ~ZÕ>}ù¤ú|õæ}Õîi«üéÙé«G'ÚŸÏOşzròÊşzqúê¹ı~õZÕ;«Åü~yò®Îë£g'ÇUÎ›Ã·‡/ív¥³×ïßW}9{÷×‹êÇ»·‡ÇUãä¤Tn
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+m€Ô9¡Z<-€İD?ãZÄ	k¼¡vêÅI{£Ëmn%·%s‚¥Óš¼(á@³Å°íš¾Ï­¡__
+
+ --- SSL READ 736 BYTES --- 
+RÓF43ÁÄ€¨ÑÒuø½|ûùúşùşo*À[=í>Áß8]?pÂÿ»šôV»ğ7×ñÿ®N¾ÕİÿëÙhkñ›gÃjô;ÎÆáaQ3>d|éÛ“‰5s+
+â¾|óñøõ«w'¾ûøèğİ¡â4(”dk-İnV0)›õdÆš_E÷]‘Hü‹/§æ‰‹$MbFï³E%Eß¶=«ië£mbÍğ:*İÇL|¾ë|­]hºr”•Üü(^F˜Ü©òŸDº(~ÃîíÉ!¾o€¬¯nt&K—&w/ÉÇıáıqÌq®>²/×9É/ÖNğ)l9i@ØqWæØÊ3ºÍÀ1K‡J£rÜÕAãDB½Päl66A7s!Vd_ªGPY&¸Hò˜,Ö¾'lqÁ…ƒ2ÁãL°ÜwÂt±H¿8h)òYÊ}'¹ƒ–)W
+ø]–fk§„şQTğ`5õ'¡r‚¶J»Ç–s!}ŒOÂ¶øá½µ`™È4*=	+v¸¥ãhâ=^3Ú–	Ÿl…şn™ Õ{îiˆNÃ¶oì³ÍmøXÎ³ua&eƒg²…ÿÂï'Úrûy×B†X6q|õ·ÿ4¬cˆÊ|Àº:ãçacdÏÃñóĞwtb¼N^„èåÆà^}p¯d-¼ú¿îu=¸Ûƒ{Qî…œš¬†÷ªŞëæğ^‡ã×­á½ÙÛïßÛï!zÂà÷5¶Rõê÷ĞFc¤’Ìu7ÚU˜Æwg_ënµÏçÛ°~2ÿÄğİèİíÅ˜Šˆ‚Ş†6²Ïá<ÕE! ø½“(rO"MèÛ§ƒ´ˆ¶)å£•<	¬bø‡G¡ën€˜
+
+ --- SSL READ 712 BYTES --- 
+POST /trafficmanager/api/v2/player/playlist? HTTP/1.1
+Host: trafficmanager.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/no-referrer
+Content-Type: application/json
+Origin: https://www.phillyvoice.com
+Content-Length: 252
+Connection: keep-alive
+
+{"url":"https://www.phillyvoice.com/staff-contributors/jimmy-kempski/","session":"u3QskclbILI7AoWFICLYowciuAWxugmz","widgetId":"0011r00001qbFvJ_373","publisherId":"phillyvoicecom","dev":"desktop","variantName":"phillyvoicecom|float_1214|A|70","id":516}
+
+ --- SSL READ 1408 BYTES --- 
+ògz¬ÈğLc#yôÊ÷ùšdÁ×
+
+ --- SSL READ 1408 BYTES --- 
+00000001
+õ
+00000001
+Ñ
+00000001
+n
+00000001
+
+00000001
+b
+00000001
+X
+00000001
+r
+00000001
+_
+00000001
+ª
+00000001
+
+00000001
+˜
+00000001
+5
+00000001
+B
+00000001
+Î
+00000001
+ş
+0000001
+y
+3ff0
+«´YÕUı³şĞÈ‡)÷h]ÚÌ®‘JşŞ®ÂŒD~$IŠ8‰•©Ï[Ár°%Œ½‘t?Dyºò‡HÑÌşi
+Ù–e‰vşîÂ÷Z¯¦-‘O…²ê5Ò':~¡|+!ï°åm[aüR
+
+ --- SSL READ 1408 BYTES --- 
+]°¦l›ÉY‹½H²@×”áÑ-V 4)^ËdÃDÄõ>‡ªÍ¼›•‘TMŞÀ;şªÉ‹ñMÈ*+›Ç»üªaó«Æ#µTR$äÁÎR”Då½©1¬u²	jå¯zzÃ%$o˜ºÒ0}u#À¬$ŞY-€¼ı$E<9Ø¾,/2¼>C†½$
+
+ --- SSL READ 1408 BYTES --- 
+7È#×Í#oI²¹şd}‘	õÍ‚d/I6_Ctu9ujâø"jØª®8‰àMaGÇÃ õÇ¥¼aæd=«…f2»%‰Ä$Â 66Ú;§\ÄƒÉ9GÓÜƒpLMøÌ†ø­¤8‰‚û}j¯B×`Z_Œ£{÷~qo¿@ô%êrB—"QÂ7{’iQ\{Íb¿Oë™X¥Y'ÑÇÏâBàoäÅdŠš­|£,j``³N²”>U¹ËHl¬/¤ÉÍµöÆeğ¥‰w¶•àå¬[wªoœñoïšëÙ®ëƒF=tÁæàl\åáfµğA_w¢(ö‡÷=Ø®o,AMš’dZéÜU´©–\w´¶´~ˆí£3 úõmÔÀ‘7³<Êè_V‰zÚ ØiPë°–ÖCmYTiG´u¤ğÅJ­f(ÎìsPÚœm@›z/¥zŠ:,¢¼EÓæ¿¦_B‚7´FF Ñ±]SÀ	ÛIÚè$İœ¡.2ï 6¨ß×¨#jâ†Ÿz½SÍåhŞz°©G]ˆñPoç'¤økÔ2H>aÛÍ3,KzO×Õr·…÷¸£ÖBg=éÈJeÖÎÂ{B:/Q£z1Ö=ğ…Ä­úl¥:í¨}®áCĞàG>«8DİŸàP
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+%kkç2Ü­nÍÜ¯»º.«ª\2tTü“UjàaÜÅÚ0´§¥´/Ãç½USÀkª&¿oNäDêb¸¾ÖŸËÙ)$•ŸTK:;„píÁ°ùeí9SÚÎı#˜hÅÅ5C=c¸ô8Í`š(ébøšÑ•æ¤Ô½ícÊø[ğÈ&XÚÚĞ!^¤İì-OœÇúJÿ`·O!wß½gøñ“P:ÌÓø¹½Ó”ÓS—ßê9üòëíÃùaÑ„nñƒpJ†ãŠaÕhs§1¢¿5ŒÀ|˜ÙP¢e=µ¡¬Ï\`.8¦ª=¢/å(Fbeü´­Õ²/Ô.³•£áŒx‡õsÿÈ”¹É)İÆÆƒŞ0á.™Ê°Lµ,|°E¢­ƒ$´nÅ»ÆŠ”£dj¥a§àçj§6X["[ùOM§4gd/ÃË“ÊxÙcUÖv)´¨!ûK#®âLå=Dõ³tİp‰ql¬´ûArî¹˜ÖıgŠ¯¿Æ?ŸZû 
+ìÌáŸa¡Ÿ­2<&iÏìŒ¬hs—'åp•rêÂ$uåÓœÅ-x¡IÑ€üF;bÕ W#µÌ\]B/n©©8 Œ4’À“‰*t’6e²Qúnuê
+
+ --- SSL READ 1408 BYTES --- 
+Ê8êºEÄ;!0°
+
+ --- SSL READ 2755 BYTES --- 
+HTTP/1.1 200 
+Date: Sat, 19 Dec 2020 16:52:01 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: https://www.phillyvoice.com
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET,POST
+Access-Control-Allow-Headers: Content-Type
+vary: accept-encoding
+Content-Encoding: gzip
+
+94d
+‹
+
+ --- SSL READ 1408 BYTES --- 
+&„ìmwË$Fó¬?
+A`¶ç‘>á¶®Û6‰Š¯IÑB€sØbÖÀ.×>¾Ï•ïßê²Sh
+
+ --- SSL READ 1408 BYTES --- 
+íbÕdø{P2æs~çÃg*8]ÏTcÊ²DGøæ'ç'ÿ§ósç'äœŸ;¾Ä=çò&UŸ{rÎ©ú¤ò3TŸ¡£$Ÿ‰üÌÔg&?sõ™ËÏ«á‘úq1©S¢;Ş;¿Ã04xÑÑ¿8Ş›œŸ;ÅÂó«_Â]7İ‹ü®Ì+•…şÚDõc¨Æºw¢)¢àßêU^€cÙIG²ÚhCX<øùç{$ëèAe3‚hGA¨M§z¼Ô‘Ñ4	CfŠÜZ)ag¯×qíÆÜ±t]T"6ë¸ÈªxÜ'¹[êc8‹xIvÅÕj—“œ8[ï=:UÛBpäyÈ:ˆª'z`³ÎÅ"Wa+­µTx‘aı¼î˜ÖjûàÛ-Â‰YGLÎ¢X…®úÃêËÄ"R†[o¤3O\­D/•íÕº2À¤qB²ëSå€Æ"fÑ1¡O¹y(lÛR‹-k÷ö[¡&0«İWta(‰ÂÏŸ%·Å`)ô›Br›X(ı¦‡VcfÂ‰Ìœú@E3O÷^n=oÄ[`j‚ÈrÆ`÷Ó:Mt‘2 ³ïš3İ¾#áìv{™˜[c™Ç•ÿ˜•¯ÿIš`n•ÃÂ”rİpfÄh6ë~îúO‚lV¢p¶-‰\—x‹æëÎÔuÍõBÖë8J
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+qÒ+Ú'¶\0O`÷#n[ò¼ãğzÕÓòtoÕSy.uø¥UüÒ›/*÷>·÷YV74lÓ$äE¨tü¶YóahH1@ å¶Ïmºƒş¹š¸¾ßc\ãFºc®ÊeŸx.Wªïì“ñáò$ÃÊ1&çÙ‡Ûë›ÆØ‹ÇÉÖnÍsWtŒğb:áWğ`=âòˆ©Ï
+mG‰@ªSÅ!Y€Ïn`PÖC-ˆ¼ãVÔ‹¥ñ®¡pÊ£ ¾ò}9f5^C‘ÛÌâ†!æÿ5G´¿42İC;ëFt.ÙP†™k”£æú0bîşÌ¯m0báˆG	îBÃ.ŒXºcØRª)—ëÚ.j¼Ì	»”Ò€†V+WvòBt±ÌˆOAx°y~4[G¼·sQKÔÛ‚ÉRÇLÀ„µï{Ç©\¤'O#PÇû<[ˆ|ƒ„fĞSKsºöÒ4ŒX]Àã‚“ä#Î7Tl%Ù¦XßÁ²ç]´dY¬’Ç›#6nİÜ4‚Û°qG‚A¬!/¢Šgñ'˜Ìw–,y-„ˆXN“‡”‡2qÇ/Ÿˆ—àãÒ‚W»j€ñ‹m-Ë&Ò1sì’Í2Qª9-}
+õ.öúËôœ÷y‘~G"wÕøÒœ'£ÖÒ¨Á’úĞ–ú$>ö9…èŒ­õE}ï-wVÏ¾QÆ4÷ş›œ²Şñ3çJÇTl%O9¬úM×?¦2B¶}ô£µl‹ëéß;o4 D»âõäpFTù>û'bDµ¹½üŠ*äºg±µUkÚ¤¡zè§rÏ8?k|g-hr
+‰×É¹à’Ë<â%f’•V/"Ôúu±¨{‡û—0G`=(—ÏïòhouZvy„Q­_÷€FlÎ4´YèŸr¹ğâŸòÚguj2ôIĞ¼!Aú¾.¸Åï&‘œXİöº–…rß§u­Ç–è 
+
+ --- SSL READ 776 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=2820&val=%7B%22userAgent%22%3A%7B%22allow%22%3Atrue%2C%22software%22%3A%7B%22nameCode%22%3A%22firefox%22%2C%22ver%22%3A%2284%22%7D%2C%22os%22%3A%7B%22nameCode%22%3A%22linux%22%2C%22ver%22%3Anull%7D%2C%22hw%22%3A%7B%22type%22%3A%22computer%22%2C%22subType%22%3Anull%7D%7D%7D&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=prs&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+¯è·÷q)@RˆÁr¯ÌöN`âóîb€œVİp‹1”&[—1X‘ã€¼ŠM.˜$‰ªN¿åĞşoÑäûsÛÎ.=ºj‡*¨`¹Áûr.ƒÄìKÕ0ÓW'òåî‹C°±‡æ|ˆ›T‹)a¹·4?ÄøÏyjb½ı5å¦MFC”(ª—1õYÿp+ùMõ>Kõ=âT•„*R\.p¶´Òx úµ	d6<ş}A­„°DÉRÕ“k'5•º˜ì­hrş1¦J_‡Å¬;IM½6}lpÎUÅ¾¬”IŞìÇêvp—wO±6ËÂÆÖ+FÁÙ§Ø±ÅUdëeE±nÄ}EÙ{ÄŠÀŸõ“Zƒ=çp÷`o÷™Ï];×+³×İuº=»×­…î:‡{]ÇîÕC»ö½o?;Àç®³|¸¼{Ğëív÷C×Šè:ö¾sp¸ßzè4¥=ìîâswo=ôğ°)í³Şfh×±ë¡†/vìgM_ì8vC¹½İƒr{öİØİ\o–nÁ®êQ=|­Ëöº{ÏvínchC7ìÚÎáF#ví®İØm
+Üm<ØÛìB×Âˆwü˜Ts:İÆ.Şm¨s½‡º‡Ó³ë)ÅlæìÁÈm$]›Ö»Î³ÓmJ¹Û”²×”r¯)p¿)ğ`½ÌîŞî¾İ¨›ô¨òõ{û»·¿V¨}è<;„Ö;ºÇ¿êW‘{kKŞ^ŸPjz[‚šƒ›ƒ›—Ñ®İìlN×½î!4{=p¿)P¶M\8^ëq‡õ8Ñ?ßtÿÈar6‡~÷`wsæ>;Üœ$]g=°g>ÛÛÜíÃgûëk[ì?Û(ÁÙİo(ÁÙİ?Øí:»²»Åµ+‹×âöìíqjôšã¶•Ùsíï>·×·¿èt{İÃ‡"·~ÅÁ¡Üš£zQ=8fjËâ»vÙ4Dû°9ì­u»ãìUzR¬/Ùpğ9½ı^ÃX;½ıİÄNw¿×mím†îõzMçì^¯¾ZTàşz`÷YoãˆÛ=pzprîm„®½êxÑ[>	©Åm,‘®³»vüÉ”İØ˜rc-öº{Ï6;G„nvow¯·W>–ZäfvŸuá6³·z°º»Wì
+
+ --- SSL READ 1408 BYTES --- 
+£—@©1lÜd™5İ“¥ÎWEi€
+
+ --- SSL READ 1408 BYTES --- 
+•$Tñ8ßÏA±™¤ğ{³¤f‰<‰Ï§° ÁÆ¶e¯e™ÉBOe96ªÖUş^ÿ¬YReWõ©%=¥˜§tÉƒêGnÿîRÌn–Ëi&#¥óßoÕ—¯ª$
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 896 BYTES --- 
+ì)±&¥œjFvgË±XøvùÍ÷\—¦gô˜>­ÇéQc´€Dx x›>Ä){Õ&ÛşB*„J‹÷å1ïuÀşõûgî7ÿü¬îÜ…‘Täµ¼ +Qµ0+ÂCzb›°ğªİ7ŸÛ8v]û~,½•oèUØ;²…*k
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:01 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+Îgú¢›B}ówbúø…cĞ·b°êÑ·#Ì`SRDçèØ<Ïñ«¤QW\œ²'Iÿ$Ğ¡‰1ÍŒÍñ»d+–RË–p‰rØ’†-T·!LF˜ÖF˜Û£å<¢¥Ow&.aíœóÛmuš!¹JÌs±áµœ!a	ë›ã«d‹I{±€ÅØ¾dŠ´÷¨uÂ`bÑŠq›2síuÒ(7.\Ã×·&IqeY­ŞPÓP¬X8IäÉ›İßb¨J’#P}×2íç¾¦
+
+ --- SSL READ 1408 BYTES --- 
+^àIM–/CİÉ«¹Ûl¿í¾6thğxÆÚV*+±™×vÓ?üîÜnw›çÅj·YŞÜnîÖŸ·ëéåBB+Iâ]UGØ.î7_µŠNş|E»·GäÖ¢ÁïË^nw·[È¿C6RQwHù7G}\
+E,6§ˆËş¦ºymw÷ı|Ù<½n¶«Íçöõ~¹yIiOa¿°°Š
+
+ --- SSL READ 1408 BYTES --- 
+»ò­•ÃhÖªü¬VOyt´Z™ßAg@}‡àÂ
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 941 BYTES --- 
+
+
+ --- SSL READ 1408 BYTES --- 
+b¶ZÙÚÅÛ¨ªæıÛDO³JıkÔÀíÑ*_¿Gî6«Ş—rï÷è!•AT!ë¬ÈÕ
+
+ --- SSL READ 1408 BYTES --- 
+,®Ù·	f ûÿÈdärd2$hDñDÅÓXÒ‡2Ó¢snHò±İ6Çd#Td€‘÷‰±¼}ue9™~m'#„Š²a]©²3²jE8«–ÕËëËH?±âIP|riá7¢cÌP½A·
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 512 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=2995&val=&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=cur&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+b<FŠ™â	É¬i§ã±±™á	ş62Ç8¯Ír(ùØ1µbl¨)÷4âÙ®½ÛObtXÇhÈ‹Úí“Ğ¼Å‘¾šÅ¾N2Ş<x£±Ö`‰ÇZÙÁ-ø|>ë¢½¸¢z¡\
+,ˆB_JŞ­j¦$×T&¾±-ŞRëÌßŒ:–QçQ©ŒzÙ5•Q”mCrÌ´z¾–•i½ÔŸI\0«
+
+ --- SSL READ 513 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=2998&val=0&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=wre&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1095 BYTES --- 
+ª¸6.Ü¨ˆÈ»1¹×Îa\k_0"êgÕ;,¢zë—Š:8Üíª¨ƒÃİˆú-£Àû‹Œg/"ê¸ì¹'¡ëàÓĞíæøDd8´÷íBõ¼ç:`õööÜ®ü²ã&ÇÇ1˜V½2ĞéxÍ¾¨ÈÒ›îÙx˜¡Ü˜$!YÏÒµÛ/L†×Aì¦è•æë`«
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+00000001
+W
+00000001
+k
+00000001
+š
+00000001
+*
+00000001
+Q
+00000001
+R
+00000001
+Z
+00000001
+ß
+00000001
+v
+00000001
+Ã
+00000001
+´
+00000001
+n
+00000001
+Q
+00000001
+ø
+00000001
+B
+00000001
+A
+00000001
+©
+01
+¬
+3fee
+ó˜D<Ÿ×±áUÇ1]<Î¦ËÇŒóìñ‚/²\òN'‹ÇÅeÍÒŞŸ"BSqßªI"hm¨ZËšÆrUkª‹Ò¥¹¥…æVœ6
+uûv
+v€¢,ì'[æ^½§°ÕhĞÌ©GÁ€×¥bÒ½ÁsDK(|-“È,€$QA;D€ f­HŞzpCò<L2š¦¿Uİ©&ŞÑø…;¦VÜ!æÔÒò^_Õ$ÓbÖ×æx¢KÉı"rügävq¹½Üó}ó3¿3SI
+şA-BK°§‹À-}½ÛØ9§5Ô&5pšÃsRé{É»{gcótl¾VÒ­÷Ø˜ÜøxŒ>#¯>$oÆÈ«§ç³iá›3±QÉÍd)£ğíF³˜§Šˆæ˜é‚‹Æ¥)ªùìy/µDRğ‰ áÃ/d­:l½¼ŸAÒXÌš[6Ã£åÏÆğÉíìGz»­snı‰êœ_ãÍèGF0ÕCt×oLfªdü³)z±˜LU/âßÿ{êë.®LğQjŠ]U
+1ß£ğWÉË
+S- ı8Í½w•õØß@±nb’Ø­Òğ³jgş^‚|¤5sÙ¶QÊıŠ"§gßó5¬q@èÀêLÄ@˜qéñâÔz<^fK38CìØÈu¼dqE¯Ì
+
+ --- SSL READ 513 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=3048&val=0&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=pll&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+	wÜÌá
+îvq²ø<£IàîbÙb÷'‹oÓ›ëÆ]g'‹÷)ı•d‘Ûëæø-#÷Ìw¸HøüòÃÇë~:şp}ùæÌ5Âd¾Xş}CçË$å~{yúşİåÕµkL’
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 394 BYTES --- 
+GET /anyclip-widget/lre-widget/assets/lre_theme/play-big.svg?hash=46b877336b HTTP/1.1
+Host: assets.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+|Ñu~S×©ü²¿Œ¢ºãÊçW|y7Ë åí»ÊË%5x&%3ß<õ±ñbşšÿR™Ä» Ä,N‰2ôÃt|#^Åø_Ùô§-§”h8†‚) EıPlº¼ıñóp¿Òüb*hİ÷Ñûái!°II+Íse0 	%Š±°P§
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 515 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=3172&val=347&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=psh&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+Şå~ªz>x—kbˆ©†—W=õÍ²	0I±–ã–çÍæöNDN`ËÄâ˜`êÜG›¿m¼ÁQ]Ó.tü»Ğñ¶ µo¶ÜçSR¿]n(‚JÛ*Ö7—åø¶>w‰ ı€k¿œßd>­èŞ§şxÇÙwµ¸ß“A‡:äPØ®6{”ï:ş±Š/Šxìì{éMº,CòßMš5H¨•1+§µÒçğè¸ÔŠ˜ËĞø9<:n©˜s¤İÍZ‘HSF<¯Fˆr¢#¦/i?'˜´Ë‚­ãäŞÏÉşÏÅ t:ê´¥°}ßLT„*®4<1à^1ÂÔJU®§»ö³}Tœ¥Y¿ô·Üó_ë=öÂdUF°×¦A`úVŒ}+Â·ÓGp_úİÌ1Z›AUXBH z2ğFá†õXĞn—Ò$Aš‹ZC	E[á-â“¦kÚñD¹™\®Ù^Wƒî& šê;îİ"ú;kçü[Néµ©"é$†Ññ;¦a€zŒø	úFÛpu‚ÑøxÒÈÔ=yu×eş/s6¦œ®yA†[E¢¨o“ÒWQŸ¹€LÜ3R¯æ˜™c²œ.lÈ¿3cˆêS·	ĞSSû/šš]aç‰;ZõósRÂ9ĞvûW±eRğ æªNãÖÀFxÇÙG¹÷¢:ûµcƒ:û?Y¨¬éu˜‘“IÁ1±”]AŸtˆÑ7:lW}ÚôÅ
+
+ --- SSL READ 515 BYTES --- 
+GET /vmp.gif?cid=&inx=&rt=3155&val=616&wnx=0&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=psw&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1050 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Content-Type: image/svg+xml
+Content-Length: 400
+Connection: keep-alive
+x-amz-id-2: 3dvfDrO2beGT2TmQa+lpdRV/zZqLueqA7NTUqXatNHQfvbuDn5znyZua2TYTiFiVqe09T0vTJ8w=
+x-amz-request-id: 3D0A94541F9CF2AF
+x-amz-meta-s3b-last-modified: 20190806T131201Z
+x-amz-version-id: P54LBC7dA7.CKZKZL0usNEXn5r08cUmk
+Accept-Ranges: bytes
+Server: AmazonS3
+Content-Encoding: gzip
+Vary: Accept-Encoding
+X-LLID: 902a628e0f7eedc7310056930168c6d7
+Age: 116
+Last-Modified: Tue, 06 Aug 2019 13:18:15 GMT
+Expires: Sat, 19 Dec 2020 20:50:06 GMT
+Cache-Control: public,max-age=14400
+Access-Control-Allow-Origin: *
+
+‹
+
+ --- SSL READ 545 BYTES --- 
+GET /vmp.gif?cid=ifmfu4tgpe4wontymrgwqvkynbkw6m2z&inx=0&rt=3295&val=&wnx=1&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=pli&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+m÷‰X"OY©~XZãfG*âØèJ”ô#)Ul°Ê²h	Õ¢«U‹ii¡S±
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+:İÔ0	
+&Šh(oÜ«lİëêVÚn‹q¸ªÜ1Ä=É½/•l9‰¾o•ÃŞiÀ.ŞÑf„×ôJù-ƒ1Wx^›;©<­n|ÂÀ‚xˆ¯ÒO²˜®*®bÁ*†ì1±sœeÍ8ó@Î–é’üü²cA™iñêfÖ,y&Ø« äAS4™@ˆÁtØ‚TáŠ¥Â[½ı›hà%”Ú®«d`¢)Àzõ:™p²ãˆ‹ã4ÃK•;Ëš&˜¥%Ë9*t˜”ºZ¶)¬ÒXØ1ydà`{ˆ©u{G6vÄ#Awá‘vñ®x
+ÉàŠ'6!g;ûğB½.îÉÄ²Œı]ù² ƒı]Yøì–º{û¸»™¢`.î9mÛ]È]{jšˆ—]ûdº·Cçdâ!äÚïB¶…xëuö!ßlòSÆt¡…öÚ}^:B}œhdÉ‡œaI>`Cb#içxm±A9q@ü3ô
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+=êŠæèÃŞcÑ_ß–\3PLªc5±E\ }Ê¶ØóôûÄô•™˜¦ğª\3ùP’¾4ñx^ŒÆjå«ö›?øghúøQµİ¸úy^–í&tZ3~ ÚôAòyê[
+°ÓäbàG)ÉÜéæ½²vä
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+19.Í!ï¿s—á%s}|ÅÜ¿bn„ÿfnŒß1wŒ_37ÃßÜ	~ÏÜü†¹3<§n€õ€¹f.Ïsüq}Â~È$‚È¦Î«¨Óu*çWÌİqDÍ;¨zÇuï8¢òŞÃãø;§âoÑUÈgæ†¹Äë°!ù3ãŠ›k t#V œG¬ãxˆÊµã›á ÓÉñçíÒ¤»@¹VêKUHĞkÙJğSe³—~CB˜h-ù$?
+p€}ü2¼e>"ï?†³Ö-‹e@11ªfµ_¶}ˆöÜ"lµò[„¡ 0¤ªG*2ü)ÛæH¬æÿ›¶7ïnÛfú†ÿ÷§°y÷ÒMT0MR‹-2ˆ/ÙÚlMÒ$­.5$A‰5ER$-Ûµô|ö÷`
+
+ --- SSL READ 1408 BYTES --- 
+V*çp+îİ…ÃUÊ¢ÜvÄ»*\È?Tdêb·2­P%ß‡êšŒ¥ò¥‡î×küg‹üg©É¸	Q,ëx0óÕg*bîÿÅTìàÈ3>•o"–^–uâ¢Äµéx,…GnÙ
+à©Jå‚Ğğ52GqT…wåT1KÑ•ª‰eõÖküÇöéàC¨ºRßÉ‹o"¥Es‘ÆpÂêé²?„ªƒ÷MÜÙ)"›ÙÅJ_»³y¼dmÑİ"z¯ˆUÙÑûEô+v·«Ş~y€Ö˜Æãü¹³H`<<r´pµêv~à|cš©H€î¿Hãcš™Hø
+ìÓÄ"M\èøOã–iZáY'k<‹Û/Š§›€Ju°
+ÇÜ5v$vNJ.ÔByBİÿıPfm™˜„¸Ú°µê„ñöì¾ŠkÚç·wJµ™>³Êgj-œ“­íi\ÇBeË¿FMqË7ßl%ğBÁë¥Pm&à ‰ST:ˆ{„ÊÖ¬ÈY.S]Îz9°Íò¿€´ˆA±@¸ÃQÜrŸusîdƒ:u	ıF¡^«H·D½ZîúA1"™V[„¿!_-¤h]G%2Z#ÏªÈëêæÆU‘íÙğ‹ šZ¯q¼£-”¸N+.ÊAÀÓÊqL“„]“¦W,vNÚ3(Rã;M µšÊy1¨É'œƒI<-¤`G¨¨…ê!\/ÁkàkªNc±=^ÅdÃ5+¨+´Íßš‰â5Nãíİ^
+
+ --- SSL READ 401 BYTES --- 
+GET /AXBhTaxz8Zf-M8wXMRQW/1582180485374_248x140_thumbnail.jpg?wid=0011r00001qbFvJ_373 HTTP/1.1
+Host: cdn5.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+ã:RBîDûv03ğZ#õ—6y¬šØßS‹6™-ÉUÁeè0	ê,şŠ9Y^#^+œ·D)L€èäÚœ¶®UY>¼Ñ/ãÍÄ¾[N…ç±Šì«zÃŸŠË#,®ìxÓ/b|5GöEüƒRzİŒÙ´KS+UH·è1É–	2t:ôqaT¥2‘¥	LPS»6	)4¨í|S"
+c)®öjEµÙ©n™À‹_H^ü2nŞ×T½”AO¶Ï!^±šìñı'ÏÒñ;×ÒñOSKÇŸ¹+qÁŞ.³tLù—Yúz[zö¼f9­ò}^ˆÕ ´ ö¼¥?ŸÆ6‡‚â@ÇÏâÆbR¿`O°GtÛ{DÓ)\Öe•Ut¹cïPŸ2lìM*ÂÅò
+
+ --- SSL READ 306 BYTES --- 
+GET /en_US/fbevents.js HTTP/1.1
+Host: connect.facebook.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 2853 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Content-Type: image/jpeg
+Content-Length: 14432
+Connection: keep-alive
+x-amz-id-2: lbli+zJDBYcvEjqG5c0MYpvsFhYA90l3KlBHbDLNO4DJS9HsWbI51Mh5yNttDVjdeGBGarB0NgA=
+x-amz-request-id: CA423F4AE849FA9D
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 238235
+Last-Modified: Thu, 20 Feb 2020 06:34:46 GMT
+X-LLID: 98dd4e4c46368f3776771d194c497e8d
+Cache-Control: public,max-age=86400
+Access-Control-Allow-Origin: *
+
+ÿØÿà
+
+ --- SSL READ 1408 BYTES --- 
+ˆDÀsØÜÕéºÙ{<³Ñ¬ÛÅÑ1Ee ‚ñ8êtİ4ÍlıLL<;<´¯~nÔe†ìª"³.ÏïÑ#S_zÿdp<üùª#\¨˜ÍI7Ğ{ƒÑhh÷õşhø3Ôt=õT;²ÁázhíÆûÜä£Avùg•Ïû{›½Z`3°_ğÀj0‰qT9Pà«rDõu„oùÂú#â#ßSo÷Ÿ“–SjJt{ôxjO»]t[<Nø=Ã<^æ	ÂşãÇäØ.ƒ´¾…qı{å'ÂÆvoÊW5!{Jn´™=#Ó›=NÕ+ÂgëÕ£™}Õí¢ˆLÇW|«e,W#ì#ìwITÄŸõG¶ˆ
+
+ --- SSL READ 12044 BYTES --- 
+mro.½Š·#¦øs§ö6âì<­:ê)L‡Õ¦8#n¶şN=R‚Æ§Ôè	Kì¸ÈRR4’£å~Ÿ¶:ÓjÊöI°^h8–•÷nœì}pYƒØ± ;
+
+ --- SSL READ 403 BYTES --- 
+GET /uwt.js HTTP/1.1
+Host: static.ads-twitter.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+If-Modified-Since: Fri, 04 Dec 2020 00:33:09 GMT
+If-None-Match: "a4cc3f907681b24a3efd540acd5d2996+gzip"
+
+
+
+ --- SSL READ 1242 BYTES --- 
+HTTP/1.1 200 OK
+content-security-policy: default-src * data: blob: 'self';script-src *.facebook.com *.fbcdn.net *.facebook.net *.google-analytics.com *.virtualearth.net *.google.com 127.0.0.1:* *.spotilocal.com:* 'unsafe-inline' 'unsafe-eval' blob: data: 'self';style-src data: blob: 'unsafe-inline' *;connect-src *.facebook.com facebook.com *.fbcdn.net *.facebook.net *.spotilocal.com:* wss://*.facebook.com:* https://fb.scanandcleanlocal.com:* attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self';block-all-mixed-content;upgrade-insecure-requests;
+Cache-Control: public, max-age=1200
+x-fb-rlafr: 0
+X-Frame-Options: DENY
+Content-Encoding: gzip
+cross-origin-resource-policy: cross-origin
+X-XSS-Protection: 0
+Strict-Transport-Security: max-age=31536000; preload; includeSubDomains
+Content-Type: application/x-javascript; charset=utf-8
+X-Content-Type-Options: nosniff
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Vary: Accept-Encoding
+Pragma: public
+X-FB-Debug: Bbpj90dOS87kUS056ObV4QsGaPthDCiNrG+F+6FBsL1uyZfY7mSn5pCJZR3VqnHXjXSpL8KNNYK2mck96OY+vw==
+X-FB-TRIP-ID: 1512268381
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Alt-Svc: h3-29=":443"; ma=3600,h3-27=":443"; ma=3600
+Connection: keep-alive
+Content-Length: 23366
+
+
+
+ --- SSL READ 1114 BYTES --- 
+)±ã)8^b)ğ#¾Rñ•Š¯¥øZŠ/*¾¨øÊÄW&s‘Q“"î\F‹o7ßn.¾™Y@•5ş)&÷®õ7•ËÂåÓ‡/f•\ËÎ©õÕı¶n‹ï·¨”ÑX«bÜ(/–µj‹—û!VşÛR¼x.×èbY­Õ¤Z¦œrSN·,ƒ–d™‚ğ2[Z·ªÜ˜
+Â¹¥äÊÓ„ÜCËd³¨Ø
+
+ --- SSL READ 16384 BYTES --- 
+‹
+
+ --- SSL READ 635 BYTES --- 
+GET /taboolaaccount-elyonsmediahorizonscom/log/3/mark?tim=08%3A52%3A00.976&item-url=https%3A//4846802.fls.doubleclick.net/ddm/fls/r/src%3D4846802%3Btype%3Dphill0%3Bcat%3Dphill0%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D3700666036330.261%3B%7Eoref%3Dhttps%3A//www.phillyvoice.com/&marking-type=PhillyVoice_Remarketing HTTP/1.1
+Host: trc.taboola.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 395 BYTES --- 
+HTTP/1.1 304 Not Modified
+Connection: keep-alive
+Date: Sat, 19 Dec 2020 16:52:02 GMT
+Via: 1.1 varnish
+Cache-Control: no-cache
+ETag: "a4cc3f907681b24a3efd540acd5d2996+gzip"
+Age: 32441
+X-Served-By: cache-ewr18139-EWR
+X-Cache: HIT
+X-Timer: S1608396723.807334,VS0,VE0
+Vary: Accept-Encoding,Host
+P3P: CP="CAO DSP LAW CURa ADMa DEVa TAIa PSAa PSDa IVAa IVDa OUR BUS IND UNI COM NAV INT"
+
+
+
+ --- SSL READ 535 BYTES --- 
+HTTP/1.1 204 No Content
+Connection: keep-alive
+Server: nginx
+Content-Type: image/gif
+P3P: policyref="http://trc.taboola.com/p3p.xml", CP="NOI DSP COR LAW NID CURa ADMa DEVa PSAa PSDa OUR BUS IND UNI COM NAV INT DEM"
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Accept-Ranges: bytes
+Date: Sat, 19 Dec 2020 16:52:03 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ewr18155-EWR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1608396723.999548,VS0,VE3
+X-vcl-time-ms: 3
+
+
+
+ --- SSL READ 1408 BYTES --- 
+00000001
+%
+00000001
+¶
+00000001
+£
+00000001
+M
+00000001
+É
+00000001
+"
+00000001
+Q
+00000001
+)
+00000001
+ş
+00000001
+3
+00000001
+F
+00000001
+¶
+00000001
+£
+00000001
+…
+00000001
+â
+00000001
+ƒ
+00000001
+&
+00000001
+›
+00000001
+6
+00000001
+
+000001
+²
+3fdf
+dëªé2ÚBçâÈ|!;K~ÿIU%˜SzóØákÅG˜Aäw
+ÂNZwqÍÒ»ÀS
+
+ --- SSL READ 5581 BYTES --- 
+få5È[‰p7òV˜&8„\«e0‰…®g„0 š Ô­ä‘F5!e&t4^°»rX©‹w9¤ôP:}×§ñ8–l8Â·¤ÕÚ1BŠÀ4Ãİ]j$ô7—4÷è’ê8!"™Í‹{ŞA+I5…Ù¢ÖHÁ0Üİ­dc&k	Œ1\t²Ãp„BN´-…ª¦`Möø8‰)ÂGt”ÜL²”÷§ê=S›:UiŸÅ”
+
+ --- SSL READ 401 BYTES --- 
+GET /AWy10UojNRE8glqe7HrB/1566418577802_248x140_thumbnail.jpg?wid=0011r00001qbFvJ_373 HTTP/1.1
+Host: cdn5.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+>ü÷y§3Ÿ«._Cğ„\ĞM"jöbû¤/Oó¯kª5[ÚĞ’4i(;4¹ —ÀşhšK‘Ó{‘÷/ÁìÁkÁ½šˆök˜û—°öÒ®–ºâûÓ2]äåa*
+
+ --- SSL READ 1400 BYTES --- 
+@\\úËm"Ü¹Üô-[4Œ@¹ò‚·Ê-èƒßÖXGÜla–¦–•C\e.y•¤¦¸ßHšª¹{ÿ¶/ªöEÕÛúk•0ÍX¯’¥ÃE©vVÊÉ’Îdªy[Êm!ÛB lÁVÛ‚Êv¾rW¸pã,;¼%ôĞ…F¸/G&ß\ÂŒ'¦.½+\ÛH<¹‘øÏİH” prX<—²*†ª£ÛIpšN¨¢Q»%¦ºb—.òâÉ³(WÂ6„&›èUxX€”‘$üCPğÄ0qjî@1öt¡}Õ9(E<^
+
+ --- SSL READ 3053 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:03 GMT
+Content-Type: image/jpeg
+Content-Length: 18987
+Connection: keep-alive
+x-amz-id-2: Z9JdHcGDkHh8Bq7pA7ctK6IViHyOD7sMH4m0xlA0M54F02/WWhWUC+QBrhXTfxUhAB6FWmbixRQ=
+x-amz-request-id: 07FBC10A6072132F
+Accept-Ranges: bytes
+Server: AmazonS3
+Age: 109401
+Last-Modified: Wed, 21 Aug 2019 20:16:18 GMT
+X-LLID: 7dab9e23d48a6008cbc9209d9d80c929
+Cache-Control: public,max-age=86400
+Access-Control-Allow-Origin: *
+
+ÿØÿà
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+jáöóÉ‹X}ã1àAú†5ªÒòéİõö…¹E1{¡³¶—şßázµqW°y/ØÆÅÜØ„Åi]Á&¤¹~ Æ1^Á=H0gmF* ~yåû 9&-‡ñÒÛ|Îş=ù:¡;\d÷Æ
+¬>¼Æü¬øÔiö‘SöÎf/¼­bq«cŠ
+®VÂî¹T>9µš8È–úESŒfÙ®4ÿ˜±…À)âüŞD•ì*H”‡i³jÉfNâÔ¤7‡U=ßêúBXnŠÚs0vçĞ¼¹üã¶ĞNPÊv€ƒQ1¤‘­.4š´37iWÎª´9®vÍ(ªÍF]è>_Üïx|ƒÛIn™,±Ï›Ë«Xİà ò1ib¨41-
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 16384 BYTES --- 
+3¥m9¢uÉ-å¸à0éß¯ùÍm|~—ÌñàGå°³@Sp8ù›ÓµbéR¬69ä3mÁ¶?Î¸jE¤~·ÂÍ<²’}¿V~ü+ÖgñÂïx¶öâ9nu=Öâéã`TÊÑ)É²1ÛvşÙTñÖ¼Ûö
+
+ --- SSL READ 1408 BYTES --- 
+ÜVµ­Aƒ¨}Çğêñ¿È3ˆf,òo¬Nû†‰]}c7qêÂ=­‚•+Æ’C†í-‚…W1ö	Ùûqº¯9›ïÇşş€6&hŸ{LÆúdGÙ0jêÅ·ã.ÔQjqò¹‹şÍ¤a<U–Íâ›]½s‚ZÏß2¶iÌiÎÔñ}Ò(ãŒ¥d.™j 3šÑÔRÍØa)kÜOëµÅœàûâ*À2zºƒ\®!™e¬‘–²%K3†şí¬”5ÿ–ô›l¹Ø¿ß±Å5Ëò§×a(dÈªZ~§,?§yÎÒ»oŠ°tÀÓg¦H
+
+ --- SSL READ 15 BYTES --- 
+OÜÑK8¢ºã±â×øÏÿÙ
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+Ñmcø˜Ùİ.CŞ˜Mˆ£¹rüå0‚W[>´yÃ6_³_·”6v»İÉJü@¾ÒÅ3“N³Ú€œ²6€÷Œ‰ÍÀaNl±&	CûR!Íéªş_nGeù	d¦ŞĞèë#½7Ô;5Œu‡¸]uúèÑqÍs5}üø±9@ö”ø]•ıåtT÷/ù“no¤úºyl4òñy‘ÓGs+#gÄºªû—ßQ¿\ÈÈœt‡úĞĞ'Æ¨ãEò|¶*´g@Ü®êüÅ:ªÿ—õ&İ9Ğû}c4Ösry™ÓGÌ­P£Mõ'İ¾aœú'½ÑèH4˜tS×õ½o„DÃI×<1ãŞ`4|ÚIt<éöÍşÈ=£÷#$:™tãc]ïúÆğH4štÍ^o8˜'Ç£¯“ho7·mÔ™³×û"¯”Ş{F¯ÿ#T2ÌI×8ÑûC½7<1d²õxãı¡94FƒJFÒ5Gæh8Ğõá‘	†wo8èzæè;ÉÄxjKIß0GÆ±~|Ò:˜ö[;–dry•jó¤gr2†Ã~•F[ùô$‘Şoõ0ì÷ãc£}(õ·Zv"iäó~«/¶#ÓĞ‡£Ñ¨}$é[™m$Lº½Á¨××O†ú DßH!>Kz'º1ÔOz?B ^Ÿa¯ß?9¡PŸ×çdÄãöOšÚû>&İÁğ¤ßö{'?B!^#óx`{C}ø4âSÖĞ‡z¯×ü‰øZk{ƒ1ĞD|1Oºy281G?@#¶‘Ş`Ø4Öï%Ñ1ßEøòqÒ?nÇ½ï¥_iÍŞğ„ïCó;‰äşÅ³³ŒÇœœ·¡­Ú˜'’>Î_œÊ¢·LóØìÌ“^ë3Œ­LIÿ/Na¹
+
+ --- SSL READ 395 BYTES --- 
+GET /uwt.js HTTP/1.1
+Host: static.ads-twitter.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+If-Modified-Since: Fri, 04 Dec 2020 00:33:09 GMT
+If-None-Match: "a4cc3f907681b24a3efd540acd5d2996+gzip"
+
+
+
+ --- SSL READ 1408 BYTES --- 
+ùØ³½.9Aî2%–ôØ™<~üØã¹o`&‡m—Ø€oçj¸Ài‚ìpñøä&¾rM·ĞÆÚPò®¤Îm—¨tqzàY:uW¦åv{6šèT'<pd»ä>3,Õİ~«YoÆÀˆ(®²g¶£8çŸbìbe¦àùBU®ÎÒúéIö!S z,â8	¾_—‘œÑğ·¯şñ£[i&"¹HwÎÉ'¶şv9UĞ¦‚í|ñ5i‚J»Ùÿ{a»Z¨:İÊ¤û£ºÚs!ùŠsxRÀ}F‹M 6ÑzZX@pÖvÔ|BHâ4oU£#Eàµ!—¶Cî×¶GT¯Ró4×!ÊßÜÁH¼
+
+ --- SSL READ 1408 BYTES --- 
+Ä$~~ğ`ş+‘¥„ï®tá[¢JMLéÂ·D”.<$~tñ)à¥‹/À’.K¸®%“HÑÅg^o™®¸lÍwbF×ÓI
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+¾iÖ­’
+
+ --- SSL READ 395 BYTES --- 
+HTTP/1.1 304 Not Modified
+Connection: keep-alive
+Date: Sat, 19 Dec 2020 16:52:03 GMT
+Via: 1.1 varnish
+Cache-Control: no-cache
+ETag: "a4cc3f907681b24a3efd540acd5d2996+gzip"
+Age: 32441
+X-Served-By: cache-ewr18139-EWR
+X-Cache: HIT
+X-Timer: S1608396723.225731,VS0,VE0
+Vary: Accept-Encoding,Host
+P3P: CP="CAO DSP LAW CURa ADMa DEVa TAIa PSAa PSDa IVAa IVDa OUR BUS IND UNI COM NAV INT"
+
+
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 1408 BYTES --- 
+ÿ˜u¬è¡vøtro®ÑÑ+ÿùÉPç±Å¸“v*İ²TÅRp•äÉ¬ÓQ”âÂ}ÒY®êU•£ª–o8“«)¤óô·Ôz-Bv‘oXŸ«euªpæ®ˆô¬ö?
+†ìß§uSB;¶Ñ‰°åRD<œØ×°İÓœæ|ÒXÂïÜvO1w¤Ï|`
+Y.)„V)M“‚yBı"2ú¥’…É§Â²<§ WÑrÔ³Nç@RÛ#Ê‘Òõ ½\Å¾tÓ,Q`é)ÈæLƒWy,Î¾ªY×@]Îác5M!„­V
+üòÜ•²jE…Ğ§)hµÚğ<Ò„î=¢Â6+!nZXqŞ8ªñE>Ÿ*S¢ÛÓG¬¹1ÎO»İ‰5šzÎò–æ|ÙÙ
+²Dåg§ªj<òe„ÕÊ Ä/c+ÊÙóù)RÆ‰
+vväˆ,U~Ìø®q £µG|9‚É›y„­ygO‰g¹DøÛõáj»§¿ò~.–J9D.m¤2Š5³¦ÊQ˜/ZŞDø¢ô[Ãÿ‹´å<&îé«$åØT‹©ˆÁD`¹X?aŞØ5ş¥åö	_S+¯‚ì5}­:hµÒ7¯ûÎ©·ŸÄi^pÁŠ¸Rù…8…x­ØÁÖø×íú:õMëuzÊ‰Eü¨†)_x-¾4ª5ïw~L¦Õíˆ8kü±!ğ¶ü£ÆtÖéü¬…Îb“$~µcÃ§§Î©Çäb«ÒÆÒ
+K©90|0•‘ª™"KQÖøMºÃ@`‹Ü©J+û‰|k-Êsğ§a0HEè·.ğT
+ŸâOé–ŞÚK@y®üGéªôñã~Çl Ø©tËoß¦ähü?ÿ=úïéÿ™Mñ;ñyjñßäwÿ.İë}JşçhŠ_§0GÓ/ºZUŸ1ßÀ×øóF“ÊW>`¦´
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+ÒÉRbt”2çºéÁÑÓ­×
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+ø¤ˆØëêñ<¥«_º¥kXº…á÷œ@ËŒ¨ï@~Ïî@ç~áH§Äê€Gº¥kX¸8e¤Ë(\ÃÂ#]½ÒÕ/]ƒÒ5*\ƒ2í Èˆ²N 
+Tˆ"]ıÒ5(]ÃÒu,\àD¹Éˆúˆ¢Àx4Oú
+ş
+
+ --- SSL READ 1142 BYTES --- 
+‡â?ìÿ%ÚÀ1Œ_©k}ÿª˜¡Œ-îÿZgÏWhšÒ¤e$Ï)Hj÷6ñ›:Ëeg_)|rı°Ùìa¦ÁÒş„¶AåØ¨•±¨nÿŠ†²ä”ÎŸI¡(‹˜¼J¨…uC(†RCÌèÈüØå]éÓîtº¦xÉÀî’©ˆ9lÓ:‰3Ç]ìˆ§N
+ x
+
+ --- SSL READ 1408 BYTES --- 
+00000001
+]
+00000001
+i
+00000001
+‘
+00000001
+Û
+00000001
+Î
+00000001
+0
+00000001
+S
+00000001
+Ó
+00000001
+>
+00000001
+—
+00000001
+Í
+00000001
+P
+00000001
+	
+00000001
+f
+00000001
+
+00000001
+
+00000001
+
+0000001
+n
+3fee
+zî·¸U¨Ö'æ³µËNeMØ±™$xûòºuiøŞ=İF^‚eÎõö›ûÒæçÛw1®»²èÉ›)ºRØqäpU°É^+˜à6›J$aêL@ÂBñ‚Fv.È3½B~İ¼j<ºÍæ÷D$ˆİB§ÏÌ½üÙ¾ÏÎUĞ:kÎ7Po$IäÙiBûe§ªÌ|ò{ïTÈÍv¦º$5"ÀT+2CeJã˜Œ)¶å—¥Ä	qîYØòz>Øæÿ"a†üÉÊJÔ á0ª|”Ã¤"i¾º¹ê‹\ZÉ>¾<?¯hhS¬Éúr“Ñ‹³‡n³&bvı(7ıİ'5”`Zü´ZY‡ê½ãi£ß­Åsøc«RN™¤‹Ê»>IÖR ŠFÚSÕ¼Çr©:Í¦%·Æ;EuPäà(ÉEá¹a¦ß=–ï	>ñT9·ã!rÙecB×çÔ¢Ëåf˜w¸\òsÂ¡µ-¢On'ú=}âÉª
+
+ --- SSL READ 1408 BYTES --- 
+’kşÏ4N†Ï4“‡‰¿bÌÎ³å²÷zÖg46ØXÛœ5›S6èOs'ÙNT@`4PÇ04TâTÂ¤\#¸¡×0eÃÈ{Yepï•µÁ–ğr©NåN¯¢uMuâP„`KØbQ¢Ğßø~¸Øº„LeTç¥¨Å×VM³fxºÀ‘*$îéc¬N5=àE©öÀ!Õr/í?„¶÷ê= éíÃP[İ«©¶šèŸUÍ³ß•f‰]íV¼Ä¡ì	±¤?ÄA¢õ‚ÔXÒbF¬u4a”#(WÒ¸Ä3ÈOÔQm0œPd]É]`äÍ ©7$á"E«Å•å²*Œ†Íê`ìæZ–9ª{k¹ŸíaEÓ¾u†4‰
+š¢‡u5RÈ¨A¦İÑ1û	û}°,”6ìqÃi8qÃ%—Ş‘„ı:AÃ¥ê7hpGRöëö;¶Ù¯Gá7`¿ñ˜ı>@èƒÃ~²ïïzíöG"ök‡ì×ñá—ƒ¿ßÔa¿ã„ıN ñôıûø¥ğ©fì7³ß4†_ğ™³8š4hÚ‘ÆÈkŒ<¿1ŠXõÙï¤1Šc¿1qÚ˜ĞÆÄkL¢Æ$mx
+
+ --- SSL READ 1408 BYTES --- 
+Ê‡çE…=2NI=ˆÔnOŠ÷Îõ^ìÇÂs§´¢n–\VÓ¨"ËÎÍÔßâ¹~$İN^HîTw{²€İfe‘Ë¤S
+é.\Iú!ÑÌËHD¥à\ÕVè2±Õ¿ôø]ØáIğ[mwöÑÜV´ÛÕ4ë¯_? ¯7ò¥†ğFkfdËOqr_'ÏK ú
+
+ --- SSL READ 413 BYTES --- 
+GET /t?ntv_url=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ntv_fpc=f9176c3a-1c91-4a7c-a06c-e5e4b4588da7 HTTP/1.1
+Host: jadserve.postrelease.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+ŒnwÍ¨v¯×îö:{{¨m´Ù„êô:ÚÓµ»;ûİvû
+
+ --- SSL READ 324 BYTES --- 
+GET /vast/362290 HTTP/1.1
+Host: vid.springserve.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Connection: keep-alive
+
+
+
+ --- SSL READ 1408 BYTES --- 
+2r“Õ+ë!­ç$f˜§‹T˜Ïcç!ÛeÅY"¤sS,=k+BVègİÖÇ
+˜ïL3eëvA{”¸.€¢›™CË±$ÔÂ1qëìª
+@#÷ô±¡´bªºš†¦©JÑ}ª‘­iˆ®FzáK\Ü
+
+ --- SSL READ 4196 BYTES --- 
+HTTP/1.1 200 
+Date: Sat, 19 Dec 2020 16:52:03 GMT
+Content-Type: text/javascript;charset=UTF-8
+Content-Length: 3453
+Connection: keep-alive
+Server: nginx/1.12.1
+Expires: Mon, 1 Jan 1990 12:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Pragma: no-cache
+Access-Control-Allow-Origin: *
+P3P: CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Set-Cookie: visitor=30f1f742-8074-406e-ad30-5cf7e3e4dcc7; Domain=.postrelease.com; Expires=Sun, 19-Dec-2021 16:52:03 GMT; Path=/; Secure; SameSite=None;
+Set-Cookie: status=0; Domain=.postrelease.com; Expires=Sun, 19-Dec-2021 16:52:03 GMT; Path=/; Secure; SameSite=None;
+Content-Encoding: gzip
+
+‹
+
+ --- SSL READ 330 BYTES --- 
+HEAD /instream/video/client.js HTTP/1.1
+Host: s0.2mdn.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Connection: keep-alive
+
+
+
+ --- SSL READ 620 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:03 GMT
+Content-Type: application/xml;charset=UTF-8
+Content-Length: 22
+Connection: keep-alive
+Server: nginx
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: ssid=b7529c21-b47c-4773-9fa2-0fecc2a81f9b;Version=1;Domain=.springserve.com;Path=/;Max-Age=31449600;Secure;Expires=Sat, 18 Dec 2021 16:52:03 GMT;SameSite=None
+Set-Cookie: sst=1608396723817;Version=1;Domain=.springserve.com;Path=/;Max-Age=31449600;Secure;Expires=Sat, 18 Dec 2021 16:52:03 GMT;SameSite=None
+Cache-Control: max-age=0, no-cache, no-store
+
+<VAST version="3.0" />
+
+ --- SSL READ 1408 BYTES --- 
+¢¨#fOÇôFªı»NTwN±Fºšõ™|EŸÇb¶­`j–òÿoÍĞ?Óç„B×”*sŞ'^ÇÏEh„Ùª$zh¹ìš{Å™'4 ‘*Ìvæë±ªøsßñÅDc7Ól´Æ:Û„Î`_òncè¨1(’·ğØ²A›©®À$é]/“-…¢Ø¬}3Ëy6Ÿ*ù˜çÂh©™É,
+ÇQU•·”7]¶2*¡}* e§£Ëå²Üìr  ¢…Ò-—£kŠ“o…Ş§uâb™f$‡aÙØÖcßs€çÂ6[lbí ÷¤¼q¯\Ó.è`Ò®¬7ésJïÅ€3/“­?KxlB°@¥å@;çiNTŞöº¨×C½aQGÖn2Q'ÖlÚÍæŸn³mÎã[2ì«ÿÍÍŸm’f“•ÛlJÒ½˜Æ5×ì¤nÉBêEZ–O¾(±:±ÒƒN¿}²kîœtÿ°·H¿{²#Qª.ëz72òåuêMùÉÌÓ8òúŸÉ'º|w…ı‰h®üM«ÂUtW™,Ï’ÄŒ¨rXÍ´ÜìJ«…şËäùraj1œ¯ÎŞ¿|¼:+dŸâìP>üMj–ßØÙâPjîmRÕÎ*÷ÿ•	Í6ex•S†¥Ï6ßJàmc—FCMÂƒuÌ´(ÿá¹œVë9Ùøé§mÚúOÍØÿÌ^!ûO¤ã‰ëòş<„í€m·Î0›Œæš±˜‡·Î¾õµ›P~§Zg`¹úÌƒî¯\ËØÄ˜–s³éê?maLÔjVc<¤ßi«…ˆ~
+´r˜½İ\ñµZ©¶¦e«+V±†
+
+ --- SSL READ 260 BYTES --- 
+GET /tag/js/gpt.js HTTP/1.1
+Host: www.googletagservices.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+ --- SSL READ 551 BYTES --- 
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Type: text/javascript
+Cross-Origin-Resource-Policy: cross-origin
+Date: Sat, 19 Dec 2020 16:52:03 GMT
+Expires: Sat, 19 Dec 2020 16:52:03 GMT
+Cache-Control: private, max-age=900
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 0
+Transfer-Encoding: chunked
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+J°‹-[jt™-xÚjiî-b§¨4D[¶:$vvüÃ–Y,GfAôËÊUÏxm—È=µ¸²Xå¢ë³ON‡iæÚ‚³5Àÿ»çÿ*¶¶Ú›Øn61sÙ"úÛ¾
+bZ$d
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 1408 BYTES --- 
+@úä–èÆ·¤ÕâsP4k6[µ)cš³l«­öºWgöòJu=®•›µ#CaN%×Øá,‹ªQı­¶†(n£^3·O_$£lrŸBæ¼3áªÁyN‘÷!ŞÑ9œ¢òvÌ—}w†ÈåÓ¥a«ò’"K4ÂNµ.<GTÈNàáU2•FÓd=Ã­-d¼£$“†€D	>–£ÎTM@¿¼eÊ•x-	çkÏÅÎwµÄö”è|—>¥Äƒy½Ì©|?Êµ'åÄõ³^›Ù¯Vÿæ`NHá	êÍÿÙ\š”øQ½Òƒ¡&q—ŸÎ—xÃšÜ:CË].UéÀ·C)EôàõĞ!h0<
+,×<Jª²ëmu-ÕHÅ&•6‘çš”‰Î¯µ*Q£¬UIµUÑ¼â`ı˜«6*>):}¢Ç“p¡rÅ›ièR¬L<×¥ Ü'j2GÑœgŸÎËâkÂÃ/Tu™¥stÁóZÔL¬\JÀéo¦c¥óbDKxÒNÆ1Ç`VB‚0xœ†i¬È«ó'ª*7Wƒ£÷
+—D)¦½÷WAŠC
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+HTTP/1.1 200 OK
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Type: text/javascript
+Timing-Allow-Origin: *
+Date: Sat, 19 Dec 2020 16:52:04 GMT
+Expires: Sat, 19 Dec 2020 16:52:04 GMT
+Cache-Control: private, max-age=900, stale-while-revalidate=3600
+ETag: "728 / 688 of 1000 / last-modified: 1608034737"
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 0
+Alt-Svc: h3-29="googleads.g.doubleclick.net:443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051="googleads.g.doubleclick.net:443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic="googleads.g.doubleclick.net:443"; ma=2592000; v="46,43",quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+
+00000001
+
+00000001
+‹
+00000001
+
+00000001
+
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+,—êÉ¼æ=n®_Ñ‘ODw
+
+ --- SSL READ 1408 BYTES --- 
+ˆ0Ş*\>Eƒ#Â…èíìxÅw$8ş•CöÖá`>½Ù:Ï”vH&“i¸xõE[[¢°MŸ8Ñqif/9c²ƒçwcw
+Ôì!“£k·ša‡µ9 øwâÄçMöz »=YFã©Âd”×•Ós=ü-k
+µ=\[İµùÃÉY®Ašºïâb6
+B]+Â°ˆcC'}‰:,A¿cuÍ^k›ììĞ­`²5n÷œq³çø„¡œºéSYg×nÑBw}
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+D:ú7ëg}œ<ú”Óá˜HÉrîÉ‰rğ]Y.ÑëªèÑX-^ÑSh>9a0òÆBfÓ@4H§4s•"!«tåk!¾«o/¿ı½˜š­ÿ¿W«ìVúÿ©VYjV«8rşõúÏë"Ê_i¿Wô$ÈE7KÿªÂõ•8œCqs‹]
+®VÌQ^K^OÄ÷¦dúJÑ–Ëµ8¼®¥hèl.
+
+ --- SSL READ 1408 BYTES --- 
+¡¡#y¯@Mª =+M,8äô(ô6À‰4@Íà¸)= aIöÖZÒ?û¾ĞÔÓ|í7Ï3vm@jŒµ) ÀƒÅwÖÃÒ0Ğ$i|ğÌ’MÉg°?@…Po.øG_j7AÑ‘‹ÁlsSÓ€¡WÄûè…J1'²Zm+MˆŒ"‰Zç¨±lıam˜ıLÊĞA)DôNg`–ºf§o–»]&·JÛÎÅ;t|µ*Ë—¾µ3©>¢!…ğ¼À\³"eÏö¥2díìTUYhW#‰yœNİHÚ©¾Ãìb´ÜïÓ	XklQÍÉÄŸu”6P©BÇ@Ù²:-8‰¢ÛPF©Î†…Î»,I¿Zuß¤´ê¾Óç¼Îd°ÙèĞ'ÑïØ]4»{qaJcŠÊÀìóùÁ)7Î“	@ö/Îpm®#l–cÁşğ)qÑ, +€Ë!pÊXÉÜ¼­	FÍ-­
+
+ --- SSL READ 1408 BYTES --- 
+|ÔrÖŠ¬OcŞ\—Ì­güg<·ŸËè½Èè,dëš¢1>ÂM,Èkòl{}‘k
+
+ --- SSL READ 1408 BYTES --- 
+EûœnÂcºd
+
+ --- SSL READ 1119 BYTES --- 
+9r¨VA)â¥¸\r´îèj•Í¦ª$N1‡dvJÓˆ0ËLÅUci ‚Ò.*È/Šç³¥J+Tšî¯¿=ÁŠ±oİ!v
+0V°?Ö¼¥¸.k`üÖEg¬ÚÑr)ßÒx&N’/—Š’CÅ…;@.gTß–‚¦fNÈËÀå’‘6<_b»ŸoÛy¥­ğ(Š¡l
+50¥"2ßvÁQ@cp
+µßşçö›şmq·5Ì´üš†Ô¶ctõñê”]ËÂ€Ym…~.ÖÀC
+jdO+“X¥îieÚUr®)şìX4¨'—3kcRæl©vÕa+æ<=Ek6&ª"`ø¶Uß›Óm­OÜXA.(/r´ƒãD%r°«O‹OÕE®>f>›¬¤ÔgÎÃ+U%îr6"®vû°ô–ß‡ım…›u†}\¶
+GÇ(oĞsÙÉtVmËNu°³\*¶çÖTãÂ2™hõ%+Ä­Iˆ}"ŠvçİmâÎ_¨¾2Kíú1(e.egƒè‰Âs÷Ï…
+ëÌË­íz0»áVà'®"%R\`›_m'ÏìŠb•Nô±µAD.,æ8¡Pi6+´Õ&¶û¶¹FpÙ}²\Ú&5ÄJ_£ÈìRíT‚€¼ÜlfSú;U	ºşÚšE¸ãüêhË%¼²ÿ3RÕAÈ`·øî±ïÿŞaßc<bßmCCñÙÖĞ=ÑŞEŠ¢¡@ìhhÊgN”˜‡‘zÂ¼»
+"ùtì%Ş”$ 3h\ˆÒƒ(+”Ö$ßÓ¤¡ÿ³ØÏ¢­ĞKß†ÂHC|Ïjøşjh#2¬ÔE®éó€™ö—ÁÎ½´§üÀ¥­¹e^ÖüÔ»]·ƒ!f?ËåÆÓ*ËÏ'˜Uáu5ùösİ^ßáù}5–Ã­ïğB†<ÿ2´•ŸäjÚ(qFBßsçØtQaFš›r¦3 ƒœéLÆ!/¾¦ÑÜsèõŒ:ŞÈsÌ1Jcz×		\¹×	qîcs‚
+T§yj(T3¾æq²×LQÌ2&şJ’4¢—³Äbs–çf>©qÓAåq&¨ı‹YBP‡Çà2¦x¸œk)#èğçsé@9§mÎ[’gwÎN	F ÃÅºB#K'$¾\™à·­hÆ[{ÈŸøV™ù$…ÑTAÙ§)$r&^BÖW
+R¦¡K}))y“ú¾Œ6D'‹u•h.H“S ™{cF–²EæĞı3Ó 9&	i6ëIøg¢ëcš¼óÆ““ ‰Â—OŠûÿYtõxQµ€S:n#ËÁØ6­ËÒ¤g§à)ú#ë"[/v`ĞC6€å¶ù&|³õRÏj+®
+
+ --- SSL READ 1408 BYTES --- 
+Š6¢8¥_Ê…É6€[‹¬¦Oı(ö»ÇXÊzs
+
+ --- SSL READ 535 BYTES --- 
+POST /j/collect?t=dc&aip=1&_r=3&v=1&_v=j87&tid=UA-56540822-1&cid=1569384814.1608372058&jid=1414935849&gjid=924626510&_gid=652329575.1608372058&_u=QCCAgEABAAAAAE~&z=1774560423 HTTP/1.1
+Host: stats.g.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: text/plain
+Content-Length: 0
+Origin: https://www.phillyvoice.com
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+00000001
+
+00000001
+z
+00000001
+S
+00000001
+w
+00000001
+Á
+00000001
+?
+00000001
+Y
+00000001
+¨
+00000001
+ 
+00000001
+$
+00000001
+i
+003ff5
+WúÛİ|ãª>P9›ê‚¨o¼Öå5]¨Ÿ¥=‡û…j#eFNå©NÑ–K^ãüdÇĞÂ].ïÙfÖl’ü€"ğ¢+Ã–K?QÛ‹£~şWï,Íd¢~™dÇ¹:w—ËWk6Ù•7u›Mu3u—ËÍï‰ê%l…/—§UÒ÷èı¢Öè!èo¶MŞıÑ].eUûSF³õ«5o6ÿm½YÖ¬
+†ùë:Õ,u>rôa@R¨Êep Ç Ü	†š¡<gªj+tº¨y‡w§¬*Ÿ†p†™p¾"F|?\ğ¶e2PÜ:ôœk@ ƒµÂï‹%{?éQä%4òV®©Oää8É9»ŠH%¸?ĞÈ¡A‚D9Ä½öÃäÔñíp….øéô|ğöÄTN§pq}s6¸~g*ğ²® ÁÙ™	E¯¬G•í¤©O_	qúø•7%¯²÷Ë«â…Ğ1Œï^
+Ô
+-VĞÅeÏ7$j\.ğÓ»›ó3Sy—L}¾¹œ³Zš©‚®o7§G¦r`Ùÿ»½*„‚.óŠÂmôëÂ·—W¬vã Œ(`W£ë“³“£›»“/ƒ£›»óÁÍÑ;s}°d¬‹“ÁU9Ò…Àÿ]¦‚>”»ş¯Şl£«u&úxÛ·ßÜak{¬iD"[vWÖ†ZJÍ´™Ÿ½ n6×¼$¯RÚe¯†ß*×“Ğ¹_9mğ)	¦lÏcÕ4Ñ];‘ø‡šötµPË^Ò†M]…Öro°ób¨=AŞ2e9©4YPjMæY°ş„k‚oÂhI~šm?lÅ²ø­ob%^£N¹Ê¨¬&Wò}®©%BA‘@½ã×tÊ™f\o¿¨æıİ¢Wœ{Šfñ.ºZ¨¶ş–&ŸHä±j©Ê+Á4ÕaQ!Î)s´§—õúÜÍ
+ü/å¨hˆÏŸP(fµÒmq½À-àëã‹o¯p\˜öÚ‹+»•ò@ùÚz³P/(³ü’ï6>­ìiÎ‚¥½ÈÒ‘,mÑ³˜öKû!K[<V²´EOó¹³†?oJs¦Ù	Ó¯z˜Óy€%ß,'˜EäêÁU€Æ[jÆø™Ğş3şæ±B_êYU·CË^çEº"?µ›Íu“:ª[Ğ…ÊL¾úæGJ‡^@CµÌø7|õ`[®Dx.ãšüšÍOÀ¹è;ÒjŠ©ºø3÷Ìõj«™%)j-8+ô©¶[@;’`“ÃQˆÜÀ®‚¶\^/`Ëw8‚1
+
+ --- SSL READ 1408 BYTES --- 
+éP@³ír@üœ´'].˜nèÍp€6Fğlû’Œÿ@'‘Å=waF!gÀs2‡‰ä—Q;~¼C¨núĞ¬’Ä­ù<o­@/
+|tˆAÜ$CG2{‘@İW©ˆ³€}7\Ö÷–Üa3 Í¬mÇ9pñ€4‡Ôé®Ù±±è8à•Z(Éßù…v’Ñ€‰óŠŸçŠí2:i3Åè(_oâ«H…(|k“fäB|é
+
+ --- SSL READ 1408 BYTES --- 
+XáÿÜ'N§”ù°¨i†î‡•ü›…Ğ¯€ı‡æ®Æ˜–?ÿçõö}2‹¡Şü|ı¼ØsÇ¡³ä4˜{\ù+ÜÇË| }1€›ÃŸu°Rñ€œÜ#Àˆ•ì“û_³¢.óŸào“À…ù‡‚6Ö«sŠ¬ë•â
+®Ğğ`LÆÔå3D8äñnHgàeƒ¸îSéŞ›]OÂE€ö³Oé?c'?<ˆ	\7gÍ[ÆçÁ0	„†.Xrû’¿-ßyÁ<¼§îOõáãáÙéõ»“«»Ó‹O—ïOï®ßŸ~€®
+‚·ûNÌùªO%0èK±Àg-Ì…ªL“„ÜËà]Sç[ÊbİTï_›"Œ©‹7”Z¾Zf0µø?_ı!ëê$„®–hªÇ^L„è¦²î&ŠÂKĞˆ/:@¶œ…ÄÒ$X©ú°X|Âe ääë
+z<ëfqûÀÖ¿0E	=Rç]ˆ›Áz‚Š?Káz±C"WHÊb¥ì†U`17¾¢ê¨òŠ‡•çÃ o¡Çˆ•²;ßo¨›õHÅCÉ‘˜còSî&Â?û„ÕÏ\WÔ!¾ÏCø7_ItDgÂJÊ¿a`àË—jXõ^ÂÖ¹ÇW…ïÜX®u6+Ê|‹:J}l:Ï@şXôæ%.ìk¹«ú†Õæ„O«5/^Ç1«à˜}s 0Ù±E—<lÊ´ÊšW)Şià%ñ½Ÿ|²¬û–cOgl‚-¼Æ³÷HÌè’ú·‰WJë¯z<|ÈvÃü›oúÂ€)ˆ€p:GÄ¹÷‚ñÇÈÿàñ™¶æÅWqf*ªX¿Zoh&PêwSšDsÇ	+õş0pâ»”§<É³Ôw$u=ö?!şèN®¥R>ÿaVF8§‘Oï"ÊˆV¬”İÅ%CZÅR¡œGmû_.¦/Ãöš”òÙPşU¼ÚiàŞ…£»˜G©­İ¯ãò-À
+
+ --- SSL READ 1408 BYTES --- 
+ŠË…ŠZ­ìãİÊ³$:ólC//\`,ç'ÇºÈ#Ş$³Áb<f·Ì¢Ø}°Í²µ6€”?oØ{úäJGcÂÜ®DëBHRb`à¦”ƒ"–
+´Ş/úüÖ42A'ÉN§yL3x?
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 1408 BYTES --- 
+Ëj†³büŞcäõv*@’ºŠµwß)âu_µZ2Ûu&ò	ØP¯ñgØ¡P«†µ¥àât-m´e¹F„šöhË6eßfGñ©Úx+Üi33±IãZÊ#›ÖùPSA¾0İmÁÒcÓ¢ñŞ“}ªSWÓ>1l²¢¦İ)¼·°©m½#QÌh#K‘¾4ˆpîH¤káFÀºÉ˜5à\‰†=“Æ±ğóVá^íUŸ5Fã„l´ñØZ6¢!¸õå5síe#JÑ¼:n·[md8-îO‹«Ì|•Á¦pYTbà…,é6èTc“¼£p×'ªñ¸'<1šûW…L,_ídïX°×ÚCi­õı–××Á^k\x)D%á¶«w8ÙÖß?Z[ı-ëï¿—¶¢…pïºƒ<}D§6¿bÅd&o ]ÌÇœ¾O=ê3…Œ@ÅxEÓõşî5$‹i¸¯œBI°„¶EªCë Šs<ìò1+¹õ<YãZï)Ä™Ç%ß³¢)?áı®¼6¤œz± Î1ôü
+
+ --- SSL READ 701 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: https://www.phillyvoice.com
+Strict-Transport-Security: max-age=10886400; includeSubDomains; preload
+Date: Sat, 19 Dec 2020 16:52:04 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, must-revalidate
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+Content-Type: text/plain
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 2
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+1g
+
+ --- SSL READ 1408 BYTES --- 
+P¨«ãA#¶…hˆn¸¢ûrJéSÑ~]¥<)¶\:*üz?îÊ¬W*‡m5¥a5Ésl	2ÊYã…Üéµ#°Œ§Åõmt)ßóõ/øÛáİãyL÷8TºÇsàÎÎòëyæ1ç.g²Ò‹M°õ¢y¡9‚F€ÿ#/²Í¬æˆ½OïîØİ:é”q³Õ$ĞIş[å¿8Xı=ÿÒsöşF}²Ç±­õÀÂ¢âhë+Ïyé™'i,¦¦Xa_-ê$crI%—ãÉe•\‹'×0YÄ4c¦ôuº3L/I¸
+
+ --- SSL READ 1408 BYTES --- 
+²“Z²Ú|šüãšŠT/dÚW¿sšöÎN1—6nïìòIñü9¯i{ç…
+ãdÏaºì¼Ğu-ŒúşŸ­n}7ı4bã¿oÅÿf÷İà˜I0ß—¦vÅU¦×/$ù¥97—éŸS{<Å“)çßğÌ»ŸâÍÂs–jº&éöuX¦éŞê°'÷ØwDvóÖ´D?>×é^½‚ù²vË~§-7·ï+¹ï¼”[IÛØ«ÛIµ²¼'/Ì=¼–j{[ôõtÃÙ­|ÿh‰<^ˆ¡âÿ‰Làÿ——ıÿbåÿG6ÿÍ6ıïn	|šSåA¬¢wæÊ’aÿø±ëN§ø¸ëÎ¦˜öÜù‡=·3Å']wŠßöÜ·Sü¡ëLñ°çNqÒsßM¥ÑÕ´jîr¾›•øÁ4İıÓ&ÎˆŒÙ0ó}²GŠn m±Ğ¿/_‡¾Œm‚­É8¶
+
+ --- SSL READ 1408 BYTES --- 
+ÏAä	…fí:Yãhsé}SŞr»¡c7±İªİğİ>²™ªjæ~C3w±fîU3ù…b…/dÙ;è’B«d–»P‚õïâqİ³U÷#’iˆÃ’×æQZRdÌÉ‡µ²'£Ôâ9ÚAğ
+o,õ‚•.^´âŠŸĞû6QqÊ½¼)À{èyB­â¶Â&† [÷œ7ævvnA&Éa¢„Åèc9àÙúÀ‰3Ã h> Oux?QCe®ãñŞÇY!ÊÂİ§‘ù\´,ûY2¾hgç›«?¸M@äƒ9´ôû@”—şræ×šanã!}_aÛ^›'ÙæbÍ/|÷øA»<öEÁÕj›¦Ë|ÊÀÎ!ústÃ˜ibÌx¸ó!Ğ&!»NˆLÙb{å}£õ
+õÍ^»ÒöòĞy˜=C_ËpÛkßê_<=fˆ¨»Ñ·>yì&ĞµÑdOû ’
+şZ›¯r5XœÍÈp"ÆÅåAmD2üE3sË‡	ˆfˆïÏBD:Å`—&Ñº ^gC¯X®p#‡D?&:˜`1E'ÒàÙGOP×1rr·9Ê½âÛ
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+Õ5Ã+)d‚ËÉøÍÖ¦H‰Z‰ŒÄëÎ
+ñœøGMT×N†Ñ=§œ7=¦ébq}ƒŠãM
+ã}6syĞbñ­Îjx†ëÃÌu-KQªĞÖeò$QÌG‘«)Â7Ü_¹¥:±Y$¼ËºÎŸ£âQ_H¼*¢Ì”êº6¶œ¶¾Ï~…hmNbŸ¤X›GZHÿ£B,çsmh¥‹ôrYám|/kÊ%¹"¼\Dex"¾œ~İ¦ôë¤¿”ë/åWaAÍ“`M\•aV‡ÏªˆrŠÚsïh*³)?tWÆT†]ëµ¡å·P¸rrÔg_Š^™º¶Àble•¬èÀUV)Å­§fåiV°”muÒäLèê¨Ò˜3»+ÂKô’‘®¬o…i"Ş«7ïORx«ÊXâ*+É¼*­‰«®ÀÂılml5­¼®_sQ]³ö~¼&®ö*^·ßOSĞõÅ>¡lª­ÑŞ=B&"ğ)i‘æÏÄ—ºÅJaø@8ÁS/³ÿ_
+
+ --- SSL READ 327 BYTES --- 
+GET /adsid/integrator.js?domain=www.phillyvoice.com HTTP/1.1
+Host: adservice.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1598 BYTES --- 
+GET /vmp.gif?cid=ifmfu4tgpe4wontymrgwqvkynbkw6m2z&inx=0&rt=5596&val=ad%3Dhttps%253A%252F%252Fvid.springserve.com%252Fvast%252F313861%253Fima%253D1%2526w%253D616%2526h%253D347%2526url%253Dhttps%25253A%25252F%25252Fwww.phillyvoice.com%25252Fstaff-contributors%25252Fjimmy-kempski%25252F%2526cb%253D751604287%2526widgetid%253D0011r00001qbFvJ_373%2526lob%253Dphillyvoicecom%25257Cfloat_1214%25257CA%25257C70%2526clipid%253Difmfu4tgpe4wontymrgwqvkynbkw6m2z%2526key_custom1%253D%255Ew%253D0011r00001qbFvJ_373%255Ec%253Difmfu4tgpe4wontymrgwqvkynbkw6m2z%255Ei%253D1%255Eab%253Dphillyvoicecom%25257Cfloat_1214%25257CA%25257C70%255Ev%253D0%255Ep%253Dphillyvoicecom%2526key_custom2%253D%255Ed%253Dwww.phillyvoice.com%255Eu%253D%255Edv%253D1%255Eco%253DUS%255Epl%253Da%2526gdpr%253D%2526consent%253D%2526viewability%253D0%2526schain%253D1.0%252C1%2521anyclip.com%252C0011r00001qbFvJAAU%252C1%252C%252C%252C%252C%2526us_privacy%253D1---%2526_vpaid_js_label%253Defi_muted_autoplay_canary%26rqcm%3D1%26ast%3D-1%26smb%3D1%26sid%3Du3QskclbILI7AoWFICLYowciuAWxugmz%26imaw%3D0%26amd%3D1%26sf%3D0&wnx=1&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=arq&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a&anx=1&arx=1&crt=0&s=0&aty=vid&tty=ac&rol=mid HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+âàT“˜ß¤k~' aÍ¼&;ÓÎÄ1ü'f
+
+ --- SSL READ 932 BYTES --- 
+GET /i/adsct?type=javascript&version=1.1.0&p_id=Twitter&p_user_id=0&txn_id=nvko8&events=%5B%5B%22pageview%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=1&tw_document_referrer=https%3A%2F%2F4846802.fls.doubleclick.net%2F&tw_document_href=https%3A%2F%2F4846802.fls.doubleclick.net%2Fddm%2Ffls%2Fr%2Fsrc%3D4846802%3Btype%3Dphill0%3Bcat%3Dphill0%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D3700666036330.261%3B~oref%3Dhttps%3A%2F%2Fwww.phillyvoice.com%2F HTTP/1.1
+Host: t.co
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/ddm/fls/r/src=4846802;type=phill0;cat=phill0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=3700666036330.261;~oref=https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+]è×•l‹Éïq&¯Ğ2
+
+ --- SSL READ 1408 BYTES --- 
+U“¶¬§>ÓÉb‡b<ó>›Ô„QMğsK¿Õ«Ü*±qíXÓ–xáXÈrd¿(zõ†tÓÑÛÄ™ÜŒ˜#}Óäâ‡¤Ş#˜÷#$C
+lŒëiîß?«„ ÖÒñ-ãÙçÈ²ÑzÀC¹Şhj )NcTe²œ±È9Iå|ÕµÉSR|g°Ô! _ªÂ!]å@"Òœ‚Å˜Ì¡â1ï‘ÅpXPcäÍ°ÆiT!&Ù<_¥XƒªÕíj½Í­õÆ0YQÔñÜPc&èë˜¿FX`ï/Œ¸îh±è-µüò­p®ÿ¢]ùóè.PbExŞ™Q(´DÃA­]ÏIj=Ül½—z¦¢EbA5m¯‰ÁôNêÒbóDÙ!nšs‘>¿ÈåØa¸‚¾ì¨¿çÑáÅ ıh;?~l‚„%¢I3w÷poÌåìzølO/?$mÉ­	^NÅ¤ÅäOÂÅ¿©4›Şè%³ZBoÊtÒúÀô‘/ƒè‹»Ñˆp…8Jt
+o50Öïü
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+{£‘å¶wuòQ¶c¹íçùïç–Û~‘ÿäÕi¿T¿N¢ğOUËmÿ®X0°ÜöK”£ŞÍ
+Ş§I€^ìY··‡G‡ß>Y[a&æ9`\Ê\ñ›Äù½Ig†öl¾3¤£8ÊÌàëör¢ô÷3Ûùÿî=CØ@â ×íL®wnËB¼2|7”™ßŠbÅ÷s“„œó:(2n"Ìùlñ;¢vZ-ò—^ffø7éÊn8[ñºWë“œM'&iv¬z%÷Ù3·´CGù$Iœt¤ÙØ~)lGe¬á«›àxf`4Éù–3˜=&™?O˜8}ê	R[{iwèE¥]Ì|jÆb)®rŞ‰x]ñÊ"Ì.€gú!òºNÉ|:^ †,–úñU¯l}ëÙ]|7CD’£˜€[õeµÆ~MËg@»–^¡c
+úù–PÔï(Àr–
+™‹|âô¤Äd8³%t(?è’™š–Æ”‘¾§µ?káFÌ;%ÿ0§vú#È75½œD^^„dªlìÇ©1p ÀM…Ï÷Åâq‰>@˜8É8ÿZRzÌªÎI%Ü\şœ­ø9ª¹!n¸X„¼¦û9-ç¤Òˆ–\¬,Ö,NÙi6ø+\·ˆJŒf5
+	ëk“AJïYÌHÊÒgàf:<°`û¾­4
+
+ --- SSL READ 849 BYTES --- 
+„qT]‡íÖ
+
+ --- SSL READ 623 BYTES --- 
+HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+content-encoding: gzip
+content-length: 65
+content-type: image/gif;charset=utf-8
+date: Sat, 19 Dec 2020 16:52:04 GMT
+expires: Tue, 31 Mar 1981 05:00:00 GMT
+last-modified: Sat, 19 Dec 2020 16:52:04 GMT
+pragma: no-cache
+server: tsa_b
+status: 200 OK
+strict-transport-security: max-age=0
+x-connection-hash: 95f66c72384bc04916eab03c8fcd0ee5
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-response-time: 8
+x-transaction: 009336a600c5921d
+x-twitter-response-tags: BouncerCompliant
+x-xss-protection: 0
+
+
+
+ --- SSL READ 1408 BYTES --- 
+i#C3q1}M:69ûÆHqı™}<Ã3äÿÊ«ôî/Š”8Û%†B&oP–fÑøWÁ<Lğ$ƒÍÆÉSDÆ™„‡>6x¢a¦‰\ªœgêÛh¿åÓËV\jBg¢Huáí}H¯\~˜ùìÄ6grSáywÙó®ÉÅI@âf3ÿV—á<Ä[•AO&îöÖ'êfÍ¦ø«‰_+}˜5›fŠøÃÌ+^¾Z)ËØ˜¯	Y‹F­¼^M3`2mCs2+y‡ÈÚ*'KF¹–p–Œòåz:ÓŞ¨}ÿã,¿eñuTl“yNæ˜VIšñû ã­,§ÖR¯+ü0«~(Lø37—B@D%Uüæ\ÌRÒğ´DÏõ¥â-Õ>Å/¯3³j6©¼7›!Ÿ¤¡˜¡a–KX¾gbùıÿfù2¹hA
+"°fş5¸{±°uß¾•._.Ùø>
+ÙÛd0˜å]ØºÉçÜ'sÎÏ_]¾Î¥zœO2ï~f[çƒH;£êşŸÈ8²qYŠ=Ù–ŒQƒÚ²F r(­EtR|T`Yƒ¥ô¾^Çó.è¸³\
+e|1üÙ\‚TVy«×^w?cËĞ°"ê©M{¦6¸eïÏYêÃåùYUuê‘À¹|šPæJA™Q˜Šñ=Òdü‘Í\ùøgúŞÉí(]‰„²ª×W·ĞÂÎĞŠToÅ6T+Ñ™uÚh…†0ê¥3¾ß‰İl¤†h±QOâå~ŒÜVâo¶å¨^ÌüGé“Ö‘+µd…û†%¾œùòEàÍRûçl¥ÑøÏÙ5¹Y"|ÅWDş<|†“ñ˜QëUÑÿòßª´€X0ã²ç@(Ò%![zŸU®jÁÚ™eçAÊÆ÷ LBÀeóupƒ¼^gğ‰_È¤$Ğk½ö¯fZ|N”Ö«ô·–"NpYC
+
+ --- SSL READ 1116 BYTES --- 
+HTTP/1.1 200 OK
+P3P: CP="This is not a P3P policy! See http://support.google.com/accounts/answer/151657 for more info."
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Cache-Control: private, no-cache, no-store
+Content-Type: application/javascript; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-Disposition: attachment; filename="f.txt"
+Content-Encoding: gzip
+Date: Sat, 19 Dec 2020 16:52:04 GMT
+Server: cafe
+X-XSS-Protection: 0
+Alt-Svc: h3-29="googleads.g.doubleclick.net:443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051="googleads.g.doubleclick.net:443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043="googleads.g.doubleclick.net:443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic="googleads.g.doubleclick.net:443"; ma=2592000; v="46,43",quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+
+068
+‹
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:04 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+00000001
+m
+00000001
+Ï
+00000001
+¢
+00000001
+®
+00000001
+
+00000001
+F
+00000001
+´
+00000001
+
+00000001
+
+00000001
+Ÿ
+00000001
+Ë
+00000001
+ 
+00000001
+ñ
+00000001
+Ï
+00000001
+e
+00000001
+È
+00000001
+ 
+00000001
+)
+00000001
+q
+00000001
+§
+000001
+Å
+da0
+®ı”ÅuEQ†È06¬á[*&yçïû|0CT…ÄU€âtp¹~ÈJÛf®$>ß9[ƒoCeÒ·ã÷Şaˆrj«Ä3Ôıé/@iœo²kçó¨¬‹’úù–ğ!Ÿš5ï“<ß1vÎèÊ--î¡oyê=@½[À/e¦(Èp=ãîğûD|XmxvìBsÓu.ÿP%»K~ÀÇqÙX@É&DáÑµ¶Æî¢à™Kú·fzòb`ë×$
+ĞÆ»6Ò~Œÿ9¢(08¥èÆ›É[0‘£—*â“^¶ñœt9;;7”Q÷‚&Œw
+
+ --- SSL READ 65 BYTES --- 
+‹
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+^ àô^Xq~ğÅ˜FC».ÿöUxÎRğä©<åûK%Ó6•ê™0}VZø›´ø«Øq¢ŠƒÜ!99AêBGœ¤x¦+ò‰ÇŒĞYCí€âé€€eª':VE©4VÎ½å÷¾Rî²:û>IdØ ´ÁD¹êıÆ(˜_v—Ş_á‚ğZ]|,5Ø0`2‰—{Ñ]2û³äˆi :ıC±”áƒ—•*lØ3m®±>Ëıb–¹òØ™éxúX½!=¯‘[ï+&‰ü—œ#¿UçÈiÎï­š&ò=U§X9S:Õ™b$û¯'K¸Ó'§Ëo&»x0‹C³Ôp Ñpp¢õµ$Pş'x
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 1408 BYTES --- 
+œcåˆÔjNZ-Ëí€IfÓr8`e?GÚÙÕœ6ìœ¾$Ú`I•,+µ,®+•,8öX.)hÈ…+¦P9à±²3Y/G“ÎÓ*(:9z…XµıZ£^jÔìÜBV±Â‡œFC¬j£¶~ª3µz¹¼¡«¼¹!¬Ú¨ÂtÿnÕXó¼³µº-’ËIÔAÏ,Ñ<Úâq¿RŠ3¸…’±ìJôXM—„´ıTZÙ®6ìtZi_víì
+
+ --- SSL READ 572 BYTES --- 
+GET /i/adsct?type=javascript&version=1.1.0&p_id=Twitter&p_user_id=0&txn_id=nvko8&events=%5B%5B%22pageview%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=0&tw_document_href=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F HTTP/1.1
+Host: t.co
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+‡Ğ³rªÀ	×H»0™Íü	rUÜıĞ*•!Åu™¸‘Ôœ¬Ğ.xdjÜÒy&£~‹_Â…çH‰Q\Ê¬0Ì“íµÜB	R[·|ğ­Ó#ÎùbqÚ|p•3Ú¶:>|¶À(Úô…gÀ×šÄ1§q²>š'Qû;qbÊIùy+è—È‘¢¹‚7dI/6AËòô,?@P4âyV'ĞïQ Æl%Y‡3÷ŒêĞ½2óg‘I–ğæD)Är‰3d„ù›­¥gÕ ¡(áè7³¥f$’†óøÕÚ¢%uÄ˜
+²z!×‚¾üÏù“u…ÛÑâø	§>qúÒQsô€‰Ó-YpâY˜8ïX!\@¬s<NwOjèØ©îhªÌ¯ç}±8©‡Mœ¥p¸Æcâb–Y4`‰`Bœ“b2±0B©sMœÓb4“’gšá§t±˜ÑfS8ìŞ“µ†»VH†°ãaâ3áƒšoRÑTgğÑğp}Àw7…@PŞ#Îßÿ°Û‡»y¡W¼!"Éäz%dœIı9¯õÿ±Ù´5ÂPIkRÎ¿ƒ_9_9;‘ÙœKçœAKœ”wˆ¿Äq*şˆ?GâO|@ë%/º7éÚÄÙG¥¹Ú%Õí¯¸D¡Vgó
+È#qNy…N…,¬´¼…GAì­
+
+ --- SSL READ 950 BYTES --- 
+±MÅ@+1×K­n)Ğ`r2çBV§/×6Yº;©4ö1ÈüƒeJTK`|óA<2µ²œƒÒdê«–?µb±íÇ<’şÖ|ÁÏÛä»¦ZåõJ)òP”˜‡"!ˆ)æ-©FUjÌÌÈq`$ªT#¯J•Í[¥ö«*5Kusäw,æLØß—ş5xT{S‚e‰Åİ—ö«Âûû_,+kşè#}õâ¾wV9Ÿ“ãğød|ò¢ñí4xQ­¼¶{VÛÛÿ¦Qû`ı¸½³ìı›şıù]ãùİÑ›éÕ²4V÷^ŞİLïÓ»××Şx4!_*ÁYğzê¿úxãİO¯ß–>^û_^/¾}9]/§ó·ãêÈ?šZ§Gï‚·‡¯Çß¾¼°ü¯¯G'WÓàó«×¶WşøÉ-…#wÂòGôÕó™7gWÇ¥w÷g}ëôâdq2İ*¾½l„}-O®f–7ù<‚:3Ïş8%__?½|qç¿‚º“wş—ÏÈq¹4l5±u;òPÔ~Ø’Üb›¿àQı19÷‡'ø/ş:™ô¦Úßgm
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+¹À<l^£*û¾"›Mr9{.¨Êè¯Kfõ™`ŠõŠÏìy>Úûõ²íÀ
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 623 BYTES --- 
+HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+content-encoding: gzip
+content-length: 65
+content-type: image/gif;charset=utf-8
+date: Sat, 19 Dec 2020 16:52:05 GMT
+expires: Tue, 31 Mar 1981 05:00:00 GMT
+last-modified: Sat, 19 Dec 2020 16:52:05 GMT
+pragma: no-cache
+server: tsa_b
+status: 200 OK
+strict-transport-security: max-age=0
+x-connection-hash: 126e71a024f8c14f9b3418269fc5b441
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-response-time: 8
+x-transaction: 00d9430e00cf22d6
+x-twitter-response-tags: BouncerCompliant
+x-xss-protection: 0
+
+
+
+ --- SSL READ 1038 BYTES --- 
+HOÖ[k«[;‡şÁÜ¦xˆûøô^‡¸'e—†6Å—]»‡À€Ü¸oôár­CåÎq'¯ÜĞ›¢N‡œ5°»"w›ùÌáG¶æ’e¨Ùd6EKş?€1¯ñ)…»èñãÔô	¡½M©}¸ËwÍ÷süQz³8~ZW·S1wîi;À_•ùÔ`$
+ÁÏ±Vúı°JîÓFºOÒó‡á§q2bãlf‡H9¼or`º;‚gHĞ¬;j2
+Ğba‹e6˜5;Û!&N§ ¶\÷~n3Q>ãåó³3ç"ÀÌP0:B8tz>ÅaÌ‡yÍƒ?DKïx¥pOÃI5"¥Cƒ”¨¼VÀk4*WËQVCJİ–¼÷t>¥[¢*C¢}Ô
+
+ --- SSL READ 65 BYTES --- 
+‹
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 814 BYTES --- 
+GET /ads/ga-audiences?t=sr&aip=1&_r=4&slf_rd=1&v=1&_v=j87&tid=UA-56540822-1&cid=1569384814.1608372058&jid=1414935849&_u=QCCAgEABAAAAAE~&z=1517946427 HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Cookie: 1P_JAR=2020-12-19-16; NID=205=n7n7I5DCoMkaBXDpM48Qetfrkx3yWmHaLupALdYatYJ7Pxih2e8jfTtZut5bA3bSJPIHR1DGgBt27L5LNzwt7DujNh3izysNUsNy9xtynuxi1fQzti9CHTlB3sfpdvFoJBqB9zzF8gKmmx3A7FHYOTeg_Hl3V5u0G_rPQqKF_Ws; ANID=AHWqTUkU8unTXB0MlvrXIS8zXH3Qhp9HF8dcBlR-zB83NOWxvEIzgT2CvgHOBoCn; OGPC=19021306-1:; DV=M3t5aI7AiMgkcJwiBMaOV24pT2O-Z9dcOI1FeSUqggIAAAA
+
+
+
+ --- SSL READ 1408 BYTES --- 
+00000001
+
+0000001
+¨
+36f4
+¢=â»ı:È¹·-ÜB{dëKh[kÚm•¹«£¶Èwİ:'©À«H¸'jÇdíØbaKÜÌwqB2›ğÃò]4eüv‹¤sÄÖY"A{Ö¶å¶^ûFÅ·,´gm•C<´a¹–åµ^û:½XÊ[â”÷­v‘ÿ¢õU¥÷@•š©­3D&\z}´jGòÜ·µÖCW™€¨òübCÄ¸t·¨‚Ü.ÿ.’µ€ÌjY® Ù¢KLİºŸõz²|š;];Ç-Åí’¤-Iº\zŸæNäš;”MÄ8(ÿ•»ÇÓÎr¤uÏ‰a¾óÑğ^Õ„Ø×ŞuÔ¦¾=èÚhObE[.|¸Úúsn¯âıHŸ…É˜=Îvç»;Nëö_©#R¿r–¸òB-qãøöO“Givİò}f€«YWE‹D+Ñ•3f]6³±A‚ä¿ÙÊ±_òÓ„ß%'µ|èG1³Ù¦/Êæ‘Óõ7ÛK~ÂÓ-ßÚëúÖx,˜°¦ãĞ¥[Öÿ±¶Bò®\Zïn¶D«	´«X¹-¯‘ŒHe3ş)$^ükD(†=ø”Íî˜Å`–ï5Â$NÆÛiØgæ6b¸è[K….Óq;ÄÒRUè}ÖXÈÕÿ¢¤Mª±§ÊVgoçJrª¼óæß™ÊÁéKıªN®İ ,w9K@"€½‚˜+5±ÒAÊãB«&>K&a_ÆããÂj\aÀÑ{3¬Étv,”@ËEr{¡O][@¤œÍñì‰„”ß‚CŸj[¬Ğë÷íßúH‰j…óY®C„§ïœñ‹G¡‹Åeãr®}S]Ì×æYÿ±4 qö•b	¶ò¢Nœğ[ôGxÀï7/ß¸cóè}ğÍ8ÓááåÊ·è0_kÕH	ÆW»¤U#Õ9+î—	x
+
+ --- SSL READ 1408 BYTES --- 
+³Ü 1 ³€ñôÒ“
+©~ËSJ§ğiXT¿ß+Ã=uì-šÔ£	ã†ÅdNš%#µ^DÌ*›0Cá5¦7u8	²è€*È	]”·ÊüÌ´$a`››×¿İÚÚi(5E¦@3ıcp­$ù<ŸÁ‹6ãïóRaüÆ$ÎX˜•
+QÂ/¬¨ÿ*ÕöwZ¡y-apbèÕ ™ƒ´&g™k­½ÔüY«ê‰´>6ŸW}_bMÕq¢Î’ĞTøÓ‚œ ¾¥$c -+û‚ÜûeGÉ·È³¶rÀßÙò‰·óZÎ^uÆ˜e	ÃÿhhKuc´m€ÌÌŠSW;ıÖë²²d«æ``¶Y8,õtw‹ûáúî-)wÕé­É¥Úúì
+¶ÚZßN)ad×R³¤‘²,cc@Œ#±÷3jyË¥ÓI«“–æ“ûÿkZúÚ«O¢wë¿æÒ¡''¾¯C‘Å¡V«jjµ¾uR£-©¬Üyü'ùí…¾õZ­n­’$§ƒ¡¯¨r2
+±‡Â¬_äÑ²–Ê
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 1408 BYTES --- 
+t.U‰¿
+
+ --- SSL READ 683 BYTES --- 
+HTTP/1.1 200 OK
+P3P: policyref="https://www.googleadservices.com/pagead/p3p.xml", CP="NOI DEV PSA PSD IVA IVD OTP OUR OTR IND OTC"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Date: Sat, 19 Dec 2020 16:52:05 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: image/gif
+X-Content-Type-Options: nosniff
+Server: cafe
+Content-Length: 42
+X-XSS-Protection: 0
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+§ÑÎI9Ä“d
+ò(ÔšÇø:JI%§¤¦‘%ákÌYÄ§t‹ÒyÒB?líçºêRdP©@¯
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+ ±İv'&iv,ÕéÀ;­
+
+ --- SSL READ 1177 BYTES --- 
+GET /?ad=https%3A%2F%2Fvid.springserve.com%2Fvast%2F313861%3Fima%3D1%26w%3D616%26h%3D347%26url%3Dhttps%253A%252F%252Fwww.phillyvoice.com%252Fstaff-contributors%252Fjimmy-kempski%252F%26cb%3D751604287%26widgetid%3D0011r00001qbFvJ_373%26lob%3Dphillyvoicecom%257Cfloat_1214%257CA%257C70%26clipid%3Difmfu4tgpe4wontymrgwqvkynbkw6m2z%26key_custom1%3D%5Ew%3D0011r00001qbFvJ_373%5Ec%3Difmfu4tgpe4wontymrgwqvkynbkw6m2z%5Ei%3D1%5Eab%3Dphillyvoicecom%257Cfloat_1214%257CA%257C70%5Ev%3D0%5Ep%3Dphillyvoicecom%26key_custom2%3D%5Ed%3Dwww.phillyvoice.com%5Eu%3D%5Edv%3D1%5Eco%3DUS%5Epl%3Da%26gdpr%3D%26consent%3D%26viewability%3D0%26schain%3D1.0%2C1%21anyclip.com%2C0011r00001qbFvJAAU%2C1%2C%2C%2C%2C%26us_privacy%3D1---%26_vpaid_js_label%3Defi_muted_autoplay_canary&rqcm=1&ast=-1&smb=1&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&imaw=0&amd=1&sf=0 HTTP/1.1
+Host: lreprx-server.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Origin: https://imasdk.googleapis.com
+Connection: keep-alive
+Referer: https://imasdk.googleapis.com/js/core/bridge3.432.0_en.html
+
+
+
+ --- SSL READ 1408 BYTES --- 
+›ø5×éã
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+"Ğ–Æ@
+$Ùİllpcc?6„´Áßıtñ@ûì¾h‰¤ñè.¤™ùI¸Pê„.½÷/Â 
+WüIãN¿åT)ËKx•ÓS¥Aíkè­xá%îÊq‚âèVªDğÎ·Ûîì%ÄpÌcñ6r©jÃsĞv4'<±Ï”!{7ş ³æ^ 8¥ İmîvŠ"6§ş!Õ´FhIïÖŸ1z]sG¥SÅt‹ò»mE1\3{úŞÓÙ÷½Õƒäa8¦>R¢˜
+ÀÊ±fPä¨EœÂÏàÉ’ÒµÚ¶£Ú„¢Šb)q~B°vÚF`lõûãEÏ¥â€$Èå><é“°U˜™pMÜSKæ®ómJCPUYRâ*€5VÏ}”ãÒI_4¯…Ñéş–:(kªí¿5Ğ¾#¯¿ß?·àYúË)`tÊÒV;'şÖloç†»ÄßÙdgÛdGğË)bô¯öT‹Q>Æ‰›ĞøÑs¨ÒPICaaÏ=õVkºˆÉ:äv<™GÃ;Å™Ô‡”]½˜I%ˆ 0Y¯H@Á½9Âwg÷ïÑwvL³Ås Âó8Ìd„ïš÷
+
+ --- SSL READ 1687 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:05 GMT
+Content-Type: text/xml; charset=utf-8
+Content-Length: 1380
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://imasdk.googleapis.com
+Access-Control-Allow-Credentials: true
+ETag: W/"564-q82TExgUUb2oMLeEjc4DREwgehI"
+
+<VAST version="2.0"><Ad id="VPAID2"><InLine><AdSystem version="1.0.4">AnyClip</AdSystem><AdTitle>VPAID Ad Manager</AdTitle><Creatives><Creative sequence="1"><Linear><AdParameters><![CDATA[{"adm":{"rqcm":"1","ast":"-1","smb":"1","sid":"u3QskclbILI7AoWFICLYowciuAWxugmz","amd":"1","sf":"0"}}]]></AdParameters><MediaFiles><MediaFile delivery="progressive" type="application/javascript" width="300" height="250" scalable="true" apiFramework="VPAID"><![CDATA[https://player.anyclip.com/lreprx/js/v1/src/lreprx.js?ad_tag=https%3A%2F%2Fvid.springserve.com%2Fvast%2F313861%3Fima%3D1%26w%3D616%26h%3D347%26url%3Dhttps%253A%252F%252Fwww.phillyvoice.com%252Fstaff-contributors%252Fjimmy-kempski%252F%26cb%3D751604287%26widgetid%3D0011r00001qbFvJ_373%26lob%3Dphillyvoicecom%257Cfloat_1214%257CA%257C70%26clipid%3Difmfu4tgpe4wontymrgwqvkynbkw6m2z%26key_custom1%3D%5Ew%3D0011r00001qbFvJ_373%5Ec%3Difmfu4tgpe4wontymrgwqvkynbkw6m2z%5Ei%3D1%5Eab%3Dphillyvoicecom%257Cfloat_1214%257CA%257C70%5Ev%3D0%5Ep%3Dphillyvoicecom%26key_custom2%3D%5Ed%3Dwww.phillyvoice.com%5Eu%3D%5Edv%3D1%5Eco%3DUS%5Epl%3Da%26gdpr%3D%26consent%3D%26viewability%3D0%26schain%3D1.0%2C1!anyclip.com%2C0011r00001qbFvJAAU%2C1%2C%2C%2C%2C%26us_privacy%3D1---%26_vpaid_js_label%3Defi_muted_autoplay_canary&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&imaw=0]]></MediaFile></MediaFiles></Linear></Creative></Creatives></InLine></Ad></VAST>
+
+ --- SSL READ 337 BYTES --- 
+GET /signals/config/608026936199777?v=2.9.30&r=stable HTTP/1.1
+Host: connect.facebook.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+&[6¾òÁÈVë˜²í¨Q…v¦ËuJ‹±‰Ö‘Xü{ø'~	ü³z
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 1408 BYTES --- 
+–¬n2Š½…·JÌ€õ˜ ÜÖßá\a¾¥ëïñÎØï3üJ¤¡,3ĞÂÄí»ˆh3Ğ6	•ª7Ùë)°ÌJ%(úÜ;MÈ&J×Üòß¾‰Ñİ½éô„¥ğ²ÏOhËâk:û?ßp|Ò®5ŸäsÊw˜“¸èDg×:Ÿ¸f£‘Èşû’ñŸ×ØçõºOv;õû±ok=i«Ğ¥l¡cóÍsA[9Uß—†¢ğS6/Y
+£Ş-¤Ã´ìêQÌ%*hÊ ëĞ
+·4¾ 	U‹µàs‚öØhÎÒóİaèÒ^&H‡ØGº‰ıwŸ3P6³ÑÀ¾È­ã£ÏÉöïY›uüRáJ£¥@á%?=!„:>xÆK¤hJã2É§n£q™¤iÊ”Ôw„ô¦V›á§Æ÷e/Ÿe•Ú¦OÈw„Âot¶lMS·h»çÔ«^W·UwuÛŠ»:°Ûq«)6Jîî§l¹²PFË›İwnZõºUChË‡Šï˜†//-}Y_|N°C^â¾óí¢ù—-Ó[6í»Ä½Ï¾ôÚdvyéYf‘sZZSŸ ŸÈJ‹»	Ÿ°æÅ‚ÇôIÉÎFB-VêwARø™h4, ?YÌÕ’;ë¿ÊÓB<J¸j!îŒë
+
+ --- SSL READ 821 BYTES --- 
+GET /i/adsct?type=javascript&version=1.1.0&p_id=Twitter&p_user_id=0&txn_id=nvko8&events=%5B%5B%22pageview%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=1&tw_document_referrer=https%3A%2F%2F4846802.fls.doubleclick.net%2F&tpx_cb=twttr.conversion.loadPixels&tw_document_href=https%3A%2F%2F4846802.fls.doubleclick.net%2Fddm%2Ffls%2Fr%2Fsrc%3D4846802%3Btype%3Dphill0%3Bcat%3Dphill0%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D3700666036330.261%3B~oref%3Dhttps%3A%2F%2Fwww.phillyvoice.com%2F HTTP/1.1
+Host: analytics.twitter.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+ve!±a9s
+
+ --- SSL READ 590 BYTES --- 
+GET /vmp.gif?cid=ifmfu4tgpe4wontymrgwqvkynbkw6m2z&inx=0&rt=7021&val=&wnx=1&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=alo&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a&anx=1&arx=1&crt=0&s=0&aty=vid&tty=ac&rol=mid HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 21 BYTES --- 
+ÌIhĞı
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:06 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 907 BYTES --- 
+HTTP/1.1 200 OK
+cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+content-encoding: gzip
+content-length: 57
+content-type: application/javascript;charset=utf-8
+date: Sat, 19 Dec 2020 16:52:06 GMT
+expires: Tue, 31 Mar 1981 05:00:00 GMT
+last-modified: Sat, 19 Dec 2020 16:52:06 GMT
+p3p: CP="CAO DSP LAW CURa ADMa DEVa TAIa PSAa PSDa IVAa IVDa OUR BUS IND UNI COM NAV INT"
+pragma: no-cache
+server: tsa_b
+set-cookie: personalization_id="v1_MG+YcEb6xQT1Lh9jV9UtCw=="; Max-Age=63072000; Expires=Mon, 19 Dec 2022 16:52:06 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+status: 200 OK
+strict-transport-security: max-age=631138519
+x-connection-hash: 3bc6bf48fe1c94949fdb460c34ef6033
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-response-time: 11
+x-transaction: 00691917008f3840
+x-twitter-response-tags: BouncerCompliant
+x-xss-protection: 0
+
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 57 BYTES --- 
+‹
+
+ --- SSL READ 725 BYTES --- 
+GET /tr/?id=608026936199777&ev=PageView&dl=https%3A%2F%2F4846802.fls.doubleclick.net%2Fddm%2Ffls%2Fr%2Fsrc%3D4846802%3Btype%3Dphill0%3Bcat%3Dphill0%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D3700666036330.261%3B~oref%3Dhttps%3A%2F%2Fwww.phillyvoice.com%2F&rl=https%3A%2F%2F4846802.fls.doubleclick.net%2F&if=true&ts=1608396725926&sw=1200&sh=900&v=2.9.30&r=stable&ec=0&o=30&it=1608396723809&coo=false&rqm=GET HTTP/1.1
+Host: www.facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 338 BYTES --- 
+GET /signals/config/1580074202251272?v=2.9.30&r=stable HTTP/1.1
+Host: connect.facebook.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 595 BYTES --- 
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Date: Sat, 19 Dec 2020 16:52:06 GMT
+Expires: Sat, 19 Dec 2020 16:52:06 GMT
+Last-Modified: Fri, 21 Dec 2012 00:00:01 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0
+Set-Cookie: fr=0TMMFGjiYidOGXlYX..Bf3i-2...1.0.Bf3i-2.; expires=Friday, 19-Mar-2021 16:52:06 GMT; path=/; domain=.facebook.com; HttpOnly; secure
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Server: proxygen-bolt
+Alt-Svc: h3-29=":443"; ma=3600,h3-27=":443"; ma=3600
+Connection: keep-alive
+Content-Length: 44
+
+GIF89a
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 1574 BYTES --- 
+HTTP/1.1 200 OK
+cross-origin-resource-policy: cross-origin
+content-security-policy: default-src * data: blob: 'self';script-src *.facebook.com *.fbcdn.net *.facebook.net *.google-analytics.com *.virtualearth.net *.google.com 127.0.0.1:* *.spotilocal.com:* 'unsafe-inline' 'unsafe-eval' blob: data: 'self';style-src data: blob: 'unsafe-inline' *;connect-src *.facebook.com facebook.com *.fbcdn.net *.facebook.net *.spotilocal.com:* wss://*.facebook.com:* https://fb.scanandcleanlocal.com:* attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self' chrome-extension://boadgeojelhgndaghljhdicfkmllpafd chrome-extension://dliochdbjfkdbacpmhlcpmleaejidimm;block-all-mixed-content;upgrade-insecure-requests;
+Cache-Control: public, max-age=1200
+x-fb-rlafr: 0
+X-Frame-Options: DENY
+Content-Encoding: gzip
+X-XSS-Protection: 0
+Strict-Transport-Security: max-age=31536000; preload; includeSubDomains
+Content-Type: application/x-javascript; charset=utf-8
+X-Content-Type-Options: nosniff
+report-to: {"group":"coep_report","max_age":86400,"endpoints":[{"url":"https:\/\/www.facebook.com\/browser_reporting\/"}]}
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+Vary: Accept-Encoding
+cross-origin-embedder-policy-report-only: require-corp;report-to="coep_report"
+Pragma: public
+X-FB-Debug: U8q7P9QubwzH4oA+Mv03v17AaaUPe+/pzzzn8zepI0VFiOGo9yhcXVLJjrg/UlIo16vHP2UqVxgu3nt04UEBPA==
+X-Content-Id: 212652905
+X-FB-TRIP-ID: 1512268381
+Date: Sat, 19 Dec 2020 16:52:06 GMT
+Alt-Svc: h3-29=":443"; ma=3600,h3-27=":443"; ma=3600
+Connection: keep-alive
+Content-Length: 70154
+
+
+
+ --- SSL READ 1434 BYTES --- 
+GET /1129382/trc/3/json?tim=1608396723939&data=%7B%22id%22%3A793%2C%22ii%22%3A%22%2Fstaff-contributors%2Fjimmy-kempski%22%2C%22it%22%3A%22video%22%2C%22sd%22%3A%22v2_b80a2e71d36448882e9c02c577a7fc22_14f310f9-3077-4e18-a06b-cec5b4689a83-tuct6d75d59_1608395901_1608395901_CNawjgYQpvdEGPmO997nLiABKAQw4QE4kaQOQJ6fD0jX1NkDUPgDWABgAGjLn6iVk6D_hCQ%22%2C%22ui%22%3A%2214f310f9-3077-4e18-a06b-cec5b4689a83-tuct6d75d59%22%2C%22vi%22%3A1608396723930%2C%22cv%22%3A%2220201123-29-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtaboolaaccount-haldonnivgmailcom%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1608396723937%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F%22%2C%22supv%22%3Atrue%7D%7D&pubit=i HTTP/1.1
+Host: trc.taboola.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1 BYTES --- 
+
+
+ --- SSL READ 1072 BYTES --- 
+HTTP/1.1 200 OK
+Connection: keep-alive
+Server: nginx
+Content-Type: application/javascript; charset=utf-8
+P3P: policyref="http://trc.taboola.com/p3p.xml", CP="NOI DSP COR LAW NID CURa ADMa DEVa PSAa PSDa OUR BUS IND UNI COM NAV INT DEM"
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Set-Cookie: t_gid=14f310f9-3077-4e18-a06b-cec5b4689a83-tuct6d75d59;Version=1;Path=/;Domain=.taboola.com;Expires=Sun, 19-Dec-2021 16:52:06 GMT;Max-Age=31536000;Secure;SameSite=None
+Set-Cookie: taboola_session_id=v2_b80a2e71d36448882e9c02c577a7fc22_14f310f9-3077-4e18-a06b-cec5b4689a83-tuct6d75d59_1608395901_1608396726_CNawjgYQpvdEGNqtqd_nLiACKAQw4QE4kaQOQJ6fD0jX1NkDUPgDWABgAGjLn6iVk6D_hCQ;Version=1;Path=/taboolaaccount-haldonnivgmailcom/;Domain=.taboola.com;Secure;SameSite=None
+Content-Encoding: gzip
+Accept-Ranges: bytes
+Date: Sat, 19 Dec 2020 16:52:06 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ewr18155-EWR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1608396727.634772,VS0,VE10
+Vary: Accept-Encoding
+X-vcl-time-ms: 10
+transfer-encoding: chunked
+
+
+
+ --- SSL READ 664 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=pageview&_s=1&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&_u=QCCAgEAB~&jid=1414935849&gjid=924626510&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=1903222378 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 545 BYTES --- 
+POST /csi?v=2&s=ima&puid=1~kivxvoc0&c=3897240141314&slotId=1948620070657&fb=ima-html5&sdkv=h.3.432.0&mrd=4&aab=1&itv=1&eee=missing-element&bi=missing-id&vmfc=1&vhc=0&ghmsh_eids=75259403 HTTP/1.1
+Host: csi.gstatic.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Origin: https://imasdk.googleapis.com
+Connection: keep-alive
+Referer: https://imasdk.googleapis.com/js/core/bridge3.432.0_en.html
+Content-Length: 0
+
+
+
+ --- SSL READ 337 BYTES --- 
+GET /js/sdkloader/loader.js HTTP/1.1
+Host: imasdk.googleapis.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 16384 BYTES --- 
+‹
+
+ --- SSL READ 5 BYTES --- 
+219
+
+
+ --- SSL READ 472 BYTES --- 
+GET /b?c1=2&c2=19749226&ns__t=1608396723977&ns_c=UTF-8&cv=3.5&c8=Jimmy%20Kempski%20%7C%20PhillyVoice&c7=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&c9= HTTP/1.1
+Host: sb.scorecardresearch.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Type: text/javascript
+Cross-Origin-Resource-Policy: cross-origin
+Content-Length: 18835
+Date: Sat, 19 Dec 2020 16:48:31 GMT
+Expires: Sat, 19 Dec 2020 17:03:31 GMT
+Last-Modified: Tue, 15 Dec 2020 20:19:07 GMT
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 0
+Cache-Control: public, max-age=900
+Age: 216
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+‹
+
+ --- SSL READ 713 BYTES --- 
+HTTP/1.1 302 Moved Temporarily
+Content-Length: 0
+Location: https://sb.scorecardresearch.com/b2?c1=2&c2=19749226&ns__t=1608396723977&ns_c=UTF-8&cv=3.5&c8=Jimmy%20Kempski%20%7C%20PhillyVoice&c7=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&c9=
+Date: Sat, 19 Dec 2020 16:52:07 GMT
+Connection: keep-alive
+Set-Cookie: UID=1D123a48a1511881286c3741608396727; expires=Fri, 09-Dec-2022 16:52:07 GMT; path=/; domain=.scorecardresearch.com
+Set-Cookie: UIDR=1608396727; expires=Fri, 09-Dec-2022 16:52:07 GMT; path=/; domain=.scorecardresearch.com
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+
+
+
+ --- SSL READ 16384 BYTES --- 
+ç—XU1Ô4ú$ft»wµUıáå‹-JÍë«í«îU4¶­NåªÕû?ÿ}e\Í¯’+|…®jW»ú|õûÛC2ct!Ôc[_ûuiïhë¿ú/’¿t’Ì€ñöÜC‘ÏWóf‚ºÕ«‘û*Âù”í!y`tû*ªm³õø%wU««:ÕˆIÅÛ’ñ,ìgÑ´•Mq°e®â™ê˜fµúj°Õ‘Æ®B5S­ş#ï!fàéó¬µ	^Ã$Ëu_šï„Š—Ê<¨/I±ašõƒ6}dt¯Ñ _m6²a=b9'Pµæ¦£º¸‹EUŒz6zŒ–†òølPÏ=îÇçÜ‰AÕZúáúˆCøyĞhƒAÄãŸÅ³ûáEØ	ÿ|ñ!@^~e‰ŠQíù†Ü=
+)º±»Ÿbo•9xÅ’|4m©!y„)#YZê¦Xê£&kÒRoÂ`"Ùã8`nY%·¹Jf¾F:lÀ/ÃĞ(¼¬È§¬Dä}6Şòä`ğ½ÔŠrµÜ/u¶®äY(Ñ'*øGYñ´`ÎÔ·¬0¯ÛeÅåµx
+gì§p\Vğ‡•b§Ñóù+u-­–8ZíçqàßóP¨À.ƒ'Z)¯uA&…QºãoµÇ$Å®€£‚:÷£YÈßîlÌÏùĞ‹bròëo^Éex9
+ƒ8ó°ì³iÊ€‰¡ï$He®>	Á:\7 “w|´âú†Ñ&o»ÔÂ×Fúf]q<Ó0ÍLÖèW©Rwó©ëÜJË\w¤ä˜EñQ8ŒdÜ,íÒ›pÚP	!‹ùûê$#dea{=eQÄÓq9LÇ%¶²™)eö©t³/î=u4”Ø#g¢åP{«Ø!õ~IóMÊÊgh‹b\º§*àæsğÂíj5Ì{ƒ~N9èK4XªÚæEDKîCÚè_è÷!ø_„è8Ã¾€¡ûY‘œmU›µ’Óa«±©iÏ„<X¿ç:âh{<9P«Ó”÷øTXbÎ³)X^!™?0,L±#	ÂÙÚ¦v~Ïñß·ç~E¾H®=şÓ”!xqÓ;ï¶¸ónŸ»ó½úÆ¬y$›­´J¶%Øç"õEºı¹Ç¶­Ãş|o'ùaÛ#®0°¬-®¢ÚÛC`%è2¤Û½ê•ñ×«şyõãºÂW?]ÕÈÕÖUıjÛê¼ /¯º«\õ®®®úWŸ¯ÿïÕüjq•ü÷UÔ‡Ò#º}õ+üğèöçæê^¹óvr…áï~òÃ6¹¡ÛŸwö¯Üù<¡î¼Iv™·Etî’ü°‘“55›Şe)]âÃÀ–adâ„<
+
+ --- SSL READ 537 BYTES --- 
+‹
+
+ --- SSL READ 606 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 15:08:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 6193
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+ó;@¯î Åâ
+
+ --- SSL READ 16384 BYTES --- 
+*Õ.¤‚¡ºR+†&Aì|RzÅ­ßN]#Ø„r ó°&‰wtşúìúÃÙåõû£ËãŸ­9~wtqqıáèı‰L:¹°šäÃÉÉëë÷gç'×Ç?ŸÿÖY+·´Şg^)LS„¢b¦i/™Ó£Üo{±È„ÿÕüé¯_@ïÓB :ó®ol‡	º cS¹ÎÒ××”‘¹Tcu85IÊßÊes#.­ô)+²:xIúnu³Õña9¢ú{¡A€şgë)¥ÅFu¹å¼l˜¦]¥Ô•X n1‡×+ï–5Ì‚¹pë!SàcèŒ–×-U‚şµ†,!euçÖıYÖ3
+
+ --- SSL READ 7 BYTES --- 
+
+0
+
+
+
+ --- SSL READ 718 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=7&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=IBC-Native-121120-Constipation&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=521238213 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+y¤#
+
+ --- SSL READ 16383 BYTES --- 
+Šª™\îŸj¼‡)#`®?Ï2­65\[&¹î2sÁñ¡+eîEKœELG˜€nı$C­—Jä+£f)™ÖS¦€@¡ÕC!…¸‹Eg=™=F3CHõ½ésØ ş¸6ô½ñôÒs¦ jÍ|¡ÅáçA£ôz‘7}Ï2ì‡½cï¸ùç³rò•-EŒjÜóÂĞsÏBŠ®,ôÜSe<gK5š6×¼Â˜‘Ì,u“.õA’5q©—a0B‹¿ìa07«’[¥’ÙØ'+Öó®ÃĞ(^V‘I‰ÈïÙ0zåMAíÅ^”ëå~-²M%ß‡xˆ>RÁ?³ŠÇWß¬Âƒ¢Uœ_‹pÆ~‡YZ+v]±±÷\\Kë%N×ÇyŒï¼U`×Á#=BÄsF=Izbh#?–±í
+
+
+ --- SSL READ 606 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 15:08:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 6193
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 1921 BYTES --- 
+GET /gampad/ads?gdfp_req=1&pvsid=449302909079530&correlator=3765108119625622&output=ldjh&impl=fifs&adsid=NT&eid=21069136%2C21069138%2C21067257%2C21068812&vrg=2020120801&gdpr=0&us_privacy=1---&guci=2.2.0.0.2.2.0.0&sc=1&sfv=1-0-37&ecs=20201219&iu_parts=22688736%2Cpv-general-interstitial-3%2Cpv-general-hpmr-atf-3%2Cpv-general-lbslb-atf-3%2Cpv-general-mr-btf-3%2Cpv-general-wallpaper-left-3%2Cpv-general-wallpaper-right-3&enc_prev_ius=%2F0%2F1%2C%2F0%2F2%2C%2F0%2F3%2C%2F0%2F4%2C%2F0%2F5%2C%2F0%2F6&prev_iu_szs=1x1%2C300x250%7C300x600%2C970x90%7C1x1%7C728x90%7C1080x106%2C300x250%2C300x1250%2C300x1250&cookie=ID%3D32e98f71ddce3a99-2225afe482b8002d%3AT%3D1608372066%3AS%3DALNI_MZPgRd1IkH7Uky5wxXwbYoPD0_1YA&bc=31&abxe=1&lmt=1608396726&dt=1608396726713&dlt=1608396718164&idt=8482&frm=20&biw=1074&bih=731&oid=3&adxs=-12245933%2C707%2C52%2C707%2C-249%2C1023&adys=-12245933%2C165%2C59%2C1167%2C0%2C0&adks=1018479264%2C1328858751%2C3489975391%2C2241095852%2C3404311872%2C1003138331&ucis=1%7C2%7C3%7C4%7C5%7C6&ifi=1&u_tz=-480&u_his=5&u_h=900&u_w=1200&u_ah=860&u_aw=1092&u_cd=24&u_sd=0.667&flash=0&url=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&vis=1&scr_x=0&scr_y=399&psz=1074x3893%7C300x250%7C1074x90%7C300x250%7C972x0%7C972x0&msz=1x-1%7C300x250%7C1074x90%7C300x250%7C300x1250%7C300x1250&ga_vid=1569384814.1608372058&ga_sid=1608396727&ga_hid=526376185&fws=128%2C0%2C0%2C0%2C0%2C0&ohw=0%2C0%2C0%2C0%2C0%2C0&tt_state=W3siaXNzdWVyT3JpZ2luIjoiaHR0cHM6Ly9hZHNlcnZpY2UuZ29vZ2xlLmNvbSIsInN0YXRlIjowfSx7Imlzc3Vlck9yaWdpbiI6Imh0dHBzOi8vYXR0ZXN0YXRpb24uYW5kcm9pZC5jb20iLCJzdGF0ZSI6MH1d HTTP/1.1
+Host: securepubads.g.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Origin: https://www.phillyvoice.com
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+o¼	6u}gúñoéËƒ3³ğã°5èÚÔ›¥zÛu^ÍJıÚxµªCbÒCGR»ÜxÇ†k©˜Ì05ÊÍMÁQ_U€jíªÖõÎo`ó'KÔÌ+œ²¨qÜš–qg¼p¥áq»Õ–Q+JNşgöájtòñx>š‘ùíß«¿;Á58)ï›:ØO	õ?mdqóF¦’„~æ”x–å—s€çéb:¼İRL§UU$lSIt´Îµ¢~%Ë
+R4¥
+
+ --- SSL READ 3218 BYTES --- 
+y–K”Ê,©êaHÌ¸gŸUÙ\ÍPóùLÇ_çxBuXÜİ‰=¤_.ú.„ŞÌ"‘&ô¹EÚj¬A­]€_‚´¹²~k-È|NC‰¬h(Ä¤wÆ1(7§ğ¨«6d<o*¥ÖÒ<‹OPSI±Õ>«Á#æñY\¬ıU3•RÕ:Ô-hÕ
+v,äÓëÜWSY<‘jû.–Š‹ëˆÏ­²Œk‹Å×†+×FdİUÊ”¯'µR˜º>¦ê'Æ¦­Móöµ½„à­Ù›[›}k1CğhcwßßØ–vòù\FId?Ú¹ûïï°¶óåûÛAâÑ†ÒğÃÊ‘ç»xÒeÇàL‹ËÙSC;ø¢ñ£V™ëš‘Ï;”‚ÇEªÚ¿w™u4ö¤â~)Â€Ì…o¡/SíñšÅM–Usl@œ3“©øº¾¡qÄ~Ş‡”–ÏôáŠ-—À#Ğc)Sâ+Oo0ß¥!·?S;-ù6±õÕotººVº•Q[Â¼Š Ö÷<Ã¢/­®Qddİı%åÏ-¿LC6ù=}¤ß£Ï²0F?Á¥”£i#-şÜPŠBv(×“ÁUñ*€!±ğ-t  *wä·A/±O.e8Ú­š;`¡~Æ=Ä™áë.Aòs{‰X’¥7´Ô¸y&_4n€ŠõiìP±nõH¼ÖMïH_Öå'AŞ]Ô†ğ“òÉZ«Çhxô†‡I/‰G¶UJ5­¹–Ì5¿ÉŒ¾ÔU¸rA_xépd«”fñ¤ğ\<®‡“¬¸}cÎ£q
+
+ --- SSL READ 724 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=8&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=IBC-Native-050619_UnhealthyRelation&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=1972087317 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 711 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=6&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=IBC-Native-121420-ADHD&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=1295910438 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+OO&#„¼¦FîŸìMà“ošÀdÒ¯äsù¶Ø”•¯e™o
+.ßé‰}İtÿÍ!ÖøäfÊ×t<ÿá»'Ã×ø-%{gÁU‘¬¦‡˜k{øû@õP}½™ÿ0Eİåµä¢Ùd^ãw”œx'1~OÉÉƒ“ÿFÉÉ'1ş’pã?(9ùş$ÆRròáz<>‰ñw”œÌÔ·÷àGğıüÿtĞ0]‰„rˆjLÙavú€iÚù#›N‚±Elw¯;cvİŸî­ûÓ¿¾îO¿mİßĞèÅæŒœüœp,ªj]N·+š¤U¾ª5
+¶³ÿ	N¦›ÿ
+
+ --- SSL READ 1400 BYTES --- 
+ö³#hïZ>j8'ğ=÷iÕ`:ÁÉ?êÃ–9y³¦H‰²ŒJtÃ#Œ_˜`„–.4áb->ÖDıÆÃ–M¹ĞTÊœiİhLB£1ã,°mÜ,êrDÿîô”•‚½¦ixš“L®Æ9qJº @æbø%âş­ƒ
+
+ --- SSL READ 606 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 15:08:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 6193
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 705 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=5&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=IBC-Events-021316&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=457867160 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 03:23:01 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 48546
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 726 BYTES --- 
+GET /tr/?id=1580074202251272&ev=PageView&dl=https%3A%2F%2F4846802.fls.doubleclick.net%2Fddm%2Ffls%2Fr%2Fsrc%3D4846802%3Btype%3Dphill0%3Bcat%3Dphill0%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D3700666036330.261%3B~oref%3Dhttps%3A%2F%2Fwww.phillyvoice.com%2F&rl=https%3A%2F%2F4846802.fls.doubleclick.net%2F&if=true&ts=1608396727818&sw=1200&sh=900&v=2.9.30&r=stable&ec=0&o=30&it=1608396723809&coo=false&rqm=GET HTTP/1.1
+Host: www.facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+3heôDæ'b»¥4Êv{¸PQÂ-¿¿xÔ§Bè»CÏ’²’™Ô'¿»qa‡TãŸUQÈU~)÷j9İVôË¡…h&…©IÑhãĞ…*ã!¤{õ™IÕ@Ò½UlVYºÍ%jN¾åbß¿XÕÔ42ŸmKe©¿ÛÛ[˜ùBV4IŒönŸAnÙ€gŒŞnÿó€¼Ğ
+zxÍ”¼Ø…’§²ÖdE‘pÏÛs|¢İ—PªuzÜÿ"‚²ºI% DL©¯¿}^–o(ñ
+
+ --- SSL READ 506 BYTES --- 
+GET /b2?c1=2&c2=19749226&ns__t=1608396723977&ns_c=UTF-8&cv=3.5&c8=Jimmy%20Kempski%20%7C%20PhillyVoice&c7=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&c9= HTTP/1.1
+Host: sb.scorecardresearch.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Connection: keep-alive
+
+
+
+ --- SSL READ 720 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=9&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=RCA-Native-121520-HolidayStress&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=1813527851 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 534 BYTES --- 
+HTTP/1.1 204 No Content
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 16:52:07 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, must-revalidate
+Last-Modified: Wed, 21 Jan 2004 19:51:30 GMT
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 0
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+
+
+ --- SSL READ 724 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=10&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=BostonScientific-Native-121520-SCS&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=2054414054 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 705 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=4&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=IBC-Health-040915&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=341442770 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Fri, 18 Dec 2020 18:49:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 79333
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 595 BYTES --- 
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Date: Sat, 19 Dec 2020 16:52:07 GMT
+Expires: Sat, 19 Dec 2020 16:52:07 GMT
+Last-Modified: Fri, 21 Dec 2012 00:00:01 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0
+Set-Cookie: fr=0YSmDW5mAnS930VUB..Bf3i-3...1.0.Bf3i-3.; expires=Friday, 19-Mar-2021 16:52:07 GMT; path=/; domain=.facebook.com; HttpOnly; secure
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Server: proxygen-bolt
+Alt-Svc: h3-29=":443"; ma=3600,h3-27=":443"; ma=3600
+Connection: keep-alive
+Content-Length: 44
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+ƒğ­IQ€\RlBf¦wÃï^«,µ#İ^9·!×|Z?!Â‰¼¨~F	34LQ™Ñ”ù;µCŠ‚ç²'â×Õ8áNËºäd8´»Z#•iy“ñ‰–>&?#KîÜRZÄ¶İZ/•)ßAâ*ëğƒÏPƒN|0ºa¾ÈW4Éô,áï=è:‚lØGS6DM	¢£!é(«}€F„Ÿ‘^¿ZšZëz¶[èr4^ï™İ²â{Të¹­kœqk)ÎÉm×œÀœÏşkN€u!/?Rñ1Ê‹­Êìæc!cíi$ç³ÿìg,Ó¼R¢ÄNVªŸ¸âÒàŠKYm“jUnÍÚëïcº^—%Ò,:It‰‚·P[ò¯)W®*Ñx-İáŒËPÉÊ
+´³üjªÿC¤ñ³š.N Ú
+ìÈfU?U²J²xª¯lFiĞ–¹4w2šäÙ›Š
+ÑJšL1¤”ÉÔiyŒ±mWhuAbSèZœ×«M–|ÚÈsÑ¿/j…4¯Îqw!Õ$<ïW
+ÎásÏ{î«¹Ö¿’–›BªO}é9-–%Â~@33œ`~À&™é£aF†ãîÕj¸«U×÷He…Y6÷ßIÁÑmÁ	
+
+ --- SSL READ 248 BYTES --- 
+HTTP/1.1 204 No Content
+Content-Length: 0
+Date: Sat, 19 Dec 2020 16:52:07 GMT
+Connection: keep-alive
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: private, no-cache, no-cache=Set-Cookie, no-store, proxy-revalidate
+
+
+
+ --- SSL READ 606 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 15:08:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 6193
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 726 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=11&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=PFCU-Native-120720_NewYearsResolution&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=615113740 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 03:23:01 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 48546
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 705 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=3&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=PlayPennsylvania&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=1332102934 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 606 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 15:08:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 6193
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+<_­SYIµÀ´ÿ¾vZiHı:h*¡mŒ‚s©cæT
+
+ --- SSL READ 713 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=12&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=Prevu-Native-120720-2021&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=545009147 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 710 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=14&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=Akoons-Native-020816&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=2124321188 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 709 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=13&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=Tacony-Native-120920&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=729056361 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Fri, 18 Dec 2020 18:49:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 79333
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 704 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=2&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=PlayPennsylvania&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=252812551 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 12:06:47 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 17120
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+¼nÃæ¹²ğ'”™¬—4·6ß*ZAÖ¥fym³ íÖUuÏå3Åš É¢Ò±ŠEá¯œü:»?^sòzv^ÏÓz6Qİ.%? Ïxı3'Ã_¸¶eÃÉÏ¿İ=é^íÙÉ¶.QûOçô]R2œàÆ}ç‘ÛZ‘¡²L.%À·±ìy¯¦š2®ë÷[‡ ’eğZÑ(|uĞş¶›eß¤‚Öµ&ïxëmà4ıÚ©ù_²R—²pÇo]Fî¥½Ô,×ç‘ñ”ÖF!ÅÒ•ÕjF¨ÆBoæ½ÖóÎ6Q$)ôÃ	á¡)qÔ¾3‹
+¿¢KùZò¼%DŠÕ¾HJg™äTü’ğsÓMZw
+
+ --- SSL READ 606 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 15:08:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 6193
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 728 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=16&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=RealEstate%20Imps&ea=Impression&el=102020_2401-pennsylvania-ave-21a2-a3&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=747401196 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 03:23:01 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 48546
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 722 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=15&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=Sponsor%20Imps&ea=Impression&el=PropSwap-Native-121820-Sportsbook&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=379111627 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 606 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 15:08:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 6193
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 298 BYTES --- 
+GET /ddm/adj/Baaegs/Ahlu HTTP/1.1
+Host: ad.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 08:06:23 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 31544
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+)ÒİaŞ¡åN'´k­š„Ï)U2ÂCS‰@¡[N„9Ÿá]ç)ò¼OÜ.œ–¶®ç9KR98]¯§¢¼+Rãf£ÊLd¦¶Ğïß”y–p€Â‡şJËôû3ë"¿L„\lÊ*‰ìQ	@áT½Ó9w³fyv¬Á÷
+Ùó!È1c¨–„‡ÜZÑ†²7ªív7%ÙãL¥çIŸÒ©ôÿ„Èy†ŸAÎÌ”¨aü½ˆ\¿(Ú|QËG%äàİëgƒ5­*YdJÆ3­ì€«­¼)äg Ù4Ó©úÌ£HW!%}¿YÓ_©¶Ö*"k9åçk™íRõ¾ïIåéTù5O*ÖQã>EîºOQ+"{îSlÅ•7>ù0Å
+
+ --- SSL READ 718 BYTES --- 
+GET /collect?v=1&_v=j87&a=526376185&t=event&ni=1&_s=17&dl=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&ul=en-us&de=UTF-8&dt=Jimmy%20Kempski%20%7C%20PhillyVoice&sd=24-bit&sr=1200x900&vp=1074x749&je=0&ec=RealEstate%20Imps&ea=Impression&el=110920-219-s-18th-st-1402&_u=QCCAgEABAAAAAE~&jid=&gjid=&cid=1569384814.1608372058&tid=UA-56540822-1&_gid=652329575.1608372058&cd6=contributor%20page&z=1829423474 HTTP/1.1
+Host: www.google-analytics.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+HTTP/1.1 200 OK
+P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: https://www.phillyvoice.com
+Google-LineItem-Id: -2,5567284483,5563782615,-1,5563782612,5563781487
+Google-Creative-Id: -2,138334527308,138257455213,-1,138331551981,138331546137
+Google-MediationGroup-Id: -2,-2,-2,-2,-2
+Google-MediationTag-Id: -2
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Content-Type: text/plain; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-Encoding: br
+Server: cafe
+Content-Length: 26483
+X-XSS-Protection: 0
+Set-Cookie: test_cookie=CheckForPermission; expires=Sat, 19-Dec-2020 17:07:07 GMT; path=/; domain=.doubleclick.net; Secure; SameSite=none
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+Süš2iÚz=$¢ªÖÃeDMêP‰1nè_şıe`ìˆe;®çûŞŸúßÿûùÚ]]ÍZ&€SÈ„“Rª¯OŞH›¸p‹aì§UÿõÛ¯ŸvîVkº)È3×w"DLˆ3+‹dÀ&²G;_kö®5ôb¿(k§*éåîéÂ¤ÔÄh:‡€H\#5™írûuÆ~Íşë×’+yèrH«õÑ(V° ÃÕ4î0  ÃQÀ
+´úß/³—vÿ‘™aÊ|wµvF¹ø2:÷½×»ïu÷üíî™­ê™ù¡5Z•²•6Ä×aäÖh
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Fri, 18 Dec 2020 18:49:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 79334
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 607 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 12:06:47 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 17121
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 297 BYTES --- 
+GET /ddm/adj/Apxg/Bpktl HTTP/1.1
+Host: ad.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 928 BYTES --- 
+HTTP/1.1 200 OK
+P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Content-Type: text/javascript; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-Disposition: attachment; filename="f.txt"
+Content-Encoding: br
+Server: cafe
+Content-Length: 14
+X-XSS-Protection: 0
+Set-Cookie: test_cookie=CheckForPermission; expires=Sat, 19-Dec-2020 17:07:08 GMT; path=/; domain=.doubleclick.net; Secure; SameSite=none
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+
+
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 1408 BYTES --- 
+<.dúÌŞTßÚ7fÈºUê/ªk¼hOaÆ¡lİ`ŒFír8&‘ÿ‹çE-œ¦‚ÉpÈUø;Bd²nÕëõÉ»ÛfuçvYr[ãO‚ŒqyP’
+Ï~q÷¼á áÁ©¾‡oÖuğ]êÒú¨ÉTĞuvÀI%´¥¹çÑÙBÌ§PÏP ép(Ü
+z6šK¥Úà
+Ñ‰hËn]1
+(¹µw¯1ZãKqğJ“1|`‡_	ÕhP‹÷%êg(Uïd§w/È•ê_¸Pûh–‹91ÊûÔ0İœ,t§M£1Œu—·ïr­_îÇD„ÂnwÑ‚7¨z×
+
+ --- SSL READ 928 BYTES --- 
+HTTP/1.1 200 OK
+P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Content-Type: text/javascript; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-Disposition: attachment; filename="f.txt"
+Content-Encoding: br
+Server: cafe
+Content-Length: 14
+X-XSS-Protection: 0
+Set-Cookie: test_cookie=CheckForPermission; expires=Sat, 19-Dec-2020 17:07:08 GMT; path=/; domain=.doubleclick.net; Secure; SameSite=none
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 606 BYTES --- 
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Date: Sat, 19 Dec 2020 15:08:54 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Last-Modified: Sun, 17 May 1998 03:00:00 GMT
+X-Content-Type-Options: nosniff
+Content-Type: image/gif
+Cross-Origin-Resource-Policy: cross-origin
+Server: Golfe2
+Content-Length: 35
+Age: 6194
+Cache-Control: no-cache, no-store, must-revalidate
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 1408 BYTES --- 
+Ê¥TßÒ9äB”~‘ ’
+	0g@ŒB„&È:3@L°óÿï/ÍvA•Ô$;
+
+ --- SSL READ 1408 BYTES --- 
+åÉ!r­é²ÏÆqn½6Ä¬K¡;v–Ã1ŞácG£È-‘âdµ·YÏÆŠDÇ²í^I[ê»$±¢¾±¦¾±¢¾™Ğ··c*š4$¤y~[è•nˆ»çÅn±Æ›=$éÇ¤e€Ó½^¢6EBÓä³şàQ"7ùf Ú2'÷›µ,´ãØŒó<ö†öuMV?èœ«OóÏØ‡]LÖ8†2º·M¡HßÛd%İÉ„VÍ5z0§J]§ô†Q¾|M+I&Î¿»¾¢é8´İ—ÚQ;®ŒM%‰5±°QÁ÷ø
+ßw`9ÍiODüI@sú.µÍMScŒØzeÁƒFùµJVRçnÒœ™™Ô¨î5÷ğğA@“ğ½Póò×{Ñõ*÷ªÈWI);Öÿæ@ñ‚0í€ëcÇn¯O÷ÎÕÚ¹ÿRWU&p`FôK€}°ı?œ*ögøòoo75ÆÿMÁŠŞ0	ô|·üÙÇkÍ„©³î
+
+ --- SSL READ 1408 BYTES --- 
+°4áÆQWÕ³/µqÑEö€C£)åÉªÏ¿Ÿ¬­›Œñ-Ïq$ô8©AøÛRı‰GZrPG Q/–„ˆ¼¿F¤¡:¥yªÎ¦ÛR“;Z£ã³U¸Ÿ›Üc–ÂuG@áºÃKO%¹éd‘ïEk®£‰5$\ÌnN·	nÚµh–—†QÕâ®i4¯2KåÊA\ë~H–-÷sˆzFç¸xf^Õ‹Ê]—z‰¾ õ\0‹¾$D¶Ã˜ÂFûà¡²„7šµ²®£r%Äæõ‚YR£(Ÿ™Ò·pº8æ5ÇÇÇ!çÑÚv´„èWBäñÎäRm^…9gÍºİUuà¨±xáò$€Õ
+ãÍJxè.¾±€–Qá'4–7y¢Ò5úëŸ®yúv>O=]çÉ!'0»Nßõ›f/Å³§udé~òhõëz_•3É×ÿ*LìÌÁ¡ÁÏÆ©Áÿü>?ız¬îstqãëÊ˜Ø_‰è+³‘áœá¹ Lkƒªª"uÁ>¬fßƒ¡b¾ñÌÒ`ÏÍCìBw<YÄ¥ª„9—Lğ(^t™²q/¾2””r$·Ñs/­šMÆéA¸>b€œ¡”R	* ~êëÒşló\±³S€Ş/K¼T.,À²?bŠP«^X”ƒj]GNªÉåX^BG^z—nÊ†Ê^B)~)“sw7”
+PW8–p_¨É²¿¬ Æ±°¾@Î-d6ÎÜsËÉÔ4.¢¢oå
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 545 BYTES --- 
+GET /vmp.gif?cid=ifmfu4tgpe4wontymrgwqvkynbkw6m2z&inx=0&rt=9219&val=&wnx=1&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=pmr&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+S?\B£Óã'óÛ{5:‰1øûw ¹UhØzşmZÀmuºÓ
+
+ --- SSL READ 1408 BYTES --- 
+^OH#„Út×<ßEä¬2'ìx*P~·ærï;ú¨lŒ]Ä+g kZm’ìw¬ª÷ÈÄr« qµccooN—qM¿W-F#Aš	¯’Uƒ3ªÂ6(í3ƒ†Ï%û©Ç”ùği 
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+
+ --- SSL READ 1132 BYTES --- 
+2o&ùŒ"ê?‡;f¥é”ùT¼+Ò€*§~ª¤å•fV¾¹G«šÔŠ ¿b¼9{}şê-ÀöĞ´’×ÕÉ½¤Öés­=D3|Áµàgc²ÜxÛŞFWÜ˜ú9
+í"7ŞÁõ”tß²e¨®q$¿áÂì§ÖÛóVÌ}{xK¨‰)ù“Ãİ+´½SmêîÉu!áİŞË¥ïıüæå_{›Tì”/hE;wœ­£+ê®Ø¸û6¶G-I=Ïyj#Äª½/	7€{æ6Üe#‡›à8#÷p÷ŒüªPÓYèãí€8yûü[Õ%[»‚ÚÀÔYzŒ{ÇÙÆ@_OtÖ½ä”ŞtS'!m-Fv3j_ÍF²…=”mŒF4qúZ…åf­W)'+=°R?b¤æz/ÅÙ”º#úd%7kA+=°ÆVæˆ5ß!ítC½^æ+YQ½ê:µuKĞM•«Éx””4Mó+5÷nNÃÒœ“z÷½x³?yênõ¦‚Øâ=Ö·\è»3;î¸9È:n,à@}}·†;•îø<´5ïÇvÃ;Ö„vªykêäè¸9èTÑ¸>ÔÎÔ¨ë}asXñ”o+_™çñq±AS¡#°¾¸—bª$\'9ÎÖV¶èW–¸ı~A(îfèWÒOê¶ŒÜyÃFÛ:bpcV‚hÏ[ƒÑ'CÑœ>}ú.ï:ö…wØûÚ5:GÍ´ú3Ã.¸ó›zÏÊı—‘-‘N›CÙDf•v}i%ì‹À¢ó$Ëd¡SzÆg;EgN[6é•5IÚ*İNâ…~ÌJ·‡–ÅL©¬©Å&XŞ‘µùyê–‡6ËC‘±±<uÆ
+
+ --- SSL READ 381 BYTES --- 
+GET /?uid=14f310f9-3077-4e18-a06b-cec5b4689a83-tuct6d75d59&src=tfa HTTP/1.1
+Host: cds.taboola.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Connection: keep-alive
+
+
+
+ --- SSL READ 1408 BYTES --- 
+z|\	U«jãÕÄ^òÉQò}œ³ÙÍz$1¨§ıˆì[Ò?¦ºüâJ˜÷‡›2­¦]ÃZ-ãÙOr$`¢t^Ìyh¾ŞQ¯³§¯wì9	ÔP|A,(Íé¾ü[êıÚÑ\òş:j9Ş|ø+¹ê´—öXjx†¯´
+
+ --- SSL READ 1408 BYTES --- 
+?ÈZç¶xZËÿ²k{y·ãohgƒJŸÓZ¾“]Âï{Swb¬eRŸŞûÛ¸ö©³ışõ¿Áo
+
+ --- SSL READ 310 BYTES --- 
+GET /ddm/ad/Bmtmqz/Bnysjz HTTP/1.1
+Host: ad.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 155 BYTES --- 
+HTTP/1.1 204 No Content
+Server: nginx
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Connection: close
+Cache-Control: no-store
+Access-Control-Allow-Origin: *
+
+
+
+ --- SSL READ 1130 BYTES --- 
+GET /lreprx/js/v1/src/lreprx.js?ad_tag=https%3A%2F%2Fvid.springserve.com%2Fvast%2F313861%3Fima%3D1%26w%3D616%26h%3D347%26url%3Dhttps%253A%252F%252Fwww.phillyvoice.com%252Fstaff-contributors%252Fjimmy-kempski%252F%26cb%3D751604287%26widgetid%3D0011r00001qbFvJ_373%26lob%3Dphillyvoicecom%257Cfloat_1214%257CA%257C70%26clipid%3Difmfu4tgpe4wontymrgwqvkynbkw6m2z%26key_custom1%3D%5Ew%3D0011r00001qbFvJ_373%5Ec%3Difmfu4tgpe4wontymrgwqvkynbkw6m2z%5Ei%3D1%5Eab%3Dphillyvoicecom%257Cfloat_1214%257CA%257C70%5Ev%3D0%5Ep%3Dphillyvoicecom%26key_custom2%3D%5Ed%3Dwww.phillyvoice.com%5Eu%3D%5Edv%3D1%5Eco%3DUS%5Epl%3Da%26gdpr%3D%26consent%3D%26viewability%3D0%26schain%3D1.0%2C1!anyclip.com%2C0011r00001qbFvJAAU%2C1%2C%2C%2C%2C%26us_privacy%3D1---%26_vpaid_js_label%3Defi_muted_autoplay_canary&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&imaw=0 HTTP/1.1
+Host: player.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+=}\Ô$‹Æz­Ëkoàå(7ñv†··¥Ì³±"şŠò¨—Ğbu£ga×‹V‚íèÑd?ûÀ92›İÍQc!‘Ä.â…Ø‰‚ÖxT_R+½ çˆ!"â”<›3Cc"Ö½i×-+ê¥m¬:LmÓt/:]„j|Eßœ£¡r'z5ø2”ß’vø1õË˜_y=“'YRÇImŞŠ}¬„1ŞOøvNÏ&ŞÇ@oØ‚iÔŒ¼äƒB5âƒD­n ¯ @C>
+
+ --- SSL READ 863 BYTES --- 
+GET /tr/?id=608026936199777&ev=Microdata&dl=https%3A%2F%2F4846802.fls.doubleclick.net%2Fddm%2Ffls%2Fr%2Fsrc%3D4846802%3Btype%3Dphill0%3Bcat%3Dphill0%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D3700666036330.261%3B~oref%3Dhttps%3A%2F%2Fwww.phillyvoice.com%2F&rl=https%3A%2F%2F4846802.fls.doubleclick.net%2F&if=true&ts=1608396727833&cd[DataLayer]=%5B%5D&cd[Meta]=%7B%22title%22%3A%22%22%7D&cd[OpenGraph]=%7B%7D&cd[Schema.org]=%5B%5D&cd[JSON-LD]=%5B%5D&sw=1200&sh=900&v=2.9.30&r=stable&ec=1&o=30&it=1608396723809&coo=false&es=automatic&tm=3&rqm=GET HTTP/1.1
+Host: www.facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+ñ:J˜·_KÚŸ%ãr7
+û\y[¶ìîD.­/8<Àjš˜sAQâE€…a~ßPŞAÊ$ó˜8ÔÓ-Â›æ-l/ù,›S)-Ol£"Y€á§S,
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 9819 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Content-Type: application/javascript
+Content-Length: 9208
+Connection: keep-alive
+x-amz-id-2: 0f4/Eq5EWQ1IwfzbuCQvNDHOwwD18OGWUT7+12wS6C1vooejbcnI3mqf1aqOXIePlBBc+u1KpPo=
+x-amz-request-id: FE8DB72A9AD39AF7
+x-amz-version-id: MbZ4Gr_KJLz38LlBXUig2kGTv4pg9h7q
+Accept-Ranges: bytes
+Server: AmazonS3
+Content-Encoding: gzip
+Vary: Accept-Encoding
+X-LLID: cbb3913a641e3e15c6e81d2828ecb6a6
+Age: 94376
+Last-Modified: Tue, 08 Dec 2020 11:16:24 GMT
+Expires: Fri, 18 Dec 2020 14:40:12 GMT
+Cache-Control: public,max-age=60
+Access-Control-Allow-Origin: *
+
+‹
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+d÷É©Ëì-³,]ÄÉ:Úf»:*vUvŒ“ªØï×q\ôìîêÍÆİÕHÍw6]Å8Å%8÷»À›¢ÙÇÄé¯L‚b6ö{¦É*Ş­ÑçHúÍşÍqiöÿÿşo³ê"İ ÚŒ{²¥_ïOÜX†Ëş.€
+
+ --- SSL READ 863 BYTES --- 
+HTTP/1.1 200 OK
+P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Pragma: no-cache
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, must-revalidate
+Content-Type: image/gif
+X-Content-Type-Options: nosniff
+Server: cafe
+Content-Length: 43
+X-XSS-Protection: 0
+Set-Cookie: test_cookie=CheckForPermission; expires=Sat, 19-Dec-2020 17:07:08 GMT; path=/; domain=.doubleclick.net; Secure; SameSite=none
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+GIF89a
+
+ --- SSL READ 595 BYTES --- 
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Expires: Sat, 19 Dec 2020 16:52:08 GMT
+Last-Modified: Fri, 21 Dec 2012 00:00:01 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0
+Set-Cookie: fr=0mOZiIxcuVTIqqxpb..Bf3i-4...1.0.Bf3i-4.; expires=Friday, 19-Mar-2021 16:52:08 GMT; path=/; domain=.facebook.com; HttpOnly; secure
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Server: proxygen-bolt
+Alt-Svc: h3-29=":443"; ma=3600,h3-27=":443"; ma=3600
+Connection: keep-alive
+Content-Length: 44
+
+GIF89a
+
+ --- SSL READ 559 BYTES --- 
+GET /vmp.gif?cid=ifmfu4tgpe4wontymrgwqvkynbkw6m2z&inx=0&rt=9675&val=1.1.9_178_prod&wnx=1&abc=phillyvoicecom%7Cfloat_1214%7CA%7C70&ty=xlo&v=0&ext=0&ta=1&lnx=0&sid=u3QskclbILI7AoWFICLYowciuAWxugmz&pid=phillyvoicecom&wid=0011r00001qbFvJ_373&pt=a HTTP/1.1
+Host: pixel.anyclip.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 264 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:08 GMT
+Content-Type: image/gif
+Content-Length: 35
+Connection: keep-alive
+Server: nginx
+Last-Modified: Thu, 05 Nov 2020 15:15:17 GMT
+ETag: "5fa41705-23"
+Accept-Ranges: bytes
+
+GIF89a
+CONNECT ERROR
+
+ --- SSL ERROR ZERO RETURN - CLOSING TUNNEL --- 
+
+ --- SSL READ 1408 BYTES --- 
+6¦&öuˆf#
+
+ --- SSL READ 582 BYTES --- 
+ıqã“¢$õoXñæ¦ü¡iPû¼®D½Câ
+CONNECT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+X¶ü÷
+^ÔŠHşÕÖxW}$~ĞÏ#oïvŸösÿ~*¸íÈ8&ùËb¾Z”@a
+à(“‚P$AÂÏúßö`ø[5WÎ?#¡Œ§õGbh 6Óxö—Q/8 ^¶´)>×mé¦bvfqG¢İ n%`®ø©ˆ‰#Ë¨^
+
+ --- SSL READ 955 BYTES --- 
+GET /vast/313861?ima=1&w=616&h=347&url=https%3A%2F%2Fwww.phillyvoice.com%2Fstaff-contributors%2Fjimmy-kempski%2F&cb=751604287&widgetid=0011r00001qbFvJ_373&lob=phillyvoicecom%7Cfloat_1214%7CA%7C70&clipid=ifmfu4tgpe4wontymrgwqvkynbkw6m2z&key_custom1=^w=0011r00001qbFvJ_373^c=ifmfu4tgpe4wontymrgwqvkynbkw6m2z^i=1^ab=phillyvoicecom%7Cfloat_1214%7CA%7C70^v=0^p=phillyvoicecom&key_custom2=^d=www.phillyvoice.com^u=^dv=1^co=US^pl=a&gdpr=&consent=&viewability=0&schain=1.0,1!anyclip.com,0011r00001qbFvJAAU,1,,,,&us_privacy=1---&_vpaid_js_label=efi_muted_autoplay_canary HTTP/1.1
+Host: vid.springserve.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/client
+Origin: https://www.phillyvoice.com
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+
+ --- SSL READ 1408 BYTES --- 
+â¹{ıÅWX‘Œri­}ï¡@oWTŒ.gÁ†7ÖX®dså5ò¸şzY2Ñ9ªfŠ;AÅ…y2:{0úùYº4ã]­ZO=)YF*5ËËt³3Ól¯¸]l0k6¯SªáÏx‡¡g™à¹#ûE S—æ¥o}û¤Eš2ïªÅ™o¡ŒŠŠ3m°èšöˆw	Ä‡İõ¦>3}¹KÈu"±G
+
+ --- SSL READ 771 BYTES --- 
+GET /ads/measurement/l?ebcid=ALh7CaQG83sz0p7lKJjwDJvaPC2yoNk_8fdD4ZVpuPvR2JmsC-ZvQwAOZB9hJ-UCtiLys_Z5x2wN HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/staff-contributors/jimmy-kempski/
+Cookie: 1P_JAR=2020-12-19-16; NID=205=n7n7I5DCoMkaBXDpM48Qetfrkx3yWmHaLupALdYatYJ7Pxih2e8jfTtZut5bA3bSJPIHR1DGgBt27L5LNzwt7DujNh3izysNUsNy9xtynuxi1fQzti9CHTlB3sfpdvFoJBqB9zzF8gKmmx3A7FHYOTeg_Hl3V5u0G_rPQqKF_Ws; ANID=AHWqTUkU8unTXB0MlvrXIS8zXH3Qhp9HF8dcBlR-zB83NOWxvEIzgT2CvgHOBoCn; OGPC=19021306-1:; DV=M3t5aI7AiMgkcJwiBMaOV24pT2O-Z9dcOI1FeSUqggIAAAA
+
+
+
+ --- SSL READ 1408 BYTES --- 
+Æ¢9œ÷•ƒÑF˜5Áü“˜É]¾l &%·6¹Îğ
+
+ --- SSL READ 2235 BYTES --- 
+HTTP/1.1 200 OK
+Date: Sat, 19 Dec 2020 16:52:09 GMT
+Content-Type: application/xml;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Access-Control-Allow-Origin: https://www.phillyvoice.com
+Access-Control-Allow-Credentials: true
+Set-Cookie: ssid=cd0d205e-da05-41b0-a93a-cb82cb9ee934;Version=1;Domain=.springserve.com;Path=/;Max-Age=31449600;Secure;Expires=Sat, 18 Dec 2021 16:52:09 GMT;SameSite=None
+Set-Cookie: sst=1608396729103;Version=1;Domain=.springserve.com;Path=/;Max-Age=31449600;Secure;Expires=Sat, 18 Dec 2021 16:52:09 GMT;SameSite=None
+Cache-Control: max-age=0, no-cache, no-store
+Content-Encoding: gzip
+
+624
+‹
+
+ --- SSL READ 399 BYTES --- 
+GET /network/trackpxl?advid=62016&action=view&r=5442&refurl=https%3A%2F%2F4846802.fls.doubleclick.net%2F HTTP/1.1
+Host: traffic.outbrain.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+
+ --- SSL READ 565 BYTES --- 
+GET /v4/fullHashes:find?$ct=application/x-protobuf&key=AIzaSyAeBuGRUrxHr4_eHhrCwdkl0G-O4qR5UXs&$httpMethod=POST&$req=ChUKE25hdmNsaWVudC1hdXRvLWZmb3gSGwoNCAUQBhgBIgMwMDEwARDKgAoaAhgLj2HPHRouCAUQAhoGCgQKvbHuGgYKBFwdQzsaBgoEajUwNxoGCgRwpqqxGgYKBMK4lgYgAQ== HTTP/1.1
+Host: safebrowsing.googleapis.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: close
+X-HTTP-Method-Override: POST
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+
+ --- SSL READ 416 BYTES --- 
+HTTP/1.1 204 No Content
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Date: Sat, 19 Dec 2020 16:52:09 GMT
+Server: jumble_frontend_server
+Content-Length: 0
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+
+
+ --- SSL READ 864 BYTES --- 
+GET /tr/?id=1580074202251272&ev=Microdata&dl=https%3A%2F%2F4846802.fls.doubleclick.net%2Fddm%2Ffls%2Fr%2Fsrc%3D4846802%3Btype%3Dphill0%3Bcat%3Dphill0%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Bord%3D3700666036330.261%3B~oref%3Dhttps%3A%2F%2Fwww.phillyvoice.com%2F&rl=https%3A%2F%2F4846802.fls.doubleclick.net%2F&if=true&ts=1608396729429&cd[DataLayer]=%5B%5D&cd[Meta]=%7B%22title%22%3A%22%22%7D&cd[OpenGraph]=%7B%7D&cd[Schema.org]=%5B%5D&cd[JSON-LD]=%5B%5D&sw=1200&sh=900&v=2.9.30&r=stable&ec=1&o=30&it=1608396723809&coo=false&es=automatic&tm=3&rqm=GET HTTP/1.1
+Host: www.facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://4846802.fls.doubleclick.net/
+
+
+ACCEPT ERROR
+
+ --- SSL_ERROR_SYSCALL ERRNO: 0 --- 
+
+ --- SSL READ 1408 BYTES --- 
+L²³ªÂ³ª
+'mNNa*ÍäĞZƒŠ7Âº-—~úÇ®Ä#a¹:Úa˜ÅòŸ^+ëª
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 595 BYTES --- 
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Date: Sat, 19 Dec 2020 16:52:09 GMT
+Expires: Sat, 19 Dec 2020 16:52:09 GMT
+Last-Modified: Fri, 21 Dec 2012 00:00:01 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0
+Set-Cookie: fr=0J9USwCr4NqQicjPb..Bf3i-5...1.0.Bf3i-5.; expires=Friday, 19-Mar-2021 16:52:09 GMT; path=/; domain=.facebook.com; HttpOnly; secure
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Server: proxygen-bolt
+Alt-Svc: h3-29=":443"; ma=3600,h3-27=":443"; ma=3600
+Connection: keep-alive
+Content-Length: 44
+
+GIF89a
+
+ --- SSL READ 745 BYTES --- 
+HTTP/1.1 404 Not Found
+Connection: keep-alive
+Content-Type: text/html;charset=iso-8859-1
+X-TraceId: 6a4975486e74e80526affd81b8e72a63
+Set-Cookie: obuid=466baccb-263a-4de1-946a-0f91fd298f78; Path=/; Domain=outbrain.com; Expires=Fri, 19-Mar-2021 16:52:09 GMT; Max-Age=7776000
+P3P: policyref="http://www.outbrain.com/w3c/p3p.xml",CP="NOI NID CURa DEVa TAIa PSAa PSDa OUR IND UNI"
+Pragma: no-cache
+Cache-Control: must-revalidate,no-cache,no-store
+Content-Encoding: gzip
+Backend-IP: 70.42.32.30
+Accept-Ranges: bytes
+Date: Sat, 19 Dec 2020 16:52:09 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ewr18122-EWR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1608396730.803184,VS0,VE3
+Traffic-Path: NYDC1, EWR, USA_EAST1
+transfer-encoding: chunked
+
+
+
+ --- SSL READ 1408 BYTES --- 
+û"k×ŠÓÔô|EyÁa®É¤A%¸‰H…—” ŒsÊ’'yM#c'c€ößN??DİÄÿÁ‰ô+¡;~àè”{[ı´¬o#¿	…¨¦œ‡ÿ“œFlAWÆÒ/H$_hÌå·Ú`æj$¹€ª©0¾T~í'áp
+‚Ÿ	AĞßæù›KİÒß¤‡àç‡ğúp<šò!„`’Õç¦:~‚I…2=gs­ÉïhàÿŞv¾ãJ%g…±È>¹Äæ.µög‚‚Ñ_]IRªÕM¬W01h±Â¿_ßÁ½lÿm"]ğu8`_&02‘Z˜"†©a¥L‚¾L‚$…ŞHµpäóî¨@è)TiÂ¹Â;±3h%>âÙ¢IşjÔi»Ú!¬ñ±&¨ğÖ9ãÁÚ_q‰…×”û‚ngšú;º I]2‘ğ’4‘Ôu„H*V-‰Ÿ>¾=vFÖM¥/P75ù‡#¥¯²°¤*rd±ó´¤P8ç\ ¨lŠQL}¿áO€êıÏÿ~}ã{ûë;›9tÔÏùşïN.Éi”ºQgÿ!—£‡5ŞŸÔ#<ÈáğĞ©³ñ™$~Ê¥Gd®‰ŒX¼ğY’¢?˜:ÿÉHêôó3:né•tïì3AˆşÄó¿ínaYô·˜[¤IcÃ¼Û:)Ô‹$>£;y¿“±s&ƒ¹–Š¶<æ~zm6EEãÁéT¶f4“ŸÚˆ(ò:§d‹~yGÜ>™S]îÄgHÏå-†8:ÃQ¡ŒlÆßïä=4×<È@1@t7²n4¢b¥Æus¤ íYÇ_ô<bb4ğïı×÷ù2wh½K|ü#ï#§LQ€%â9$Ç‚ÌÖÛÃjÍàç“ÒÌñ\"’ıİYl |ß)$ÀÉR[AMı:ÏT8ºEcfAÿ/„‹p<V581Rñ'3Z2Zè2½Åş½q¬O4ğ=‚w½
+ÚçäÇ™‘»Ã|È{/÷›ÓÑ¿#ë4ñq¿!‰eë„òê‹n8lÇ‘X¿Å7¡äk™ˆ·Öuø[Ö4pƒ¸HrŸËx$7<ø]¦mX³ïe#”ÄØ"Õ³Dd·—¨ê¶\•¾>ÛÂéÓZ³ÄP¥{Í~O¥NöÒ’Ö%”¸¶&?g(ÙÌìvp¯L‡9¸íÿÎt-‡a5Ú÷\sÚÅ`îC\ªPVVĞÊ{g¾
+Ö!ï¯Õº[ö¶¸sBÑ7ÆÔà°h‚‚6
+
+ --- SSL READ 4 BYTES --- 
+f9
+
+
+ --- SSL READ 1408 BYTES --- 
+-mW¡3_éì|ƒ€’…NÛ™@oÇnÂ,fZm"ìo4z,æZrûË¸Ø‰ïÓ±h¥xk0JiX¦o¤Šb
+
+ --- SSL READ 837 BYTES --- 
+HTTP/1.1 200 OK
+Content-Type: application/x-protobuf
+Content-Disposition: attachment
+Content-Encoding: gzip
+Date: Sat, 19 Dec 2020 16:52:09 GMT
+Server: ESF
+Cache-Control: private
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Connection: close
+Transfer-Encoding: chunked
+
+00000001
+
+00000001
+‹
+00000001
+
+00000001
+
+
+ --- SSL READ 833 BYTES --- 
+GET /e/a.gif?dmn=www.phillyvoice.com&pn=%2Fstaff-contributors%2Fjimmy-kempski%2F&qs=na&rdn=www.phillyvoice.com&rpn=%2Fstaff-contributors%2Fjimmy-kempski%2F&rqs=na&evid=8bc9b178-ec10-44a1-bf46-bb3d0f795255&suu=800a94817afc80dfc477cf3c4b934e06&tt=cs.js&ipaddr=71.168.238.60&z_evid=FAF61F7ECE43A75A9C03704D3D2FEA8B35A02270D8EDFC9ABFA1FB2048C3E3FC&urls=&rnd=1608396729016&cid=c013&version=1.395.38&cc=US&repeat=0&htmLcy=44 HTTP/1.1
+Host: p.acquireinsight.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://p.acquireinsight.net/1.395.38/a/s.htm?cid=c013&cc=US&cont=NA&version=1.395.38
+Cookie: barometric[cuid]=uFUXNV_dz1VX6sL3AB5jAg; pxcelPage_c013=1_0_0
+
+
+
+ --- SSL READ 249 BYTES --- 
+‹
+
+ --- SSL READ 777 BYTES --- 
+GET /pcs/view?xai=AKAOjssQSUtyV-TGTL3SmPmyuA8pqXzblE13SjjLRKxYX9LBL2VLOucqlhT6v4iMxInWG8cYO73Y6pwpbSGb1YgaD_YjY5mi2FBHaSHnpI2gx8ibZ7IQiNdUbgGguYcTxo61R7v_dmX_GlsP2PbypCPnBE3BlhpeOCMKuKFW2433i5wL5gO0Z0MEgq_c2pwGeaTyhawIMm5zqKpxtgRY3GWYCNTTDEMUOTmTcgqbD_Sz9kIBeEp-jPZAvBcrNJ0cFOIQy8id_WeaZUIG2ZW13rVS0MYlppfkbFE&sai=AMfl-YT3fqa3gZx9P5WiSdlS7YJglktDuBbC3R8aidVGRqHZQdoyc-nuWIlgPl5RJC63S8tiZ8l_nNdEV3yRr36rYTKSL7PFl1o6CL2r9haok7ejNK_MVGaPkvOvvuGMjfs&sig=Cg0ArKJSzF_mk3aSTxF6EAE&adurl= HTTP/1.1
+Host: securepubads.g.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: https://www.phillyvoice.com/
+
+
+
+ --- SSL READ 1408 BYTES --- 
+œ
+
+ --- SSL READ 5 BYTES --- 
+0
+
+
+
+ --- SSL READ 192 BYTES --- 
+HTTP/1.1 204 No Content
+Expires: Sat, 19 Dec 2020 16:52:09 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Sat, 19 Dec 2020 16:52:09 GMT
+Connection: keep-alive
+
+
+
+ --- SSL READ 7 BYTES --- 
+
+0
+
+
+
+ --- SSL READ 1408 BYTES --- 
+®oÌ'~D‹œÍ6,üNe
+
+ --- SSL READ 741 BYTES --- 
+GET /pcs/view?xai=AKAOjssGcRm-rmuVdtkhoIe2V648j63gGfrR0GtQU8k2lgzw9myZ8Kfct3cozIayNsgVQML2qKkNra_WAU18ua9PeFw4-grGUY7e5b8QREdwjxqwSSLIJCu48KHqrmruVB4BhyxTSYptZn3hSFoXtx8H4R3IYUCimL_Bz3vEZBhm1mIJFoMSfhqT9mWGYJdWwdaf5-eGUmDloYh1W45ywQyin7uE8SxdBxWYih4EdKjRcJXhAliIWodO-BwheKXyN4Q1Bued529fODxm6msB3pf8CKtCfBmtAg1bAQ&sai=AMfl-YQJed-s8e1_lUK6upfW6Pw4FRdfWdqlGBYlbVNlQ0XziC9RHmsMdB_exrU-c50rffg1nQWHgGFOLbgAjPfeirk_6JLha8wCWJQr1-BPdsSIdxrtctTco2aN8qRkZA4&sig=Cg0ArKJSzOQlirTNQvQNEAE&adurl= HTTP/1.1
+Host: securepubads.g.doubleclick.net
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: image/webp,*/*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+
+ --- SSL READ 328 BYTES --- 
+j5ŸŞëî™°‚ï(ûPãiÊâøšG}ºûúÏåVqo—^(ÆæÆi³Ğ±öaÖ‡»í\Ø(GÉx†Åf=cV™*]ïÊé_Ï`šéyÇHØ÷õI=[’D+"&¬gÚvM\Ó10æm:˜0ws XyÅ®–lÎ&Â¾0æ“6Òş†w$AÏ¤H`7.}”ˆûx®üºœìÓ€PÔz0^X8\TŒ¿îû];jËr¨@mÄÅşY}Sb…‡tÉ	—Nşä?C|^¬¿â<ä¶Ÿ2á³ÕAnÂ^»§‹3ùhÆÏd`¿üçèIÀ~¶Ÿk;{qÃÚ%”’Ë¼3¹ùYx•ÔH‹¥ô7”™é^Ø7‚ïÖWËRˆo¤ÃÆæ#§¢íS«-KøîÁ™ËJñ0,ŒÒE_5ƒ`{“øèì•îö
+
+ --- SSL READ 815 BYTES --- 
+HTTP/1.1 200 OK
+P3P: policyref="https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xml", CP="CURa ADMa DEVa TAIo PSAo PSDo OUR IND UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Cache-Control: private
+Access-Control-Allow-Origin: *
+Content-Type: image/gif
+X-Content-Type-Options: nosniff
+Date: Sat, 19 Dec 2020 16:52:10 GMT
+Server: cafe
+Content-Length: 0
+X-XSS-Protection: 0
+Set-Cookie: test_cookie=CheckForPermission; expires=Sat, 19-Dec-2020 17:07:10 GMT; path=/; domain=.doubleclick.net; Secure; SameSite=none
+Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Expires: Sat, 19 Dec 2020 16:52:10 GMT
+
+
+
+ --- SSL READ 565 BYTES --- 
+GET /v4/fullHashes:find?$ct=application/x-protobuf&key=AIzaSyAeBuGRUrxHr4_eHhrCwdkl0G-O4qR5UXs&$httpMethod=POST&$req=ChUKE25hdmNsaWVudC1hdXRvLWZmb3gSGwoNCAUQBhgBIgMwMDEwARDKgAoaAhgLj2HPHRouCAUQAhoGCgTSwv-lGgYKBCw7X7IaBgoENKcmthoGCgRLBLXDGgYKBMPo2vsgAQ== HTTP/1.1
+Host: safebrowsing.googleapis.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0
+Accept: */*
+Accept-Language
