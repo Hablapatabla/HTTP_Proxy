@@ -8,7 +8,6 @@
 #include <errno.h>
 #include <sys/ioctl.h>
 #include <signal.h>
-#include <zlib.h>
 #include <openssl/pem.h>
 #include <openssl/conf.h>
 #include <openssl/x509v3.h>
@@ -20,7 +19,6 @@
 #endif
 
 #include "parse.h"
-#include "rmessage.h"
 
 #define BUFSIZE 1024 * 16
 #define CACHESIZE 30
@@ -1059,61 +1057,16 @@ for (int i = 0; i <= fdmax; ++i) {
 						error("SSL * IS NULL IN SOCKET CONTEXTS\n");
 					else {
 						int partner = socket_contexts[i]->partner_tcp_sfd;
-						// TODO: THIS IS BAD BAD BAD
 						int read = SSL_read(socket_contexts[i]->ssl, buf, BUFSIZE);
 						if (read <= 0) {
 							ERR_print_errors_fp(stderr);
 							int err = SSL_get_error(socket_contexts[i]->ssl, read);
-							//display_ssl_error(err);
 							if (err == SSL_ERROR_ZERO_RETURN)
 								close_ssl_tunnel(i, partner, &master_set);
 						}
 						else {
 
 							printf("\n --- SSL READ %d BYTES --- \n%s\n", read, buf);
-							buf[read] = '\0';
-							char decompressed[BUFSIZE];
-							z_stream infstream;
-							infstream.zalloc = Z_NULL;
-							infstream.zfree = Z_NULL;
-							infstream.opaque = Z_NULL;
-							infstream.avail_in = (uInt)(read);
-							infstream.next_in = (Bytef *)buf;
-							infstream.avail_out = (uInt)(read);
-							infstream.next_out = (Bytef *)decompressed;
-
-							int a = inflateInit2(&infstream, -8);
-							if (a == Z_OK)
-								printf("\nZ_OK\n");
-							else if (a == Z_MEM_ERROR)
-								printf("\nZ_MEM_ERROR\n");
-							else if (a == Z_VERSION_ERROR)
-								printf("\nZ_VERSION_ERROR\n");
-							else if (a == Z_STREAM_ERROR)
-								printf("\nZ_STREAM_ERROR\n");
-
-
-							int b = inflate(&infstream, Z_FINISH);
-							if (b == Z_OK)
-								printf("\nZ_OK\n");
-							else if (b == Z_NEED_DICT)
-								printf("\nZ_NEED_DICT\n");
-							else if (b == Z_DATA_ERROR) {
-								printf("\nZ_VERSION_ERROR\n");
-								printf("%s\n", infstream.msg);
-							}
-							else if (b == Z_STREAM_END)
-								printf("\nZ_STREAM_END\n");
-							else if (b == Z_STREAM_ERROR)
-								printf("\nZ_STREAM_ERROR\n");
-							else if (b == Z_MEM_ERROR)
-								printf("\nZ_MEM_ERROR\n");
-							else if (b == Z_BUF_ERROR)
-								printf("\nZ_BUF_ERROR\n");
-							inflateEnd(&infstream);
-							printf("\n --- SSL DECOMPRESED READ %d BYTES --- \n%s\n", read, decompressed);
-							//printf("UNCOMPRESSED BUFFER: %s\n", decompressed);
-
 
 							int wrote = SSL_write(socket_contexts[partner]->ssl, buf, read);
 							if (wrote <= 0) {
@@ -1123,9 +1076,7 @@ for (int i = 0; i <= fdmax; ++i) {
 								if (err == SSL_ERROR_ZERO_RETURN)
 									close_ssl_tunnel(i, partner, &master_set);
 							}
-							//else
-								//printf("\n --- SSL WROTE %d BYTES --- \n", wrote);
-						}
+						 }
 						}
 					}
 	      }
