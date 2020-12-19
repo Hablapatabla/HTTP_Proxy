@@ -8,6 +8,7 @@ This proxy takes HTTP GET and CONNECT method requests. The proxy depends on RFC 
 1. Configure your browser (Firefox recommended) and machine to trust the myCA.pem certificate in the repo.
 2. Ensure myCA.pem is in the same directory as the proxy.
 3. Create an empty folder called 'certificates'. <-- This is critical!
+4. The proxy can be started from the command line with './proxy'. A port number needs to be passed as well. If using the .pac configuration file, the specified port is 9996, and the final command would be './proxy 9996'. Otherwise, pass whatever port that was specified when configuring the proxy in the browser.
 
 ## Getting started (in-depth)
 
@@ -30,6 +31,8 @@ Most browsers use the machines local trust store. However, browsers like Firefox
 3. 'View certificates' > 'Authorities'
 4. Select 'Import...', and import the myCA.pem file.
 
+To have Firefox dynamically change between using the proxy and not (i.e. let Firefox continue if the proxy is not running), a proxy.pac file has been supplied. This file can be used as configuration in Firefox's proxy settings, with the 'Automatic proxy configuration URL' option. A URL with the file:// prefix and the path to the file can be supplied.
+
 ### Certificates folder
 Finally, you need to create an empty folder in the same directory as the project called 'certificates'. Due to the nature of using the OpenSSL command line to do a lot of the heavy lifting, it is critical that this directory exists, otherwise, the proxy will not work. This folder will be filled with .pem certificates and .key private keys for each new hostname visited as browsing continues. These certificates should have the used hostname as the Subject Common Name, and should have that hostname as well as the hostname with a 'www.' prefix as Subject Alternative Names. These can be viewed with the command 'certtool d [cert.'hostname'.pem]'.
 
@@ -44,4 +47,3 @@ This is a brief list of sites that are known to not work with the proxy. The rea
 * ESPN.com
 * salesforce.com
 * dropbox.com
-* 
